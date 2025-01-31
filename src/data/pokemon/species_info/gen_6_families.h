@@ -3545,12 +3545,12 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
 #if P_FAMILY_TYRUNT
     [SPECIES_TYRUNT] =
     {
-        .baseHP        = 58,
-        .baseAttack    = 89,
-        .baseDefense   = 77,
-        .baseSpeed     = 48,
+        .baseHP        = 60,
+        .baseAttack    = 90,
+        .baseDefense   = 75,
+        .baseSpeed     = 50,
         .baseSpAttack  = 45,
-        .baseSpDefense = 45,
+        .baseSpDefense = 40,
         .types = MON_TYPES(TYPE_ROCK, TYPE_DRAGON),
         .catchRate = 45,
         .expYield = 72,
@@ -3560,19 +3560,19 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MONSTER, EGG_GROUP_DRAGON),
-        .abilities = { ABILITY_STRONG_JAW, ABILITY_NONE, ABILITY_STURDY },
+        .abilities = { ABILITY_STRONG_JAW, ABILITY_SAND_FORCE, ABILITY_STURDY },
         .bodyColor = BODY_COLOR_BROWN,
         .speciesName = _("Tyrunt"),
         .cryId = CRY_TYRUNT,
         .natDexNum = NATIONAL_DEX_TYRUNT,
-        .categoryName = _("Royal Heir"),
+        .categoryName = _("Jaw"),
         .height = 8,
         .weight = 260,
         .description = COMPOUND_STRING(
             "Its immense jaws have enough destructive\n"
             "force that it can chew up a car. If\n"
             "something happens that it doesn't like,\n"
-            "it throws a tantrum and runs wild."),
+            "it throws a tantrum. 60/90/75/45/40/50"),
         .pokemonScale = 366,
         .pokemonOffset = 7,
         .trainerScale = 257,
@@ -3600,15 +3600,14 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
             gOverworldPalette_Tyrunt,
             gShinyOverworldPalette_Tyrunt
         )
+		.perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,
         .levelUpLearnset = sTyruntLevelUpLearnset,
         .teachableLearnset = sTyruntTeachableLearnset,
-        .eggMoveLearnset = sTyruntEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL_DAY, 39, SPECIES_TYRANTRUM}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 40, SPECIES_TYRANTRUM}),
     },
-
     [SPECIES_TYRANTRUM] =
     {
-        .baseHP        = 82,
+        .baseHP        = 81,
         .baseAttack    = 121,
         .baseDefense   = 119,
         .baseSpeed     = 71,
@@ -3623,19 +3622,19 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MONSTER, EGG_GROUP_DRAGON),
-        .abilities = { ABILITY_STRONG_JAW, ABILITY_NONE, ABILITY_ROCK_HEAD },
+        .abilities = { ABILITY_STRONG_JAW, ABILITY_SAND_FORCE, ABILITY_ROCK_HEAD },
         .bodyColor = BODY_COLOR_RED,
         .speciesName = _("Tyrantrum"),
         .cryId = CRY_TYRANTRUM,
         .natDexNum = NATIONAL_DEX_TYRANTRUM,
-        .categoryName = _("Despot"),
+        .categoryName = _("Jaw"),
         .height = 25,
         .weight = 2700,
         .description = COMPOUND_STRING(
             "Thanks to its gargantuan jaws, which could\n"
             "shred thick metal plates as if they were\n"
             "paper, it was invincible in the ancient\n"
-            "world it once inhabited."),
+            "world it lived in. 81/121/119/69/59/71"),
         .pokemonScale = 257,
         .pokemonOffset = 10,
         .trainerScale = 423,
@@ -3663,11 +3662,10 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
             gOverworldPalette_Tyrantrum,
             gShinyOverworldPalette_Tyrantrum
         )
-        .levelUpLearnset = sTyrantrumLevelUpLearnset,
-        .teachableLearnset = sTyrantrumTeachableLearnset,
+        .levelUpLearnset = sTyruntLevelUpLearnset,
+        .teachableLearnset = sTyruntTeachableLearnset,
     },
 #endif //P_FAMILY_TYRUNT
-
 #if P_FAMILY_AMAURA
     [SPECIES_AMAURA] =
     {

@@ -2408,4 +2408,90 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
         .cantBeSwapped = TRUE,
         .cantBeTraced = TRUE,
     },
+	[ABILITY_BOOM_BOX] =
+    {
+        .name = _("Boom Box"),
+        .description = COMPOUND_STRING("Ups and resists sound."),
+        .aiRating = 2,
+        .breakable = TRUE,
+    },
+	[ABILITY_SHELLEMENTAL] =
+    {
+        .name = _("Shellemental"),
+        .description = COMPOUND_STRING("Only weak to Fire & Ice."),
+        .aiRating = 10,
+        .cantBeCopied = TRUE,
+        .cantBeSwapped = TRUE,
+        .breakable = TRUE,
+    },
+	[ABILITY_ALL_TERRAIN] =
+    {
+        .name = _("All-Terrain"),
+        .description = COMPOUND_STRING("Negates weather effects."),
+        .aiRating = 5,
+    },
+	[ABILITY_MESOGLACIES] =
+    {
+        .name = _("Mesoglacies"),
+        .description = COMPOUND_STRING("Snow/Psy ups best stat."),
+        .aiRating = 7,
+        .cantBeCopied = TRUE,
+        .cantBeSwapped = TRUE,
+        .cantBeTraced = TRUE,
+        .failsOnImposter = TRUE,
+    },
+	[ABILITY_CENOSOLARIS] =
+    {
+        .name = _("Cenosolaris"),
+        .description = COMPOUND_STRING("Sun/Grass ups best stat."),
+        .aiRating = 7,
+        .cantBeCopied = TRUE,
+        .cantBeSwapped = TRUE,
+        .cantBeTraced = TRUE,
+        .failsOnImposter = TRUE,
+    },
+    [ABILITY_ZONAI_DRIVE] =
+    {
+        .name = _("Zonai Drive"),
+        .description = COMPOUND_STRING("Rain/Elec ups best stat."),
+        .aiRating = 7,
+        .cantBeCopied = TRUE,
+        .cantBeSwapped = TRUE,
+        .cantBeTraced = TRUE,
+        .failsOnImposter = TRUE,
+    },
+	[ABILITY_AMIHAN] =
+    {
+        .name = _("Amihan"),
+        .description = COMPOUND_STRING("Snow and Psychic Field."),
+        .aiRating = 9,
+    },
+	[ABILITY_HABAGAT] =
+    {
+        .name = _("Habagat"),
+        .description = COMPOUND_STRING("Sun and Grassy Field."),
+        .aiRating = 9,
+    },
+	[ABILITY_RAMUH] =
+    {
+        .name = _("Ramuh"),
+        .description = COMPOUND_STRING("Rain and Electric Field."),
+        .aiRating = 9,
+    },
+	[ABILITY_AIR_PRESSURE] =
+    {
+        .name = _("Air Pressure"),
+        .description = COMPOUND_STRING("Not hit by Ground attacks."),
+        .aiRating = 7,
+        .breakable = TRUE,
+    },
+	[ABILITY_TRI_OS] =
+    {
+        .name = _("Tri-OS"),
+        .description = COMPOUND_STRING("Boosts Rock/Ice."),
+        .aiRating = 10,
+        .cantBeCopied = TRUE,
+        .cantBeSwapped = TRUE,
+        .breakable = TRUE,
+    },
 };

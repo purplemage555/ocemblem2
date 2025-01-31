@@ -1151,3 +1151,67 @@ EventScript_VsSeekerChargingDone::
 	.include "data/scripts/follower.inc"
 	.include "data/text/save.inc"
 	.include "data/text/birch_speech.inc"
+
+	.include "data/maps/EastfordOW/scripts.inc"
+
+	.include "data/maps/SeleniaRoute1/scripts.inc"
+
+	.include "data/maps/KirkopolisOW/scripts.inc"
+
+	.include "data/maps/PirateBridge/scripts.inc"
+
+	.include "data/maps/PetesburgOW/scripts.inc"
+
+	.include "data/maps/PlayerHouse/scripts.inc"
+
+	.include "data/maps/MapleLab/scripts.inc"
+
+	.include "data/maps/EastfordNPCs/scripts.inc"
+
+	.include "data/maps/EastfordPokeCenter/scripts.inc"
+
+	.include "data/maps/EastfordMart/scripts.inc"
+
+	.include "data/maps/KirkopolisPokeCenter/scripts.inc"
+
+	.include "data/maps/PetesburgPokeCenter/scripts.inc"
+
+	.include "data/maps/PetesburgMart/scripts.inc"
+
+	.include "data/maps/PetesburgNPCs/scripts.inc"
+
+	.include "data/maps/BarstHouse/scripts.inc"
+
+	.include "data/maps/SeleniaRoute2/scripts.inc"
+
+	.include "data/maps/SanctumOW/scripts.inc"
+
+	.include "data/maps/SanctumPokeCenter/scripts.inc"
+
+	.include "data/maps/SanctumMart/scripts.inc"
+
+	.include "data/maps/DragonPass/scripts.inc"
+
+	.include "data/maps/SanctumNPCs/scripts.inc"
+
+	.include "data/maps/ApprenticeHouse/scripts.inc"
+
+	.include "data/maps/MareepMeadow/scripts.inc"
+
+	.include "data/maps/FortTarif/scripts.inc"
+
+	.include "data/maps/FortTarifCave/scripts.inc"
+
+	.include "data/maps/SeleniaRoute3North/scripts.inc"
+
+	.include "data/maps/SeleniaRoute3South/scripts.inc"
+
+	.include "data/maps/SouthportOW/scripts.inc"
+
+	.include "data/maps/OldRodHouse/scripts.inc"
+
+	.include "data/maps/Route3Lodge/scripts.inc"
+
+	.include "data/maps/SouthportPokeCenter/scripts.inc"
+
+	.include "data/maps/SouthportMart/scripts.inc"

@@ -1839,7 +1839,6 @@ static const u16 sWooperEggMoveLearnset[] = {
     MOVE_POWER_UP_PUNCH,
     MOVE_UNAVAILABLE,
 };
-#if P_PALDEAN_FORMS
 static const u16 sWooperPaldeaEggMoveLearnset[] = {
     MOVE_ACID_SPRAY,
     MOVE_AFTER_YOU,
@@ -1855,7 +1854,6 @@ static const u16 sWooperPaldeaEggMoveLearnset[] = {
     MOVE_SWALLOW,
     MOVE_UNAVAILABLE,
 };
-#endif //P_PALDEAN_FORMS
 #endif //P_FAMILY_WOOPER
 
 #if P_FAMILY_MURKROW

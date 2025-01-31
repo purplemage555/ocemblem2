@@ -1,0 +1,129 @@
+{
+  "id": "MAP_EASTFORD_OW",
+  "name": "EastfordOW",
+  "layout": "LAYOUT_EASTFORD_OW",
+  "music": "MUS_LITTLEROOT",
+  "region_map_section": "MAPSEC_PALLET_TOWN",
+  "requires_flash": false,
+  "weather": "WEATHER_SNOW",
+  "map_type": "MAP_TYPE_CITY",
+  "allow_cycling": true,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": [
+    {
+      "map": "MAP_SELENIA_ROUTE1",
+      "offset": 0,
+      "direction": "right"
+    }
+  ],
+  "object_events": [
+    {
+      "graphics_id": "OBJ_EVENT_GFX_CUTTABLE_TREE",
+      "x": 11,
+      "y": 12,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "EventScript_CutTree",
+      "flag": "FLAG_TEMP_11"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_WOMAN_2",
+      "x": 12,
+      "y": 22,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_WANDER_LEFT_AND_RIGHT",
+      "movement_range_x": 1,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Eastford_ES_FlowerGirl",
+      "flag": "0"
+    }
+  ],
+  "warp_events": [
+    {
+      "x": 26,
+      "y": 9,
+      "elevation": 0,
+      "dest_map": "MAP_PLAYER_HOUSE",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 20,
+      "y": 9,
+      "elevation": 0,
+      "dest_map": "MAP_MAPLE_LAB",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 22,
+      "y": 16,
+      "elevation": 0,
+      "dest_map": "MAP_EASTFORD_NPCS",
+      "dest_warp_id": "1"
+    },
+    {
+      "x": 26,
+      "y": 16,
+      "elevation": 0,
+      "dest_map": "MAP_EASTFORD_NPCS",
+      "dest_warp_id": "2"
+    },
+    {
+      "x": 22,
+      "y": 21,
+      "elevation": 0,
+      "dest_map": "MAP_EASTFORD_NPCS",
+      "dest_warp_id": "5"
+    },
+    {
+      "x": 26,
+      "y": 21,
+      "elevation": 0,
+      "dest_map": "MAP_EASTFORD_NPCS",
+      "dest_warp_id": "6"
+    },
+    {
+      "x": 25,
+      "y": 26,
+      "elevation": 0,
+      "dest_map": "MAP_EASTFORD_POKE_CENTER",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 21,
+      "y": 26,
+      "elevation": 0,
+      "dest_map": "MAP_EASTFORD_MART",
+      "dest_warp_id": "0"
+    }
+  ],
+  "coord_events": [
+
+  ],
+  "bg_events": [
+    {
+      "type": "sign",
+      "x": 16,
+      "y": 15,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "Eastford_EventScript_TownSign"
+    },
+    {
+      "type": "sign",
+      "x": 12,
+      "y": 23,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "Eastford_EventScript_TriSign"
+    }
+  ]
+}

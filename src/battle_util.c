@@ -2323,7 +2323,7 @@ u8 DoBattlerEndTurnEffects(void)
         {
         case ENDTURN_WEATHER_DAMAGE:
             ability = GetBattlerAbility(battler);
-            if (!IsBattlerAlive(battler) || !WEATHER_HAS_EFFECT || ability == ABILITY_MAGIC_GUARD)
+            if (!IsBattlerAlive(battler) || !WEATHER_HAS_EFFECT || ability == ABILITY_MAGIC_GUARD || ability == ABILITY_ALL_TERRAIN)
             {
                 gBattleStruct->turnEffectsTracker++;
                 break;
@@ -4178,6 +4178,10 @@ u32 CanAbilityBlockMove(u32 battlerAtk, u32 battlerDef, u32 move, u32 abilityDef
         if (gMovesInfo[move].soundMove && !(GetBattlerMoveTargetType(battlerAtk, move) & MOVE_TARGET_USER))
             effect = MOVE_BLOCKED_BY_SOUNDPROOF_OR_BULLETPROOF;
         break;
+	case ABILITY_BOOM_BOX:
+        if (gMovesInfo[move].soundMove && !(GetBattlerMoveTargetType(battlerAtk, move) & MOVE_TARGET_USER))
+            effect = MOVE_BLOCKED_BY_SOUNDPROOF_OR_BULLETPROOF;
+        break;
     case ABILITY_BULLETPROOF:
         if (gMovesInfo[move].ballisticMove)
             effect = MOVE_BLOCKED_BY_SOUNDPROOF_OR_BULLETPROOF;
@@ -4857,6 +4861,42 @@ u32 AbilityBattleEffects(u32 caseID, u32 battler, u32 ability, u32 special, u32 
             {
                 gSpecialStatuses[battler].switchInAbilityDone = TRUE;
                 BattleScriptPushCursorAndCallback(BattleScript_BlockedByPrimalWeatherEnd3);
+                effect++;
+            }
+            break;
+		case ABILITY_AMIHAN:
+            if (TryChangeBattleWeather(battler, ENUM_WEATHER_SNOW, TRUE))
+            {
+                BattleScriptPushCursorAndCallback(BattleScript_SnowWarningActivatesSnow);
+                effect++;
+            }
+			if (TryChangeBattleTerrain(battler, STATUS_FIELD_PSYCHIC_TERRAIN, &gFieldTimers.terrainTimer))
+            {
+                BattleScriptPushCursorAndCallback(BattleScript_PsychicSurgeActivates);
+                effect++;
+            }
+            break;	
+		case ABILITY_HABAGAT:
+            if (TryChangeBattleWeather(battler, ENUM_WEATHER_SUN, TRUE))
+            {
+                BattleScriptPushCursorAndCallback(BattleScript_DroughtActivates);
+                effect++;
+            }
+			if (TryChangeBattleTerrain(battler, STATUS_FIELD_GRASSY_TERRAIN, &gFieldTimers.terrainTimer))
+            {
+                BattleScriptPushCursorAndCallback(BattleScript_GrassySurgeActivates);
+                effect++;
+            }
+            break;
+		case ABILITY_RAMUH:
+            if (TryChangeBattleWeather(battler, ENUM_WEATHER_RAIN, TRUE))
+            {
+                BattleScriptPushCursorAndCallback(BattleScript_DrizzleActivates);
+                effect++;
+            }
+			if (TryChangeBattleTerrain(battler, STATUS_FIELD_ELECTRIC_TERRAIN, &gFieldTimers.terrainTimer))
+            {
+                BattleScriptPushCursorAndCallback(BattleScript_ElectricSurgeActivates);
                 effect++;
             }
             break;
@@ -6268,6 +6308,7 @@ u32 AbilityBattleEffects(u32 caseID, u32 battler, u32 ability, u32 special, u32 
             switch (GetBattlerAbility(battler))
             {
             case ABILITY_IMMUNITY:
+			case ABILITY_ALL_TERRAIN:
             case ABILITY_PASTEL_VEIL:
                 if (gBattleMons[battler].status1 & (STATUS1_POISON | STATUS1_TOXIC_POISON | STATUS1_TOXIC_COUNTER))
                 {
@@ -8524,22 +8565,22 @@ u8 GetAttackerObedienceForAction()
     if (FlagGet(FLAG_BADGE08_GET)) // Rain Badge, ignore obedience altogether
         return OBEYS;
 
-    obedienceLevel = 10;
+    obedienceLevel = 25;
 
     if (FlagGet(FLAG_BADGE01_GET)) // Stone Badge
-        obedienceLevel = 20;
-    if (FlagGet(FLAG_BADGE02_GET)) // Knuckle Badge
         obedienceLevel = 30;
-    if (FlagGet(FLAG_BADGE03_GET)) // Dynamo Badge
+    if (FlagGet(FLAG_BADGE02_GET)) // Knuckle Badge
         obedienceLevel = 40;
-    if (FlagGet(FLAG_BADGE04_GET)) // Heat Badge
+    if (FlagGet(FLAG_BADGE03_GET)) // Dynamo Badge
         obedienceLevel = 50;
-    if (FlagGet(FLAG_BADGE05_GET)) // Balance Badge
+    if (FlagGet(FLAG_BADGE04_GET)) // Heat Badge
         obedienceLevel = 60;
-    if (FlagGet(FLAG_BADGE06_GET)) // Feather Badge
+    if (FlagGet(FLAG_BADGE05_GET)) // Balance Badge
         obedienceLevel = 70;
-    if (FlagGet(FLAG_BADGE07_GET)) // Mind Badge
+    if (FlagGet(FLAG_BADGE06_GET)) // Feather Badge
         obedienceLevel = 80;
+    if (FlagGet(FLAG_BADGE07_GET)) // Mind Badge
+        obedienceLevel = 90;
 
     if (B_OBEDIENCE_MECHANICS >= GEN_8
      && !IsOtherTrainer(gBattleMons[gBattlerAttacker].otId, gBattleMons[gBattlerAttacker].otName))
@@ -8739,6 +8780,8 @@ static bool32 IsBattlerGroundedInverseCheck(u32 battler, bool32 considerInverse)
     if (holdEffect == HOLD_EFFECT_AIR_BALLOON)
         return FALSE;
     if ((AI_DATA->aiCalcInProgress ? AI_DATA->abilities[battler] : GetBattlerAbility(battler)) == ABILITY_LEVITATE)
+        return FALSE;
+	if ((AI_DATA->aiCalcInProgress ? AI_DATA->abilities[battler] : GetBattlerAbility(battler)) == ABILITY_AIR_PRESSURE)
         return FALSE;
     if (IS_BATTLER_OF_TYPE(battler, TYPE_FLYING) && (!considerInverse || !FlagGet(B_FLAG_INVERSE_BATTLE)))
         return FALSE;
@@ -9371,6 +9414,18 @@ static inline u32 CalcMoveBasePowerAfterModifiers(struct DamageCalculationData *
         if (moveType == TYPE_STEEL)
            modifier = uq4_12_multiply(modifier, UQ_4_12(1.5));
         break;
+	case ABILITY_ALL_TERRAIN:
+        if (moveType == TYPE_DRAGON)
+           modifier = uq4_12_multiply(modifier, UQ_4_12(1.5));
+        break;
+	case ABILITY_AIR_PRESSURE:
+        if (moveType == TYPE_FLYING)
+           modifier = uq4_12_multiply(modifier, UQ_4_12(1.5));
+        break;
+	case ABILITY_TRI_OS:
+        if (moveType == TYPE_ROCK || moveType == TYPE_ICE)
+           modifier = uq4_12_multiply(modifier, UQ_4_12(1.5));
+        break;
     case ABILITY_PIXILATE:
         if (moveType == TYPE_FAIRY && gBattleStruct->ateBoost[battlerAtk])
             modifier = uq4_12_multiply(modifier, UQ_4_12(1.2));
@@ -9392,6 +9447,10 @@ static inline u32 CalcMoveBasePowerAfterModifiers(struct DamageCalculationData *
             modifier = uq4_12_multiply(modifier, UQ_4_12(1.2));
         break;
     case ABILITY_PUNK_ROCK:
+        if (gMovesInfo[move].soundMove)
+            modifier = uq4_12_multiply(modifier, UQ_4_12(1.3));
+        break;
+	case ABILITY_BOOM_BOX:
         if (gMovesInfo[move].soundMove)
             modifier = uq4_12_multiply(modifier, UQ_4_12(1.3));
         break;
@@ -9466,6 +9525,33 @@ static inline u32 CalcMoveBasePowerAfterModifiers(struct DamageCalculationData *
         {
             u8 defHighestStat = GetHighestStatId(battlerDef);
             if ((gFieldStatuses & STATUS_FIELD_ELECTRIC_TERRAIN || gBattleStruct->boosterEnergyActivates & (1u << battlerDef))
+             && ((IS_MOVE_PHYSICAL(move) && defHighestStat == STAT_DEF) || (IS_MOVE_SPECIAL(move) && defHighestStat == STAT_SPDEF))
+             && !(gBattleMons[battlerDef].status2 & STATUS2_TRANSFORMED))
+                modifier = uq4_12_multiply(modifier, UQ_4_12(0.7));
+        }
+        break;
+	case ABILITY_MESOGLACIES:
+        {
+            u8 defHighestStat = GetHighestStatId(battlerDef);
+            if (((weather & B_WEATHER_SNOW && WEATHER_HAS_EFFECT) || gFieldStatuses & STATUS_FIELD_PSYCHIC_TERRAIN)
+             && ((IS_MOVE_PHYSICAL(move) && defHighestStat == STAT_DEF) || (IS_MOVE_SPECIAL(move) && defHighestStat == STAT_SPDEF))
+             && !(gBattleMons[battlerDef].status2 & STATUS2_TRANSFORMED))
+                modifier = uq4_12_multiply(modifier, UQ_4_12(0.7));
+        }
+        break;
+	case ABILITY_CENOSOLARIS:
+        {
+            u8 defHighestStat = GetHighestStatId(battlerDef);
+            if (((weather & B_WEATHER_SUN && WEATHER_HAS_EFFECT) || gFieldStatuses & STATUS_FIELD_GRASSY_TERRAIN)
+             && ((IS_MOVE_PHYSICAL(move) && defHighestStat == STAT_DEF) || (IS_MOVE_SPECIAL(move) && defHighestStat == STAT_SPDEF))
+             && !(gBattleMons[battlerDef].status2 & STATUS2_TRANSFORMED))
+                modifier = uq4_12_multiply(modifier, UQ_4_12(0.7));
+        }
+        break;
+	case ABILITY_ZONAI_DRIVE:
+        {
+            u8 defHighestStat = GetHighestStatId(battlerDef);
+            if (((weather & B_WEATHER_RAIN && WEATHER_HAS_EFFECT) || gFieldStatuses & STATUS_FIELD_ELECTRIC_TERRAIN)
              && ((IS_MOVE_PHYSICAL(move) && defHighestStat == STAT_DEF) || (IS_MOVE_SPECIAL(move) && defHighestStat == STAT_SPDEF))
              && !(gBattleMons[battlerDef].status2 & STATUS2_TRANSFORMED))
                 modifier = uq4_12_multiply(modifier, UQ_4_12(0.7));
@@ -9746,6 +9832,39 @@ static inline u32 CalcAttackStat(struct DamageCalculationData *damageCalcData, u
         {
             u32 atkHighestStat = GetHighestStatId(battlerAtk);
             if (gFieldStatuses & STATUS_FIELD_ELECTRIC_TERRAIN || gBattleStruct->boosterEnergyActivates & (1u << battlerAtk))
+            {
+                if ((IS_MOVE_PHYSICAL(move) && atkHighestStat == STAT_ATK) || (IS_MOVE_SPECIAL(move) && atkHighestStat == STAT_SPATK))
+                    modifier = uq4_12_multiply(modifier, UQ_4_12(1.3));
+            }
+        }
+        break;
+	case ABILITY_MESOGLACIES:
+        if (!(gBattleMons[battlerAtk].status2 & STATUS2_TRANSFORMED))
+        {
+            u32 atkHighestStat = GetHighestStatId(battlerAtk);
+            if (((weather & B_WEATHER_SNOW) && WEATHER_HAS_EFFECT) || gFieldStatuses & STATUS_FIELD_PSYCHIC_TERRAIN)
+            {
+                if ((IS_MOVE_PHYSICAL(move) && atkHighestStat == STAT_ATK) || (IS_MOVE_SPECIAL(move) && atkHighestStat == STAT_SPATK))
+                    modifier = uq4_12_multiply(modifier, UQ_4_12(1.3));
+            }
+        }
+        break;
+	case ABILITY_CENOSOLARIS:
+        if (!(gBattleMons[battlerAtk].status2 & STATUS2_TRANSFORMED))
+        {
+            u32 atkHighestStat = GetHighestStatId(battlerAtk);
+            if (((weather & B_WEATHER_SUN) && WEATHER_HAS_EFFECT) || gFieldStatuses & STATUS_FIELD_GRASSY_TERRAIN)
+            {
+                if ((IS_MOVE_PHYSICAL(move) && atkHighestStat == STAT_ATK) || (IS_MOVE_SPECIAL(move) && atkHighestStat == STAT_SPATK))
+                    modifier = uq4_12_multiply(modifier, UQ_4_12(1.3));
+            }
+        }
+        break;
+	case ABILITY_ZONAI_DRIVE:
+        if (!(gBattleMons[battlerAtk].status2 & STATUS2_TRANSFORMED))
+        {
+            u32 atkHighestStat = GetHighestStatId(battlerAtk);
+            if (((weather & B_WEATHER_RAIN) && WEATHER_HAS_EFFECT) || gFieldStatuses & STATUS_FIELD_ELECTRIC_TERRAIN)
             {
                 if ((IS_MOVE_PHYSICAL(move) && atkHighestStat == STAT_ATK) || (IS_MOVE_SPECIAL(move) && atkHighestStat == STAT_SPATK))
                     modifier = uq4_12_multiply(modifier, UQ_4_12(1.3));
@@ -10663,6 +10782,14 @@ uq4_12_t CalcPartyMonTypeEffectivenessMultiplier(u16 move, u16 speciesDef, u16 a
 
         if (moveType == TYPE_GROUND && abilityDef == ABILITY_LEVITATE && !(gFieldStatuses & STATUS_FIELD_GRAVITY))
             modifier = UQ_4_12(0.0);
+		if (moveType == TYPE_GROUND && abilityDef == ABILITY_AIR_PRESSURE && !(gFieldStatuses & STATUS_FIELD_GRAVITY))
+            modifier = UQ_4_12(0.0);
+		if (moveType == TYPE_DRAGON && abilityDef == ABILITY_ALL_TERRAIN)
+            modifier = UQ_4_12(0.0);
+		if (!(moveType == TYPE_FIRE || moveType == TYPE_ICE) && abilityDef == ABILITY_SHELLEMENTAL)
+            modifier = UQ_4_12(0.0);
+		if ((moveType == TYPE_FIRE || moveType == TYPE_ICE) && abilityDef == ABILITY_SHELLEMENTAL)
+			modifier = UQ_4_12(2.0);
         if (abilityDef == ABILITY_WONDER_GUARD && modifier <= UQ_4_12(1.0) && gMovesInfo[move].power)
             modifier = UQ_4_12(0.0);
     }

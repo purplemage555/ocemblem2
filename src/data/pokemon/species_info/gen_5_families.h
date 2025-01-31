@@ -2622,7 +2622,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
             "These Pokémon appear at building\n"
             "sites and help out with construction.\n"
             "They always carry squared logs.\n"
-            "As they grow, they carry bigger logs."),
+            "75/80/55/25/35/35"),
         .pokemonScale = 422,
         .pokemonOffset = 14,
         .trainerScale = 256,
@@ -2650,12 +2650,11 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
             gOverworldPalette_Timburr,
             gShinyOverworldPalette_Timburr
         )
-        .levelUpLearnset = sTimburrLevelUpLearnset,
+		.perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,
+        .levelUpLearnset = sConkeldurrLevelUpLearnset,
         .teachableLearnset = sTimburrTeachableLearnset,
-        .eggMoveLearnset = sTimburrEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 25, SPECIES_GURDURR}),
     },
-
     [SPECIES_GURDURR] =
     {
         .baseHP        = 85,
@@ -2684,8 +2683,8 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .description = COMPOUND_STRING(
             "They strengthen their bodies by carrying\n"
             "steel beams. This Pokémon is so muscular\n"
-            "and strongly built that even a group of\n"
-            "wrestlers could not make it budge an inch."),
+            "and strongly built that even wrestlers\n"
+            "cannot move it. 85/105/85/40/50/40"),
         .pokemonScale = 282,
         .pokemonOffset = 3,
         .trainerScale = 256,
@@ -2713,12 +2712,12 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
             gOverworldPalette_Gurdurr,
             gShinyOverworldPalette_Gurdurr
         )
-        .levelUpLearnset = sGurdurrLevelUpLearnset,
-        .teachableLearnset = sGurdurrTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_TRADE, 0, SPECIES_CONKELDURR},
+		.perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,
+        .levelUpLearnset = sConkeldurrLevelUpLearnset,
+        .teachableLearnset = sTimburrTeachableLearnset,
+        .evolutions = EVOLUTION({EVO_LEVEL, 35, SPECIES_CONKELDURR},
                                 {EVO_ITEM, ITEM_LINKING_CORD, SPECIES_CONKELDURR}),
     },
-
     [SPECIES_CONKELDURR] =
     {
         .baseHP        = 105,
@@ -2729,7 +2728,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .baseSpDefense = 65,
         .types = MON_TYPES(TYPE_FIGHTING),
         .catchRate = 45,
-        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_8) ? 253 : 227,
+        .expYield = 253,
         .evYield_Attack = 3,
         .genderRatio = PERCENT_FEMALE(25),
         .eggCycles = 20,
@@ -2747,8 +2746,8 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .description = COMPOUND_STRING(
             "They use concrete pillars as walking\n"
             "canes. Rather than rely solely on force,\n"
-            "they master moves that utilize the\n"
-            "centrifugal force of spinning concrete."),
+            "they utilize the centrifugal force of\n"
+            "spinning concrete. 105/140/95/55/65/45"),
         .pokemonScale = 265,
         .pokemonOffset = 3,
         .trainerScale = 262,
@@ -2776,8 +2775,9 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
             gOverworldPalette_Conkeldurr,
             gShinyOverworldPalette_Conkeldurr
         )
+		.perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,
         .levelUpLearnset = sConkeldurrLevelUpLearnset,
-        .teachableLearnset = sConkeldurrTeachableLearnset,
+        .teachableLearnset = sTimburrTeachableLearnset,
     },
 #endif //P_FAMILY_TIMBURR
 
@@ -3134,8 +3134,8 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .description = COMPOUND_STRING(
             "It chews up leaves and sews them with\n"
             "sticky thread extruded from its mouth.\n"
-            "Since this Pokémon makes its own clothes,\n"
-            "it is a mascot for fashion designers."),
+            "It is a mascot for fashion designers.\n"
+            "45/53/70/40/60/42"),
         .pokemonScale = 530,
         .pokemonOffset = 15,
         .trainerScale = 256,
@@ -3163,12 +3163,11 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
             gOverworldPalette_Sewaddle,
             gShinyOverworldPalette_Sewaddle
         )
+		.perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,
         .levelUpLearnset = sSewaddleLevelUpLearnset,
         .teachableLearnset = sSewaddleTeachableLearnset,
-        .eggMoveLearnset = sSewaddleEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 20, SPECIES_SWADLOON}),
     },
-
     [SPECIES_SWADLOON] =
     {
         .baseHP        = 55,
@@ -3199,7 +3198,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
             "Forests where Swadloon live have\n"
             "superb foliage because the nutrients\n"
             "they make from fallen leaves nourish\n"
-            "the plant life."),
+            "the plant life. 55/63/90/50/80/42"),
         .pokemonScale = 432,
         .pokemonOffset = 15,
         .trainerScale = 256,
@@ -3227,11 +3226,11 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
             gOverworldPalette_Swadloon,
             gShinyOverworldPalette_Swadloon
         )
-        .levelUpLearnset = sSwadloonLevelUpLearnset,
-        .teachableLearnset = sSwadloonTeachableLearnset,
+		.perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,
+        .levelUpLearnset = sSewaddleLevelUpLearnset,
+        .teachableLearnset = sSewaddleTeachableLearnset,
         .evolutions = EVOLUTION({EVO_FRIENDSHIP, 0, SPECIES_LEAVANNY}),
     },
-
     [SPECIES_LEAVANNY] =
     {
         .baseHP        = 75,
@@ -3239,16 +3238,10 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .baseDefense   = 80,
         .baseSpeed     = 92,
         .baseSpAttack  = 70,
-        .baseSpDefense = P_UPDATED_STATS >= GEN_6 ? 80 : 70,
+        .baseSpDefense = 80,
         .types = MON_TYPES(TYPE_BUG, TYPE_GRASS),
         .catchRate = 45,
-    #if P_UPDATED_EXP_YIELDS >= GEN_8
         .expYield = 250,
-    #elif P_UPDATED_EXP_YIELDS >= GEN_7
-        .expYield = 225,
-    #else
-        .expYield = 221,
-    #endif
         .evYield_Attack = 3,
         .itemRare = ITEM_MENTAL_HERB,
         .genderRatio = PERCENT_FEMALE(50),
@@ -3268,7 +3261,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
             "It keeps its eggs warm with heat from\n"
             "fermenting leaves. It also uses leaves to\n"
             "weave warm wrappings for Sewaddle by\n"
-            "using the silk secreted from its mouth."),
+            "using its silk. 75/103/80/70/80/92"),
         .pokemonScale = 282,
         .pokemonOffset = 3,
         .trainerScale = 256,
@@ -3296,11 +3289,11 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
             gOverworldPalette_Leavanny,
             gShinyOverworldPalette_Leavanny
         )
-        .levelUpLearnset = sLeavannyLevelUpLearnset,
-        .teachableLearnset = sLeavannyTeachableLearnset,
+		.perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,
+        .levelUpLearnset = sSewaddleLevelUpLearnset,
+        .teachableLearnset = sSewaddleTeachableLearnset,
     },
 #endif //P_FAMILY_SEWADDLE
-
 #if P_FAMILY_VENIPEDE
     [SPECIES_VENIPEDE] =
     {
@@ -3320,11 +3313,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_BUG),
-    #if P_UPDATED_ABILITIES >= GEN_6
         .abilities = { ABILITY_POISON_POINT, ABILITY_SWARM, ABILITY_SPEED_BOOST },
-    #else
-        .abilities = { ABILITY_POISON_POINT, ABILITY_SWARM, ABILITY_QUICK_FEET },
-    #endif
         .bodyColor = BODY_COLOR_RED,
         .speciesName = _("Venipede"),
         .cryId = CRY_VENIPEDE,
@@ -3336,7 +3325,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
             "Using the feelers on its head and tail,\n"
             "it picks up vibrations in the air to\n"
             "determine its prey's location and state.\n"
-            "It is brutally aggressive."),
+            "It is very aggressive. 30/45/59/30/39/57"),
         .pokemonScale = 491,
         .pokemonOffset = 16,
         .trainerScale = 256,
@@ -3364,12 +3353,11 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
             gOverworldPalette_Venipede,
             gShinyOverworldPalette_Venipede
         )
+		.perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,
         .levelUpLearnset = sVenipedeLevelUpLearnset,
         .teachableLearnset = sVenipedeTeachableLearnset,
-        .eggMoveLearnset = sVenipedeEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 22, SPECIES_WHIRLIPEDE}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 15, SPECIES_WHIRLIPEDE}),
     },
-
     [SPECIES_WHIRLIPEDE] =
     {
         .baseHP        = 40,
@@ -3388,11 +3376,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_BUG),
-    #if P_UPDATED_ABILITIES >= GEN_6
         .abilities = { ABILITY_POISON_POINT, ABILITY_SWARM, ABILITY_SPEED_BOOST },
-    #else
-        .abilities = { ABILITY_POISON_POINT, ABILITY_SWARM, ABILITY_QUICK_FEET },
-    #endif
         .bodyColor = BODY_COLOR_GRAY,
         .speciesName = _("Whirlipede"),
         .cryId = CRY_WHIRLIPEDE,
@@ -3404,7 +3388,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
             "Storing energy for evolution, it sits.\n"
             "But when attacked, it spins its body at\n"
             "high speed like a wheel and then\n"
-            "crashes furiously into its opponent."),
+            "crashes into foes. 40/55/99/40/79/47"),
         .pokemonScale = 282,
         .pokemonOffset = 7,
         .trainerScale = 256,
@@ -3432,28 +3416,22 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
             gOverworldPalette_Whirlipede,
             gShinyOverworldPalette_Whirlipede
         )
-        .levelUpLearnset = sWhirlipedeLevelUpLearnset,
-        .teachableLearnset = sWhirlipedeTeachableLearnset,
+		.perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,
+        .levelUpLearnset = sVenipedeLevelUpLearnset,
+        .teachableLearnset = sVenipedeTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 30, SPECIES_SCOLIPEDE}),
     },
-
     [SPECIES_SCOLIPEDE] =
     {
-        .baseHP        = 60,
-        .baseAttack    = P_UPDATED_STATS >= GEN_6 ? 100 : 90,
+        .baseHP        = 80,
+        .baseAttack    = 100,
         .baseDefense   = 89,
         .baseSpeed     = 112,
-        .baseSpAttack  = 55,
+        .baseSpAttack  = 50,
         .baseSpDefense = 69,
         .types = MON_TYPES(TYPE_BUG, TYPE_POISON),
         .catchRate = 45,
-    #if P_UPDATED_EXP_YIELDS >= GEN_8
         .expYield = 243,
-    #elif P_UPDATED_EXP_YIELDS >= GEN_7
-        .expYield = 218,
-    #else
-        .expYield = 214,
-    #endif
         .evYield_Speed = 3,
         .itemRare = ITEM_POISON_BARB,
         .genderRatio = PERCENT_FEMALE(50),
@@ -3461,11 +3439,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_BUG),
-    #if P_UPDATED_ABILITIES >= GEN_6
         .abilities = { ABILITY_POISON_POINT, ABILITY_SWARM, ABILITY_SPEED_BOOST },
-    #else
-        .abilities = { ABILITY_POISON_POINT, ABILITY_SWARM, ABILITY_QUICK_FEET },
-    #endif
         .bodyColor = BODY_COLOR_RED,
         .speciesName = _("Scolipede"),
         .cryId = CRY_SCOLIPEDE,
@@ -3477,7 +3451,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
             "With quick movements, it chases down\n"
             "its foes, attacking relentlessly with its\n"
             "horns until it prevails. Then it finishes\n"
-            "them off with deadly poison."),
+            "them off with poison. 80/100/89/50/69/112"),
         .pokemonScale = 257,
         .pokemonOffset = 2,
         .trainerScale = 423,
@@ -3505,18 +3479,12 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
             gOverworldPalette_Scolipede,
             gShinyOverworldPalette_Scolipede
         )
-        .levelUpLearnset = sScolipedeLevelUpLearnset,
-        .teachableLearnset = sScolipedeTeachableLearnset,
+		.perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,
+        .levelUpLearnset = sVenipedeLevelUpLearnset,
+        .teachableLearnset = sVenipedeTeachableLearnset,
     },
 #endif //P_FAMILY_VENIPEDE
-
 #if P_FAMILY_COTTONEE
-#if P_UPDATED_TYPES >= GEN_6
-    #define COTTONEE_FAMILY_TYPES { TYPE_GRASS, TYPE_FAIRY }
-#else
-    #define COTTONEE_FAMILY_TYPES { TYPE_GRASS, TYPE_GRASS }
-#endif
-
     [SPECIES_COTTONEE] =
     {
         .baseHP        = 40,
@@ -3525,7 +3493,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .baseSpeed     = 66,
         .baseSpAttack  = 37,
         .baseSpDefense = 50,
-        .types = COTTONEE_FAMILY_TYPES,
+        .types = MON_TYPES(TYPE_GRASS, TYPE_FAIRY),
         .catchRate = 190,
         .expYield = 56,
         .evYield_Speed = 1,
@@ -3547,7 +3515,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
             "When it finds others of its kind, they all\n"
             "stick together. When enough of them\n"
             "have collected, the mass resembles a\n"
-            "cumulonimbus cloud."),
+            "cumulonimbus cloud. 40/27/60/37/50/66"),
         .pokemonScale = 530,
         .pokemonOffset = 15,
         .trainerScale = 256,
@@ -3575,12 +3543,11 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
             gOverworldPalette_Cottonee,
             gShinyOverworldPalette_Cottonee
         )
+		.perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,
         .levelUpLearnset = sCottoneeLevelUpLearnset,
         .teachableLearnset = sCottoneeTeachableLearnset,
-        .eggMoveLearnset = sCottoneeEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_ITEM, ITEM_SUN_STONE, SPECIES_WHIMSICOTT}),
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_LEAF_STONE, SPECIES_WHIMSICOTT}),
     },
-
     [SPECIES_WHIMSICOTT] =
     {
         .baseHP        = 60,
@@ -3589,7 +3556,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .baseSpeed     = 116,
         .baseSpAttack  = 77,
         .baseSpDefense = 75,
-        .types = COTTONEE_FAMILY_TYPES,
+        .types = MON_TYPES(TYPE_GRASS, TYPE_FAIRY),
         .catchRate = 75,
         .expYield = 168,
         .evYield_Speed = 2,
@@ -3611,7 +3578,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
             "It rides on the wind and slips into\n"
             "people's homes. After it has turned a\n"
             "room into a cotton-filled mess, it giggles\n"
-            "to itself and takes off."),
+            "and takes off. 60/67/85/77/75/116"),
         .pokemonScale = 365,
         .pokemonOffset = 12,
         .trainerScale = 256,
@@ -3639,11 +3606,11 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
             gOverworldPalette_Whimsicott,
             gShinyOverworldPalette_Whimsicott
         )
-        .levelUpLearnset = sWhimsicottLevelUpLearnset,
-        .teachableLearnset = sWhimsicottTeachableLearnset,
+		.perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,
+        .levelUpLearnset = sCottoneeLevelUpLearnset,
+        .teachableLearnset = sCottoneeTeachableLearnset,
     },
 #endif //P_FAMILY_COTTONEE
-
 #if P_FAMILY_PETILIL
     [SPECIES_PETILIL] =
     {
@@ -4174,8 +4141,8 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
     {
         .baseHP        = 50,
         .baseAttack    = 72,
-        .baseDefense   = 35,
-        .baseSpeed     = 65,
+        .baseDefense   = 40,
+        .baseSpeed     = 68,
         .baseSpAttack  = 35,
         .baseSpDefense = 35,
         .types = MON_TYPES(TYPE_GROUND, TYPE_DARK),
@@ -4200,7 +4167,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
             "It conceals itself in the sand and\n"
             "chomps down on the legs of any prey\n"
             "that unwarily walk over it. Its favorite\n"
-            "food is Trapinch."),
+            "food is Trapinch. 50/72/40/35/35/68"),
         .pokemonScale = 365,
         .pokemonOffset = 14,
         .trainerScale = 256,
@@ -4228,18 +4195,17 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
             gOverworldPalette_Sandile,
             gShinyOverworldPalette_Sandile
         )
+		.perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,
         .levelUpLearnset = sSandileLevelUpLearnset,
         .teachableLearnset = sSandileTeachableLearnset,
-        .eggMoveLearnset = sSandileEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 29, SPECIES_KROKOROK}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 24, SPECIES_KROKOROK}),
     },
-
     [SPECIES_KROKOROK] =
     {
         .baseHP        = 60,
         .baseAttack    = 82,
         .baseDefense   = 45,
-        .baseSpeed     = 74,
+        .baseSpeed     = 73,
         .baseSpAttack  = 45,
         .baseSpDefense = 45,
         .types = MON_TYPES(TYPE_GROUND, TYPE_DARK),
@@ -4264,7 +4230,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
             "They move in groups of a few individuals.\n"
             "Thanks to the special membrane covering\n"
             "its eyes, it can see its surroundings\n"
-            "clearly, even in the dead of night."),
+            "clearly at night. 60/82/45/45/45/73"),
         .pokemonScale = 305,
         .pokemonOffset = 7,
         .trainerScale = 257,
@@ -4292,28 +4258,22 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
             gOverworldPalette_Krokorok,
             gShinyOverworldPalette_Krokorok
         )
-        .levelUpLearnset = sKrokorokLevelUpLearnset,
-        .teachableLearnset = sKrokorokTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 40, SPECIES_KROOKODILE}),
+		.perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,
+        .levelUpLearnset = sSandileLevelUpLearnset,
+        .teachableLearnset = sSandileTeachableLearnset,
+        .evolutions = EVOLUTION({EVO_LEVEL, 36, SPECIES_KROOKODILE}),
     },
-
     [SPECIES_KROOKODILE] =
     {
         .baseHP        = 95,
         .baseAttack    = 117,
-        .baseDefense   = P_UPDATED_STATS >= GEN_6 ? 80 : 70,
-        .baseSpeed     = 92,
+        .baseDefense   = 80,
+        .baseSpeed     = 103,
         .baseSpAttack  = 65,
         .baseSpDefense = 70,
         .types = MON_TYPES(TYPE_GROUND, TYPE_DARK),
         .catchRate = 45,
-    #if P_UPDATED_EXP_YIELDS >= GEN_8
         .expYield = 260,
-    #elif P_UPDATED_EXP_YIELDS >= GEN_7
-        .expYield = 234,
-    #else
-        .expYield = 229,
-    #endif
         .evYield_Attack = 3,
         .itemCommon = ITEM_BLACK_GLASSES,
         .genderRatio = PERCENT_FEMALE(50),
@@ -4333,7 +4293,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
             "Very violent Pokémon, they never allow\n"
             "their prey to escape. Their jaws are so\n"
             "powerful, they can crush the body of\n"
-            "an automobile."),
+            "an automobile. 95/117/80/65/70/103"),
         .pokemonScale = 268,
         .pokemonOffset = 2,
         .trainerScale = 271,
@@ -4361,11 +4321,11 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
             gOverworldPalette_Krookodile,
             gShinyOverworldPalette_Krookodile
         )
-        .levelUpLearnset = sKrookodileLevelUpLearnset,
-        .teachableLearnset = sKrookodileTeachableLearnset,
+		.perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,
+        .levelUpLearnset = sSandileLevelUpLearnset,
+        .teachableLearnset = sSandileTeachableLearnset,
     },
 #endif //P_FAMILY_SANDILE
-
 #if P_FAMILY_DARUMAKA
     [SPECIES_DARUMAKA] =
     {
@@ -4384,7 +4344,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
-        .abilities = { ABILITY_HUSTLE, ABILITY_NONE, ABILITY_INNER_FOCUS },
+        .abilities = { ABILITY_HUSTLE, ABILITY_INNER_FOCUS, ABILITY_INNER_FOCUS },
         .bodyColor = BODY_COLOR_RED,
         .speciesName = _("Darumaka"),
         .cryId = CRY_DARUMAKA,
@@ -4395,8 +4355,8 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .description = COMPOUND_STRING(
             "When its internal fire is burning, it\n"
             "cannot calm down and it runs around.\n"
-            "When the fire diminishes, it pulls its\n"
-            "limbs into its body and falls asleep."),
+            "When the fire diminishes, it curls up\n"
+            "and falls asleep. 70/90/45/15/45/50"),
         .pokemonScale = 422,
         .pokemonOffset = 14,
         .trainerScale = 256,
@@ -4424,13 +4384,12 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
             gOverworldPalette_Darumaka,
             gShinyOverworldPalette_Darumaka
         )
-        .levelUpLearnset = sDarumakaLevelUpLearnset,
-        .teachableLearnset = sDarumakaTeachableLearnset,
-        .eggMoveLearnset = sDarumakaEggMoveLearnset,
+		.perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,
+        .levelUpLearnset = sDarmanitanLevelUpLearnset,
+        .teachableLearnset = sDarmanitanTeachableLearnset,
         .formSpeciesIdTable = sDarumakaFormSpeciesIdTable,
         .evolutions = EVOLUTION({EVO_LEVEL, 35, SPECIES_DARMANITAN_STANDARD}),
     },
-
     [SPECIES_DARMANITAN_STANDARD] =
     {
         .baseHP        = 105,
@@ -4441,14 +4400,14 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .baseSpDefense = 55,
         .types = MON_TYPES(TYPE_FIRE),
         .catchRate = 60,
-        .expYield = 168,
+        .expYield = 189,
         .evYield_Attack = 2,
         .genderRatio = PERCENT_FEMALE(50),
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
-        .abilities = { ABILITY_SHEER_FORCE, ABILITY_NONE, ABILITY_ZEN_MODE },
+        .abilities = { ABILITY_SHEER_FORCE, ABILITY_GORILLA_TACTICS, ABILITY_ZEN_MODE },
         .bodyColor = BODY_COLOR_RED,
         .speciesName = _("Darmanitan"),
         .cryId = CRY_DARMANITAN,
@@ -4460,7 +4419,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
             "When one is injured in a fierce battle,\n"
             "it transforms into a stone statue.\n"
             "Then it meditates and sharpens its\n"
-            "mind and fights on mentally."),
+            "mind to fight on. 105/140/55/30/55/95"),
         .pokemonScale = 272,
         .pokemonOffset = 3,
         .trainerScale = 256,
@@ -4488,12 +4447,12 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
             gOverworldPalette_DarmanitanStandard,
             gShinyOverworldPalette_DarmanitanStandard
         )
+		.perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,
         .levelUpLearnset = sDarmanitanLevelUpLearnset,
         .teachableLearnset = sDarmanitanTeachableLearnset,
         .formSpeciesIdTable = sDarmanitanFormSpeciesIdTable,
         .formChangeTable = sDarmanitanFormChangeTable,
     },
-
     [SPECIES_DARMANITAN_ZEN] =
     {
         .baseHP        = 105,
@@ -4547,7 +4506,6 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .formSpeciesIdTable = sDarmanitanFormSpeciesIdTable,
         .formChangeTable = sDarmanitanFormChangeTable,
     },
-
 #if P_GALARIAN_FORMS
     [SPECIES_DARUMAKA_GALAR] =
     {
@@ -4613,7 +4571,6 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .formSpeciesIdTable = sDarumakaFormSpeciesIdTable,
         .evolutions = EVOLUTION({EVO_ITEM, ITEM_ICE_STONE, SPECIES_DARMANITAN_GALAR_STANDARD}),
     },
-
     [SPECIES_DARMANITAN_GALAR_STANDARD] =
     {
         .baseHP        = 105,
@@ -4677,7 +4634,6 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .formSpeciesIdTable = sDarmanitanFormSpeciesIdTable,
         .formChangeTable = sDarmanitanGalarFormChangeTable,
     },
-
     [SPECIES_DARMANITAN_GALAR_ZEN] =
     {
         .baseHP        = 105,
@@ -4935,7 +4891,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .baseHP        = 50,
         .baseAttack    = 75,
         .baseDefense   = 70,
-        .baseSpeed     = 48,
+        .baseSpeed     = 50,
         .baseSpAttack  = 35,
         .baseSpDefense = 70,
         .types = MON_TYPES(TYPE_DARK, TYPE_FIGHTING),
@@ -4948,7 +4904,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .friendship = 35,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD, EGG_GROUP_DRAGON),
-        .abilities = { ABILITY_SHED_SKIN, ABILITY_MOXIE, ABILITY_INTIMIDATE },
+        .abilities = { ABILITY_SHED_SKIN, ABILITY_INTIMIDATE, ABILITY_INTIMIDATE },
         .bodyColor = BODY_COLOR_YELLOW,
         .speciesName = _("Scraggy"),
         .cryId = CRY_SCRAGGY,
@@ -4960,7 +4916,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
             "Its skin has a rubbery elasticity, so it\n"
             "can reduce damage by defensively\n"
             "pulling its skin up to its neck.\n"
-            "Its skull is massively thick."),
+            "Its skull is thick. 50/75/70/35/70/50"),
         .pokemonScale = 422,
         .pokemonOffset = 14,
         .trainerScale = 256,
@@ -4988,18 +4944,17 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
             gOverworldPalette_Scraggy,
             gShinyOverworldPalette_Scraggy
         )
+		.perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,
         .levelUpLearnset = sScraggyLevelUpLearnset,
         .teachableLearnset = sScraggyTeachableLearnset,
-        .eggMoveLearnset = sScraggyEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 39, SPECIES_SCRAFTY}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 29, SPECIES_SCRAFTY}),
     },
-
     [SPECIES_SCRAFTY] =
     {
         .baseHP        = 65,
         .baseAttack    = 90,
         .baseDefense   = 115,
-        .baseSpeed     = 58,
+        .baseSpeed     = 60,
         .baseSpAttack  = 45,
         .baseSpDefense = 115,
         .types = MON_TYPES(TYPE_DARK, TYPE_FIGHTING),
@@ -5013,7 +4968,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD, EGG_GROUP_DRAGON),
-        .abilities = { ABILITY_SHED_SKIN, ABILITY_MOXIE, ABILITY_INTIMIDATE },
+        .abilities = { ABILITY_SHED_SKIN, ABILITY_INTIMIDATE, ABILITY_INTIMIDATE },
         .bodyColor = BODY_COLOR_RED,
         .speciesName = _("Scrafty"),
         .cryId = CRY_SCRAFTY,
@@ -5025,7 +4980,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
             "Groups of them beat up anything that\n"
             "enters their territory. The one with the\n"
             "biggest crest is the group leader, and\n"
-            "is the most respected."),
+            "the most respected. 65/90/115/45/115/60"),
         .pokemonScale = 320,
         .pokemonOffset = 7,
         .trainerScale = 256,
@@ -5053,18 +5008,18 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
             gOverworldPalette_Scrafty,
             gShinyOverworldPalette_Scrafty
         )
-        .levelUpLearnset = sScraftyLevelUpLearnset,
-        .teachableLearnset = sScraftyTeachableLearnset,
+		.perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,
+        .levelUpLearnset = sScraggyLevelUpLearnset,
+        .teachableLearnset = sScraggyTeachableLearnset,
     },
 #endif //P_FAMILY_SCRAGGY
-
 #if P_FAMILY_SIGILYPH
     [SPECIES_SIGILYPH] =
     {
         .baseHP        = 72,
         .baseAttack    = 58,
         .baseDefense   = 80,
-        .baseSpeed     = 97,
+        .baseSpeed     = 107,
         .baseSpAttack  = 103,
         .baseSpDefense = 80,
         .types = MON_TYPES(TYPE_PSYCHIC, TYPE_FLYING),
@@ -5076,7 +5031,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FLYING),
-        .abilities = { ABILITY_WONDER_SKIN, ABILITY_MAGIC_GUARD, ABILITY_TINTED_LENS },
+        .abilities = { ABILITY_TINTED_LENS, ABILITY_MAGIC_GUARD, ABILITY_TINTED_LENS },
         .bodyColor = BODY_COLOR_BLACK,
         .speciesName = _("Sigilyph"),
         .cryId = CRY_SIGILYPH,
@@ -5085,10 +5040,10 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .height = 14,
         .weight = 140,
         .description = COMPOUND_STRING(
-            "The guardians of an ancient city, they\n"
+            "The guardians of ancient cities, they\n"
             "always fly the same route while keeping\n"
             "watch for invaders. They use their\n"
-            "psychic power to attack enemies."),
+            "psionics to attack. 72/58/80/103/80/107"),
         .pokemonScale = 265,
         .pokemonOffset = 2,
         .trainerScale = 262,
@@ -5117,16 +5072,15 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
             gOverworldPalette_Sigilyph,
             gShinyOverworldPalette_Sigilyph
         )
+		.perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,
         .levelUpLearnset = sSigilyphLevelUpLearnset,
         .teachableLearnset = sSigilyphTeachableLearnset,
-        .eggMoveLearnset = sSigilyphEggMoveLearnset,
     },
 #endif //P_FAMILY_SIGILYPH
-
 #if P_FAMILY_YAMASK
     [SPECIES_YAMASK] =
     {
-        .baseHP        = 38,
+        .baseHP        = 40,
         .baseAttack    = 30,
         .baseDefense   = 85,
         .baseSpeed     = 30,
@@ -5153,8 +5107,8 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .description = COMPOUND_STRING(
             "These Pokémon arose from the spirits\n"
             "of people interred in graves in past ages.\n"
-            "Each of them carries a mask that used\n"
-            "to be its face when it was human."),
+            "Each carries a mask that used to be its\n"
+            "face when it was human. 40/30/85/55/65/30"),
         .pokemonScale = 432,
         .pokemonOffset = 13,
         .trainerScale = 256,
@@ -5183,16 +5137,15 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
             gOverworldPalette_Yamask,
             gShinyOverworldPalette_Yamask
         )
-        .levelUpLearnset = sYamaskLevelUpLearnset,
+		.perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,
+        .levelUpLearnset = sCofagrigusLevelUpLearnset,
         .teachableLearnset = sYamaskTeachableLearnset,
-        .eggMoveLearnset = sYamaskEggMoveLearnset,
         .formSpeciesIdTable = sYamaskFormSpeciesIdTable,
         .evolutions = EVOLUTION({EVO_LEVEL, 34, SPECIES_COFAGRIGUS}),
     },
-
     [SPECIES_COFAGRIGUS] =
     {
-        .baseHP        = 58,
+        .baseHP        = 60,
         .baseAttack    = 50,
         .baseDefense   = 145,
         .baseSpeed     = 30,
@@ -5220,7 +5173,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
             "Grave robbers who mistake them for\n"
             "real coffins and get too close end up\n"
             "trapped inside their bodies. Their bodies\n"
-            "are covered in pure gold."),
+            "are covered in gold. 60/50/145/95/105/30"),
         .pokemonScale = 259,
         .pokemonOffset = 0,
         .trainerScale = 290,
@@ -5248,10 +5201,65 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
             gOverworldPalette_Cofagrigus,
             gShinyOverworldPalette_Cofagrigus
         )
+		.perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,
         .levelUpLearnset = sCofagrigusLevelUpLearnset,
-        .teachableLearnset = sCofagrigusTeachableLearnset,
+        .teachableLearnset = sYamaskTeachableLearnset,
+		.evolutions = EVOLUTION({EVO_ITEM, ITEM_MOON_STONE, SPECIES_KHUFARIGUS}),
     },
-
+	[SPECIES_KHUFARIGUS] =
+    {
+        .baseHP        = 60,
+        .baseAttack    = 60,
+        .baseDefense   = 95,
+        .baseSpeed     = 125,
+        .baseSpAttack  = 110,
+        .baseSpDefense = 85,
+        .types = MON_TYPES(TYPE_GHOST, TYPE_GROUND),
+        .catchRate = 60,
+        .expYield = 211,
+        .evYield_Speed = 3,
+        .itemRare = ITEM_SPELL_TAG,
+        .genderRatio = PERCENT_FEMALE(50),
+        .eggCycles = 25,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_FAST,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MINERAL, EGG_GROUP_AMORPHOUS),
+        .abilities = { ABILITY_MUMMY, ABILITY_NONE, ABILITY_NONE },
+        .bodyColor = BODY_COLOR_BROWN,
+        .speciesName = _("Khufarigus"),
+        .cryId = CRY_COFAGRIGUS,
+        .natDexNum = NATIONAL_DEX_KHUFARIGUS,
+        .categoryName = _("Mummy"),
+        .height = 17,
+        .weight = 765,
+        .description = COMPOUND_STRING(
+            "When Cofagrigus is exposed to an alien\n"
+            "material known as Corrodium, it sheds\n"
+            "its coffin and becomes an agile mummy\n"
+            "known as Khufarigus. 60/60/95/110/85/125"),
+        .pokemonScale = 259,
+        .pokemonOffset = 0,
+        .trainerScale = 290,
+        .trainerOffset = 1,
+        .frontPic = gMonFrontPic_Cofagrigus,
+        .frontPicSize = MON_COORDS_SIZE(64, 64),
+        .frontPicYOffset = 0,
+        .frontAnimFrames = sAnims_Cofagrigus,
+        .frontAnimId = ANIM_GLOW_BLACK,
+        .backPic = gMonBackPic_Cofagrigus,
+        .backPicSize = MON_COORDS_SIZE(56, 56),
+        .backPicYOffset = 6,
+        .backAnimId = BACK_ANIM_V_SHAKE_H_SLIDE,
+        .palette = gMonPalette_Cofagrigus,
+        .shinyPalette = gMonShinyPalette_Cofagrigus,
+        .iconSprite = gMonIcon_Cofagrigus,
+        .iconPalIndex = 0,
+        SHADOW(6, 12, SHADOW_SIZE_M)
+        FOOTPRINT(Cofagrigus)
+		.perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,
+        .levelUpLearnset = sKhufarigusLevelUpLearnset,
+        .teachableLearnset = sYamaskTeachableLearnset,
+    },
 #if P_GALARIAN_FORMS
     [SPECIES_YAMASK_GALAR] =
     {
@@ -5381,7 +5389,6 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
     },
 #endif //P_GALARIAN_FORMS
 #endif //P_FAMILY_YAMASK
-
 #if P_FAMILY_TIRTOUGA
     [SPECIES_TIRTOUGA] =
     {
@@ -5857,8 +5864,8 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .description = COMPOUND_STRING(
             "To protect themselves from danger, they\n"
             "hide their true identities by transforming\n"
-            "into people and Pokémon. Apparently, it\n"
-            "often transforms into a silent child."),
+            "into people and Pokémon. It often becomes\n"
+            "a silent child. 40/65/40/80/40/65"),
         .pokemonScale = 365,
         .pokemonOffset = 12,
         .trainerScale = 256,
@@ -5886,13 +5893,12 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
             gOverworldPalette_Zorua,
             gShinyOverworldPalette_Zorua
         )
-        .levelUpLearnset = sZoruaLevelUpLearnset,
+		.perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,
+        .levelUpLearnset = sZoroarkLevelUpLearnset,
         .teachableLearnset = sZoruaTeachableLearnset,
-        .eggMoveLearnset = sZoruaEggMoveLearnset,
         .formSpeciesIdTable = sZoruaFormSpeciesIdTable,
         .evolutions = EVOLUTION({EVO_LEVEL, 30, SPECIES_ZOROARK}),
     },
-
     [SPECIES_ZOROARK] =
     {
         .baseHP        = 60,
@@ -5921,8 +5927,8 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .description = COMPOUND_STRING(
             "Bonds between these Pokémon are very\n"
             "strong. It protects the safety of its\n"
-            "pack by tricking its opponents. They\n"
-            "defend their lair with illusory scenery."),
+            "pack by tricking its opponents.\n"
+            "60/105/60/120/60/105"),
         .pokemonScale = 259,
         .pokemonOffset = 1,
         .trainerScale = 296,
@@ -5950,11 +5956,65 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
             gOverworldPalette_Zoroark,
             gShinyOverworldPalette_Zoroark
         )
+		.perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,
         .levelUpLearnset = sZoroarkLevelUpLearnset,
-        .teachableLearnset = sZoroarkTeachableLearnset,
+        .teachableLearnset = sZoruaTeachableLearnset,
         .formSpeciesIdTable = sZoroarkFormSpeciesIdTable,
+		.evolutions = EVOLUTION({EVO_ITEM, ITEM_MOON_STONE, SPECIES_LOBOARK}),
     },
-
+	[SPECIES_LOBOARK] =
+    {
+        .baseHP        = 80,
+        .baseAttack    = 125,
+        .baseDefense   = 60,
+        .baseSpeed     = 110,
+        .baseSpAttack  = 100,
+        .baseSpDefense = 60,
+        .types = MON_TYPES(TYPE_DARK),
+        .catchRate = 30,
+        .expYield = 224,
+        .evYield_SpAttack = 3,
+        .genderRatio = PERCENT_FEMALE(12.5),
+        .eggCycles = 20,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_SLOW,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
+        .abilities = { ABILITY_PUNK_ROCK, ABILITY_NONE, ABILITY_NONE },
+        .bodyColor = BODY_COLOR_GRAY,
+        .speciesName = _("Loboark"),
+        .cryId = CRY_ZOROARK,
+        .natDexNum = NATIONAL_DEX_LOBOARK,
+        .categoryName = _("Werewolf"),
+        .height = 16,
+        .weight = 811,
+        .description = COMPOUND_STRING(
+            "Zoroark takes on this vicious, robust\n"
+            "form when exposed to Corrodium. It no\n"
+            "longer relies on illusions thanks to\n"
+            "its new strength. 80/125/60/100/60/110"),
+        .pokemonScale = 259,
+        .pokemonOffset = 1,
+        .trainerScale = 296,
+        .trainerOffset = 1,
+        .frontPic = gMonFrontPic_Zoroark,
+        .frontPicSize = MON_COORDS_SIZE(64, 64),
+        .frontPicYOffset = 2,
+        .frontAnimFrames = sAnims_Zoroark,
+        .frontAnimId = ANIM_FLICKER_INCREASING,
+        .backPic = gMonBackPic_Zoroark,
+        .backPicSize = MON_COORDS_SIZE(64, 56),
+        .backPicYOffset = 10,
+        .backAnimId = BACK_ANIM_JOLT_RIGHT,
+        .palette = gMonPalette_Zoroark,
+        .shinyPalette = gMonShinyPalette_Zoroark,
+        .iconSprite = gMonIcon_Zoroark,
+        .iconPalIndex = 0,
+        SHADOW(1, 8, SHADOW_SIZE_L)
+        FOOTPRINT(Zoroark)
+		.perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,
+        .levelUpLearnset = sLoboarkLevelUpLearnset,
+        .teachableLearnset = sZoruaTeachableLearnset,
+    },
 #if P_HISUIAN_FORMS
     [SPECIES_ZORUA_HISUI] =
     {
@@ -6734,9 +6794,9 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
     [SPECIES_VANILLITE] =
     {
         .baseHP        = 36,
-        .baseAttack    = 50,
+        .baseAttack    = 44,
         .baseDefense   = 50,
-        .baseSpeed     = 44,
+        .baseSpeed     = 50,
         .baseSpAttack  = 65,
         .baseSpDefense = 60,
         .types = MON_TYPES(TYPE_ICE),
@@ -6749,11 +6809,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MINERAL),
-    #if P_UPDATED_ABILITIES >= GEN_7
         .abilities = { ABILITY_ICE_BODY, ABILITY_SNOW_CLOAK, ABILITY_WEAK_ARMOR },
-    #else
-        .abilities = { ABILITY_ICE_BODY, ABILITY_NONE, ABILITY_WEAK_ARMOR },
-    #endif
         .bodyColor = BODY_COLOR_WHITE,
         .speciesName = _("Vanillite"),
         .cryId = CRY_VANILLITE,
@@ -6762,10 +6818,10 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .height = 4,
         .weight = 57,
         .description = COMPOUND_STRING(
-            "The temperature of their breath is -58ºF.\n"
+            "The temperature of their breath is -50ºC.\n"
             "They create snow crystals and make snow\n"
-            "fall in the areas around them. Vanillite is\n"
-            "treasured by households in warm regions."),
+            "fall in the areas around them. Vanillite\n"
+            "is treasured by many. 36/44/50/65/60/50"),
         .pokemonScale = 491,
         .pokemonOffset = 12,
         .trainerScale = 256,
@@ -6793,19 +6849,18 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
             gOverworldPalette_Vanillite,
             gShinyOverworldPalette_Vanillite
         )
+		.perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,
         .levelUpLearnset = sVanilliteLevelUpLearnset,
         .teachableLearnset = sVanilliteTeachableLearnset,
-        .eggMoveLearnset = sVanilliteEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 35, SPECIES_VANILLISH}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 25, SPECIES_VANILLISH}),
     },
-
     [SPECIES_VANILLISH] =
     {
         .baseHP        = 51,
-        .baseAttack    = 65,
+        .baseAttack    = 59,
         .baseDefense   = 65,
-        .baseSpeed     = 59,
-        .baseSpAttack  = 80,
+        .baseSpeed     = 65,
+        .baseSpAttack  = 85,
         .baseSpDefense = 75,
         .types = MON_TYPES(TYPE_ICE),
         .catchRate = 120,
@@ -6817,11 +6872,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MINERAL),
-    #if P_UPDATED_ABILITIES >= GEN_7
         .abilities = { ABILITY_ICE_BODY, ABILITY_SNOW_CLOAK, ABILITY_WEAK_ARMOR },
-    #else
-        .abilities = { ABILITY_ICE_BODY, ABILITY_NONE, ABILITY_WEAK_ARMOR },
-    #endif
         .bodyColor = BODY_COLOR_WHITE,
         .speciesName = _("Vanillish"),
         .cryId = CRY_VANILLISH,
@@ -6833,7 +6884,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
             "Vanillish has existed since the Ice Age.\n"
             "It controls particles of ice, freezes its\n"
             "opponents, and then shatters them with\n"
-            "a headbutt."),
+            "a headbutt. 51/59/65/85/75/65"),
         .pokemonScale = 320,
         .pokemonOffset = 7,
         .trainerScale = 256,
@@ -6861,22 +6912,22 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
             gOverworldPalette_Vanillish,
             gShinyOverworldPalette_Vanillish
         )
-        .levelUpLearnset = sVanillishLevelUpLearnset,
-        .teachableLearnset = sVanillishTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 47, SPECIES_VANILLUXE}),
+		.perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,
+        .levelUpLearnset = sVanilliteLevelUpLearnset,
+        .teachableLearnset = sVanilliteTeachableLearnset,
+        .evolutions = EVOLUTION({EVO_LEVEL, 37, SPECIES_VANILLUXE}),
     },
-
     [SPECIES_VANILLUXE] =
     {
         .baseHP        = 71,
-        .baseAttack    = 95,
+        .baseAttack    = 79,
         .baseDefense   = 85,
-        .baseSpeed     = 79,
+        .baseSpeed     = 95,
         .baseSpAttack  = 110,
         .baseSpDefense = 95,
         .types = MON_TYPES(TYPE_ICE),
         .catchRate = 45,
-        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_8) ? 268 : 241,
+        .expYield = 268,
         .evYield_SpAttack = 3,
         .itemCommon = ITEM_NEVER_MELT_ICE,
         .genderRatio = PERCENT_FEMALE(50),
@@ -6884,11 +6935,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MINERAL),
-    #if P_UPDATED_ABILITIES >= GEN_7
-        .abilities = { ABILITY_ICE_BODY, ABILITY_SNOW_WARNING, ABILITY_WEAK_ARMOR },
-    #else
-        .abilities = { ABILITY_ICE_BODY, ABILITY_NONE, ABILITY_WEAK_ARMOR },
-    #endif
+        .abilities = { ABILITY_SNOW_WARNING, ABILITY_SNOW_WARNING, ABILITY_WEAK_ARMOR },
         .bodyColor = BODY_COLOR_WHITE,
         .speciesName = _("Vanilluxe"),
         .cryId = CRY_VANILLUXE,
@@ -6900,7 +6947,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
             "Each of its two heads has a brain, and\n"
             "when they are in agreement, it attacks\n"
             "its enemies by exhaling a violent blizzard.\n"
-            "It makes snow clouds inside its body."),
+            "It makes snowstorms. 71/79/85/110/95/95"),
         .pokemonScale = 272,
         .pokemonOffset = 3,
         .trainerScale = 256,
@@ -6928,11 +6975,11 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
             gOverworldPalette_Vanilluxe,
             gShinyOverworldPalette_Vanilluxe
         )
-        .levelUpLearnset = sVanilluxeLevelUpLearnset,
-        .teachableLearnset = sVanilluxeTeachableLearnset,
+		.perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,
+        .levelUpLearnset = sVanilliteLevelUpLearnset,
+        .teachableLearnset = sVanilliteTeachableLearnset,
     },
 #endif //P_FAMILY_VANILLITE
-
 #if P_FAMILY_DEERLING
     [SPECIES_DEERLING_SPRING] =
     {
@@ -7995,7 +8042,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .baseAttack    = 47,
         .baseDefense   = 50,
         .baseSpeed     = 65,
-        .baseSpAttack  = 57,
+        .baseSpAttack  = 58,
         .baseSpDefense = 50,
         .types = MON_TYPES(TYPE_BUG, TYPE_ELECTRIC),
         .catchRate = 190,
@@ -8006,7 +8053,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_BUG),
-        .abilities = { ABILITY_COMPOUND_EYES, ABILITY_UNNERVE, ABILITY_SWARM },
+        .abilities = { ABILITY_COMPOUND_EYES, ABILITY_SWARM, ABILITY_SWARM },
         .bodyColor = BODY_COLOR_YELLOW,
         .speciesName = _("Joltik"),
         .cryId = CRY_JOLTIK,
@@ -8018,7 +8065,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
             "Since they can't generate their own\n"
             "electricity, they attach themselves to\n"
             "large-bodied Pokémon and absorb static\n"
-            "electricity, which they store in a pouch."),
+            "electricity. 50/47/50/58/50/65"),
         .pokemonScale = 682,
         .pokemonOffset = 24,
         .trainerScale = 256,
@@ -8046,19 +8093,18 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
             gOverworldPalette_Joltik,
             gShinyOverworldPalette_Joltik
         )
+		.perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,
         .levelUpLearnset = sJoltikLevelUpLearnset,
         .teachableLearnset = sJoltikTeachableLearnset,
-        .eggMoveLearnset = sJoltikEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 36, SPECIES_GALVANTULA}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 32, SPECIES_GALVANTULA}),
     },
-
     [SPECIES_GALVANTULA] =
     {
-        .baseHP        = 70,
+        .baseHP        = 72,
         .baseAttack    = 77,
         .baseDefense   = 60,
         .baseSpeed     = 108,
-        .baseSpAttack  = 97,
+        .baseSpAttack  = 98,
         .baseSpDefense = 60,
         .types = MON_TYPES(TYPE_BUG, TYPE_ELECTRIC),
         .catchRate = 75,
@@ -8069,19 +8115,19 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_BUG),
-        .abilities = { ABILITY_COMPOUND_EYES, ABILITY_UNNERVE, ABILITY_SWARM },
+        .abilities = { ABILITY_COMPOUND_EYES, ABILITY_SWARM, ABILITY_SWARM },
         .bodyColor = BODY_COLOR_YELLOW,
         .speciesName = _("Galvantula"),
         .cryId = CRY_GALVANTULA,
         .natDexNum = NATIONAL_DEX_GALVANTULA,
-        .categoryName = _("EleSpider"),
+        .categoryName = _("ElecSpider"),
         .height = 8,
         .weight = 143,
         .description = COMPOUND_STRING(
             "It creates barriers from electrified silk\n"
             "that stun foes. This works as a weapon as\n"
             "well as a defense. While it is immobilized\n"
-            "by shock, they leisurely consume it."),
+            "by shock, they eat it. 72/77/60/98/60/108"),
         .pokemonScale = 366,
         .pokemonOffset = 10,
         .trainerScale = 257,
@@ -8109,11 +8155,11 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
             gOverworldPalette_Galvantula,
             gShinyOverworldPalette_Galvantula
         )
-        .levelUpLearnset = sGalvantulaLevelUpLearnset,
-        .teachableLearnset = sGalvantulaTeachableLearnset,
+		.perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,
+        .levelUpLearnset = sJoltikLevelUpLearnset,
+        .teachableLearnset = sJoltikTeachableLearnset,
     },
 #endif //P_FAMILY_JOLTIK
-
 #if P_FAMILY_FERROSEED
     [SPECIES_FERROSEED] =
     {
@@ -8444,10 +8490,10 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
     [SPECIES_TYNAMO] =
     {
         .baseHP        = 35,
-        .baseAttack    = 55,
+        .baseAttack    = 50,
         .baseDefense   = 40,
         .baseSpeed     = 60,
-        .baseSpAttack  = 45,
+        .baseSpAttack  = 50,
         .baseSpDefense = 40,
         .types = MON_TYPES(TYPE_ELECTRIC),
         .catchRate = 190,
@@ -8463,14 +8509,14 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .speciesName = _("Tynamo"),
         .cryId = CRY_TYNAMO,
         .natDexNum = NATIONAL_DEX_TYNAMO,
-        .categoryName = _("EleFish"),
+        .categoryName = _("ElecFish"),
         .height = 2,
         .weight = 3,
         .description = COMPOUND_STRING(
             "These Pokémon move in schools.\n"
-            "One alone can emit only a trickle of\n"
-            "electricity, so a group of them gathers\n"
-            "to unleash a powerful electric shock."),
+            "One alone can emit only few sparks,\n"
+            "but a group can gather to unleash\n"
+            "powerful zaps. 35/50/30/50/40/60"),
         .pokemonScale = 682,
         .pokemonOffset = 24,
         .trainerScale = 256,
@@ -8499,19 +8545,19 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
             gOverworldPalette_Tynamo,
             gShinyOverworldPalette_Tynamo
         )
+		.perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,
         .tmIlliterate = TRUE,
         .levelUpLearnset = sTynamoLevelUpLearnset,
         .teachableLearnset = sTynamoTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 39, SPECIES_EELEKTRIK}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 26, SPECIES_EELEKTRIK}),
     },
-
     [SPECIES_EELEKTRIK] =
     {
         .baseHP        = 65,
-        .baseAttack    = 85,
+        .baseAttack    = 80,
         .baseDefense   = 70,
         .baseSpeed     = 40,
-        .baseSpAttack  = 75,
+        .baseSpAttack  = 80,
         .baseSpDefense = 70,
         .types = MON_TYPES(TYPE_ELECTRIC),
         .catchRate = 60,
@@ -8527,14 +8573,14 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .speciesName = _("Eelektrik"),
         .cryId = CRY_EELEKTRIK,
         .natDexNum = NATIONAL_DEX_EELEKTRIK,
-        .categoryName = _("EleFish"),
+        .categoryName = _("ElecFish"),
         .height = 12,
         .weight = 220,
         .description = COMPOUND_STRING(
             "These Pokémon have a big appetite.\n"
             "It wraps itself around its prey and\n"
-            "paralyzes it with electricity from the\n"
-            "round spots on its sides. Then it chomps."),
+            "paralyzes it with electricity, then\n"
+            "chomps down. 65/80/70/80/70/40"),
         .pokemonScale = 282,
         .pokemonOffset = 4,
         .trainerScale = 256,
@@ -8563,22 +8609,22 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
             gOverworldPalette_Eelektrik,
             gShinyOverworldPalette_Eelektrik
         )
-        .levelUpLearnset = sEelektrikLevelUpLearnset,
-        .teachableLearnset = sEelektrikTeachableLearnset,
+		.perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,
+        .levelUpLearnset = sTynamoLevelUpLearnset,
+        .teachableLearnset = sEelektrossTeachableLearnset,
         .evolutions = EVOLUTION({EVO_ITEM, ITEM_THUNDER_STONE, SPECIES_EELEKTROSS}),
     },
-
     [SPECIES_EELEKTROSS] =
     {
         .baseHP        = 85,
         .baseAttack    = 115,
         .baseDefense   = 80,
         .baseSpeed     = 50,
-        .baseSpAttack  = 105,
+        .baseSpAttack  = 115,
         .baseSpDefense = 80,
         .types = MON_TYPES(TYPE_ELECTRIC),
         .catchRate = 30,
-        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_8) ? 258 : 232,
+        .expYield = 258,
         .evYield_Attack = 3,
         .genderRatio = PERCENT_FEMALE(50),
         .eggCycles = 20,
@@ -8590,14 +8636,14 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .speciesName = _("Eelektross"),
         .cryId = CRY_EELEKTROSS,
         .natDexNum = NATIONAL_DEX_EELEKTROSS,
-        .categoryName = _("EleFish"),
+        .categoryName = _("ElecFish"),
         .height = 21,
         .weight = 805,
         .description = COMPOUND_STRING(
             "They crawl out of the ocean using their\n"
             "arms. They will attack prey on shore and\n"
             "immediately drag it into the ocean, with\n"
-            "their sucker mouths."),
+            "their sucker mouths. 85/115/80/115/80/50"),
         .pokemonScale = 256,
         .pokemonOffset = 1,
         .trainerScale = 365,
@@ -8626,11 +8672,11 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
             gOverworldPalette_Eelektross,
             gShinyOverworldPalette_Eelektross
         )
-        .levelUpLearnset = sEelektrossLevelUpLearnset,
+		.perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,
+        .levelUpLearnset = sTynamoLevelUpLearnset,
         .teachableLearnset = sEelektrossTeachableLearnset,
     },
 #endif //P_FAMILY_TYNAMO
-
 #if P_FAMILY_ELGYEM
     [SPECIES_ELGYEM] =
     {
@@ -8775,11 +8821,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_AMORPHOUS),
-    #if P_UPDATED_ABILITIES >= GEN_6
-        .abilities = { ABILITY_FLASH_FIRE, ABILITY_FLAME_BODY, ABILITY_INFILTRATOR },
-    #else
-        .abilities = { ABILITY_FLASH_FIRE, ABILITY_FLAME_BODY, ABILITY_SHADOW_TAG },
-    #endif
+        .abilities = { ABILITY_INFILTRATOR, ABILITY_FLAME_BODY, ABILITY_INFILTRATOR },
         .bodyColor = BODY_COLOR_WHITE,
         .noFlip = TRUE,
         .speciesName = _("Litwick"),
@@ -8792,7 +8834,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
             "While Litwick shines a light and pretends\n"
             "to be a guide, it absorbs the life force of\n"
             "any who follow it, which becomes the fuel\n"
-            "that it burns."),
+            "that it burns. 50/30/55/65/55/20"),
         .pokemonScale = 530,
         .pokemonOffset = 13,
         .trainerScale = 256,
@@ -8822,10 +8864,8 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         )
         .levelUpLearnset = sLitwickLevelUpLearnset,
         .teachableLearnset = sLitwickTeachableLearnset,
-        .eggMoveLearnset = sLitwickEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 41, SPECIES_LAMPENT}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 25, SPECIES_LAMPENT}),
     },
-
     [SPECIES_LAMPENT] =
     {
         .baseHP        = 60,
@@ -8843,11 +8883,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_AMORPHOUS),
-    #if P_UPDATED_ABILITIES >= GEN_6
-        .abilities = { ABILITY_FLASH_FIRE, ABILITY_FLAME_BODY, ABILITY_INFILTRATOR },
-    #else
-        .abilities = { ABILITY_FLASH_FIRE, ABILITY_FLAME_BODY, ABILITY_SHADOW_TAG },
-    #endif
+        .abilities = { ABILITY_INFILTRATOR, ABILITY_FLAME_BODY, ABILITY_INFILTRATOR },
         .bodyColor = BODY_COLOR_BLACK,
         .speciesName = _("Lampent"),
         .cryId = CRY_LAMPENT,
@@ -8858,8 +8894,8 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .description = COMPOUND_STRING(
             "This ominous Pokémon is feared.\n"
             "Through cities it wanders, searching\n"
-            "for the spirits of the fallen. The spirits\n"
-            "it absorbs fuel its baleful fire."),
+            "for the spirits of the fallen; absorbing\n"
+            "them to fuel its fire. 60/40/60/95/60/55"),
         .pokemonScale = 422,
         .pokemonOffset = 12,
         .trainerScale = 256,
@@ -8888,14 +8924,14 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
             gOverworldPalette_Lampent,
             gShinyOverworldPalette_Lampent
         )
-        .levelUpLearnset = sLampentLevelUpLearnset,
-        .teachableLearnset = sLampentTeachableLearnset,
+		.perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,
+        .levelUpLearnset = sLitwickLevelUpLearnset,
+        .teachableLearnset = sLitwickTeachableLearnset,
         .evolutions = EVOLUTION({EVO_ITEM, ITEM_DUSK_STONE, SPECIES_CHANDELURE}),
     },
-
     [SPECIES_CHANDELURE] =
     {
-        .baseHP        = 60,
+        .baseHP        = 75,
         .baseAttack    = 55,
         .baseDefense   = 90,
         .baseSpeed     = 80,
@@ -8903,18 +8939,14 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .baseSpDefense = 90,
         .types = MON_TYPES(TYPE_GHOST, TYPE_FIRE),
         .catchRate = 45,
-        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_8) ? 260 : 234,
+        .expYield = 260,
         .evYield_SpAttack = 3,
         .genderRatio = PERCENT_FEMALE(50),
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_AMORPHOUS),
-    #if P_UPDATED_ABILITIES >= GEN_6
-        .abilities = { ABILITY_FLASH_FIRE, ABILITY_FLAME_BODY, ABILITY_INFILTRATOR },
-    #else
-        .abilities = { ABILITY_FLASH_FIRE, ABILITY_FLAME_BODY, ABILITY_SHADOW_TAG },
-    #endif
+        .abilities = { ABILITY_INFILTRATOR, ABILITY_INFILTRATOR, ABILITY_INFILTRATOR },
         .bodyColor = BODY_COLOR_BLACK,
         .speciesName = _("Chandelure"),
         .cryId = CRY_CHANDELURE,
@@ -8926,7 +8958,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
             "Being consumed in Chandelure's flame burns\n"
             "up the spirit, leaving the body behind.\n"
             "By waving the flames on its arms, it puts\n"
-            "its foes into a hypnotic trance."),
+            "hypnotizes foes. 75/55/90/145/90/80"),
         .pokemonScale = 305,
         .pokemonOffset = 7,
         .trainerScale = 257,
@@ -8955,11 +8987,11 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
             gOverworldPalette_Chandelure,
             gShinyOverworldPalette_Chandelure
         )
-        .levelUpLearnset = sChandelureLevelUpLearnset,
-        .teachableLearnset = sChandelureTeachableLearnset,
+		.perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,
+        .levelUpLearnset = sLitwickLevelUpLearnset,
+        .teachableLearnset = sLitwickTeachableLearnset,
     },
 #endif //P_FAMILY_LITWICK
-
 #if P_FAMILY_AXEW
     [SPECIES_AXEW] =
     {
@@ -8978,7 +9010,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .friendship = 35,
         .growthRate = GROWTH_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MONSTER, EGG_GROUP_DRAGON),
-        .abilities = { ABILITY_RIVALRY, ABILITY_MOLD_BREAKER, ABILITY_UNNERVE },
+        .abilities = { ABILITY_MOLD_BREAKER, ABILITY_NONE, ABILITY_UNNERVE },
         .bodyColor = BODY_COLOR_GREEN,
         .speciesName = _("Axew"),
         .cryId = CRY_AXEW,
@@ -8989,8 +9021,8 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .description = COMPOUND_STRING(
             "They mark their territory by leaving\n"
             "gashes in trees with their tusks. If a\n"
-            "tusk breaks, a new one grows in quickly,\n"
-            "harder and sturdier than the last."),
+            "tusk breaks, a new one grows quickly,\n"
+            "sturdier than ever. 46/87/60/30/40/57"),
         .pokemonScale = 422,
         .pokemonOffset = 13,
         .trainerScale = 256,
@@ -9018,12 +9050,11 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
             gOverworldPalette_Axew,
             gShinyOverworldPalette_Axew
         )
+		.perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,
         .levelUpLearnset = sAxewLevelUpLearnset,
         .teachableLearnset = sAxewTeachableLearnset,
-        .eggMoveLearnset = sAxewEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 38, SPECIES_FRAXURE}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 28, SPECIES_FRAXURE}),
     },
-
     [SPECIES_FRAXURE] =
     {
         .baseHP        = 66,
@@ -9041,7 +9072,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .friendship = 35,
         .growthRate = GROWTH_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MONSTER, EGG_GROUP_DRAGON),
-        .abilities = { ABILITY_RIVALRY, ABILITY_MOLD_BREAKER, ABILITY_UNNERVE },
+        .abilities = { ABILITY_MOLD_BREAKER, ABILITY_NONE, ABILITY_UNNERVE },
         .bodyColor = BODY_COLOR_GREEN,
         .speciesName = _("Fraxure"),
         .cryId = CRY_FRAXURE,
@@ -9053,7 +9084,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
             "Their tusks can shatter rocks.\n"
             "A broken tusk will not grow back,\n"
             "so it diligently sharpens its tusks on\n"
-            "river rocks after the end of a battle."),
+            "rocks after battle. 66/117/70/40/50/67"),
         .pokemonScale = 305,
         .pokemonOffset = 7,
         .trainerScale = 257,
@@ -9081,11 +9112,11 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
             gOverworldPalette_Fraxure,
             gShinyOverworldPalette_Fraxure
         )
-        .levelUpLearnset = sFraxureLevelUpLearnset,
-        .teachableLearnset = sFraxureTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 48, SPECIES_HAXORUS}),
+		.perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,
+        .levelUpLearnset = sAxewLevelUpLearnset,
+        .teachableLearnset = sAxewTeachableLearnset,
+        .evolutions = EVOLUTION({EVO_LEVEL, 42, SPECIES_HAXORUS}),
     },
-
     [SPECIES_HAXORUS] =
     {
         .baseHP        = 76,
@@ -9096,14 +9127,14 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .baseSpDefense = 70,
         .types = MON_TYPES(TYPE_DRAGON),
         .catchRate = 45,
-        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_8) ? 270 : 243,
+        .expYield = 270,
         .evYield_Attack = 3,
         .genderRatio = PERCENT_FEMALE(50),
         .eggCycles = 40,
         .friendship = 35,
         .growthRate = GROWTH_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MONSTER, EGG_GROUP_DRAGON),
-        .abilities = { ABILITY_RIVALRY, ABILITY_MOLD_BREAKER, ABILITY_UNNERVE },
+        .abilities = { ABILITY_MOLD_BREAKER, ABILITY_NONE, ABILITY_UNNERVE },
         .bodyColor = BODY_COLOR_YELLOW,
         .speciesName = _("Haxorus"),
         .cryId = CRY_HAXORUS,
@@ -9115,7 +9146,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
             "They are kind but can be relentless\n"
             "when defending territory. Their sturdy\n"
             "tusks will stay sharp even if used to cut\n"
-            "steel beams."),
+            "steel beams. 76/147/90/60/70/97"),
         .pokemonScale = 267,
         .pokemonOffset = 2,
         .trainerScale = 286,
@@ -9143,8 +9174,9 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
             gOverworldPalette_Haxorus,
             gShinyOverworldPalette_Haxorus
         )
-        .levelUpLearnset = sHaxorusLevelUpLearnset,
-        .teachableLearnset = sHaxorusTeachableLearnset,
+		.perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,
+        .levelUpLearnset = sAxewLevelUpLearnset,
+        .teachableLearnset = sAxewTeachableLearnset,
     },
 #endif //P_FAMILY_AXEW
 
@@ -9799,8 +9831,8 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
 #if P_FAMILY_GOLETT
     [SPECIES_GOLETT] =
     {
-        .baseHP        = 59,
-        .baseAttack    = 74,
+        .baseHP        = 60,
+        .baseAttack    = 75,
         .baseDefense   = 50,
         .baseSpeed     = 35,
         .baseSpAttack  = 35,
@@ -9827,8 +9859,8 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .description = COMPOUND_STRING(
             "These Pokémon are thought to have\n"
             "been created by the science of an\n"
-            "ancient and mysterious civilization.\n"
-            "It's been active for thousands of years."),
+            "ancient and mysterious civilization\n"
+            "millenia ago. 60/75/50/35/50/35"),
         .pokemonScale = 305,
         .pokemonOffset = 7,
         .trainerScale = 257,
@@ -9856,15 +9888,15 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
             gOverworldPalette_Golett,
             gShinyOverworldPalette_Golett
         )
+		.perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,
         .levelUpLearnset = sGolettLevelUpLearnset,
         .teachableLearnset = sGolettTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 43, SPECIES_GOLURK}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 38, SPECIES_GOLURK}),
     },
-
     [SPECIES_GOLURK] =
     {
-        .baseHP        = 89,
-        .baseAttack    = 124,
+        .baseHP        = 90,
+        .baseAttack    = 125,
         .baseDefense   = 80,
         .baseSpeed     = 55,
         .baseSpAttack  = 55,
@@ -9879,7 +9911,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MINERAL),
-        .abilities = { ABILITY_IRON_FIST, ABILITY_KLUTZ, ABILITY_NO_GUARD },
+        .abilities = { ABILITY_IRON_FIST, ABILITY_NO_GUARD, ABILITY_NO_GUARD },
         .bodyColor = BODY_COLOR_GREEN,
         .noFlip = TRUE,
         .speciesName = _("Golurk"),
@@ -9890,9 +9922,9 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .weight = 3300,
         .description = COMPOUND_STRING(
             "Golurk were created to protect people\n"
-            "and Pokémon by an ancient civilisation.\n"
+            "and Pokémon by ancient civilizations.\n"
             "Removing the seal on its chest makes its\n"
-            "internal energy go out of control."),
+            "systems unstable. 90/125/80/55/80/55"),
         .pokemonScale = 275,
         .pokemonOffset = 3,
         .trainerScale = 300,
@@ -9920,20 +9952,84 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
             gOverworldPalette_Golurk,
             gShinyOverworldPalette_Golurk
         )
-        .levelUpLearnset = sGolurkLevelUpLearnset,
-        .teachableLearnset = sGolurkTeachableLearnset,
+		.perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,
+        .levelUpLearnset = sGolettLevelUpLearnset,
+        .teachableLearnset = sGolettTeachableLearnset,
+		.evolutions = EVOLUTION({EVO_ITEM, ITEM_MOON_STONE, SPECIES_FRANKENLURK}),
+    },
+	[SPECIES_FRANKENLURK] =
+    {
+        .baseHP        = 100,
+        .baseAttack    = 120,
+        .baseDefense   = 85,
+        .baseSpeed     = 40,
+        .baseSpAttack  = 105,
+        .baseSpDefense = 85,
+        .types = MON_TYPES(TYPE_ELECTRIC, TYPE_GHOST),
+        .catchRate = 60,
+        .expYield = 211,
+        .evYield_SpAttack = 3,
+        .itemRare = ITEM_LIGHT_CLAY,
+        .genderRatio = MON_GENDERLESS,
+        .eggCycles = 25,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_FAST,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MINERAL),
+        .abilities = { ABILITY_IRON_FIST, ABILITY_NO_GUARD, ABILITY_NO_GUARD },
+        .bodyColor = BODY_COLOR_BROWN,
+        .noFlip = TRUE,
+        .speciesName = _("Frankenlurk"),
+        .cryId = CRY_GOLURK,
+        .natDexNum = NATIONAL_DEX_FRANKENLURK,
+        .categoryName = _("Reborn"),
+        .height = 28,
+        .weight = 3300,
+        .description = COMPOUND_STRING(
+            "Exposure to Corrodium has made Golurk\n"
+            "electrically charged, rearranging its\n"
+            "entire body and imbuing it with potent\n"
+            "electromagnetism. 100/120/85/105/85/40"),
+        .pokemonScale = 275,
+        .pokemonOffset = 3,
+        .trainerScale = 300,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_Golurk,
+        .frontPicSize = MON_COORDS_SIZE(64, 64),
+        .frontPicYOffset = 0,
+        .frontAnimFrames = sAnims_Golurk,
+        .frontAnimId = ANIM_V_SHAKE_TWICE,
+        .backPic = gMonBackPic_Golurk,
+        .backPicSize = MON_COORDS_SIZE(64, 56),
+        .backPicYOffset = 7,
+        .backAnimId = BACK_ANIM_V_SHAKE,
+        .palette = gMonPalette_Golurk,
+        .shinyPalette = gMonShinyPalette_Golurk,
+        .iconSprite = gMonIcon_Golurk,
+        .iconPalIndex = 0,
+        SHADOW(-1, 14, SHADOW_SIZE_L)
+        FOOTPRINT(Golurk)
+        OVERWORLD(
+            sPicTable_Golurk,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_FOOT,
+            gOverworldPalette_Golurk,
+            gShinyOverworldPalette_Golurk
+        )
+		.perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,
+        .levelUpLearnset = sFrankenlurkLevelUpLearnset,
+        .teachableLearnset = sGolettTeachableLearnset,
     },
 #endif //P_FAMILY_GOLETT
-
 #if P_FAMILY_PAWNIARD
     [SPECIES_PAWNIARD] =
     {
-        .baseHP        = 45,
+        .baseHP        = 50,
         .baseAttack    = 85,
         .baseDefense   = 70,
         .baseSpeed     = 60,
         .baseSpAttack  = 40,
-        .baseSpDefense = 40,
+        .baseSpDefense = 45,
         .types = MON_TYPES(TYPE_DARK, TYPE_STEEL),
         .catchRate = 120,
         .expYield = 68,
@@ -9943,7 +10039,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .friendship = 35,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_HUMAN_LIKE),
-        .abilities = { ABILITY_DEFIANT, ABILITY_INNER_FOCUS, ABILITY_PRESSURE },
+        .abilities = { ABILITY_DEFIANT, ABILITY_PRESSURE, ABILITY_PRESSURE },
         .bodyColor = BODY_COLOR_RED,
         .speciesName = _("Pawniard"),
         .cryId = CRY_PAWNIARD,
@@ -9955,7 +10051,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
             "Ignoring their injuries, groups attack by\n"
             "sinking the blades that cover their bodies\n"
             "into their prey. If battling dulls them, it\n"
-            "sharpens them on stones by the river."),
+            "sharpens them on stone. 50/85/70/40/45/60"),
         .pokemonScale = 432,
         .pokemonOffset = 15,
         .trainerScale = 256,
@@ -9983,12 +10079,11 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
             gOverworldPalette_Pawniard,
             gShinyOverworldPalette_Pawniard
         )
+		.perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,
         .levelUpLearnset = sPawniardLevelUpLearnset,
         .teachableLearnset = sPawniardTeachableLearnset,
-        .eggMoveLearnset = sPawniardEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 52, SPECIES_BISHARP}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 32, SPECIES_BISHARP}),
     },
-
     [SPECIES_BISHARP] =
     {
         .baseHP        = 65,
@@ -10007,7 +10102,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .friendship = 35,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_HUMAN_LIKE),
-        .abilities = { ABILITY_DEFIANT, ABILITY_INNER_FOCUS, ABILITY_PRESSURE },
+        .abilities = { ABILITY_DEFIANT, ABILITY_PRESSURE, ABILITY_PRESSURE },
         .bodyColor = BODY_COLOR_RED,
         .speciesName = _("Bisharp"),
         .cryId = CRY_BISHARP,
@@ -10019,7 +10114,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
             "This pitiless Pokémon commands a group\n"
             "of Pawniard to hound prey into immobility.\n"
             "It battles to become the boss, but will be\n"
-            "driven from the group if it loses."),
+            "exiled if it loses. 65/125/100/60/70/70"),
         .pokemonScale = 259,
         .pokemonOffset = 1,
         .trainerScale = 296,
@@ -10047,11 +10142,10 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
             gOverworldPalette_Bisharp,
             gShinyOverworldPalette_Bisharp
         )
-        .levelUpLearnset = sBisharpLevelUpLearnset,
-        .teachableLearnset = sBisharpTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_DEFEAT_THREE_WITH_ITEM, ITEM_LEADERS_CREST, SPECIES_KINGAMBIT}),
+		.perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,
+        .levelUpLearnset = sPawniardLevelUpLearnset,
+        .teachableLearnset = sPawniardTeachableLearnset,
     },
-
 #if P_GEN_9_CROSS_EVOS
     [SPECIES_KINGAMBIT] =
     {
@@ -10115,7 +10209,6 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
     },
 #endif //P_GEN_9_CROSS_EVOS
 #endif //P_FAMILY_PAWNIARD
-
 #if P_FAMILY_BOUFFALANT
     [SPECIES_BOUFFALANT] =
     {
@@ -10631,10 +10724,10 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
     [SPECIES_DEINO] =
     {
         .baseHP        = 52,
-        .baseAttack    = 65,
+        .baseAttack    = 45,
         .baseDefense   = 50,
         .baseSpeed     = 38,
-        .baseSpAttack  = 45,
+        .baseSpAttack  = 65,
         .baseSpDefense = 50,
         .types = MON_TYPES(TYPE_DARK, TYPE_DRAGON),
         .catchRate = 45,
@@ -10656,8 +10749,8 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .description = COMPOUND_STRING(
             "Lacking sight, it's unaware of its\n"
             "surroundings, so it bumps into things and\n"
-            "eats anything that moves. Approaching\n"
-            "it carelessly is dangerous."),
+            "eats anything that moves. Approaching it\n"
+            "carelessly is foolish. 52/45/50/65/50/38"),
         .pokemonScale = 366,
         .pokemonOffset = 12,
         .trainerScale = 257,
@@ -10685,19 +10778,18 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
             gOverworldPalette_Deino,
             gShinyOverworldPalette_Deino
         )
+		.perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,
         .levelUpLearnset = sDeinoLevelUpLearnset,
         .teachableLearnset = sDeinoTeachableLearnset,
-        .eggMoveLearnset = sDeinoEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 50, SPECIES_ZWEILOUS}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 24, SPECIES_ZWEILOUS}),
     },
-
     [SPECIES_ZWEILOUS] =
     {
         .baseHP        = 72,
-        .baseAttack    = 85,
+        .baseAttack    = 64,
         .baseDefense   = 70,
         .baseSpeed     = 58,
-        .baseSpAttack  = 65,
+        .baseSpAttack  = 86,
         .baseSpDefense = 70,
         .types = MON_TYPES(TYPE_DARK, TYPE_DRAGON),
         .catchRate = 45,
@@ -10720,7 +10812,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
             "After it has eaten up all the food in its\n"
             "territory, it moves on to another area.\n"
             "Whichever head eats more than the other\n"
-            "gets to be the leader."),
+            "becomes the leader. 72/64/70/86/70/58"),
         .pokemonScale = 265,
         .pokemonOffset = 3,
         .trainerScale = 262,
@@ -10748,22 +10840,22 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
             gOverworldPalette_Zweilous,
             gShinyOverworldPalette_Zweilous
         )
-        .levelUpLearnset = sZweilousLevelUpLearnset,
-        .teachableLearnset = sZweilousTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 64, SPECIES_HYDREIGON}),
+		.perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,
+        .levelUpLearnset = sDeinoLevelUpLearnset,
+        .teachableLearnset = sDeinoTeachableLearnset,
+        .evolutions = EVOLUTION({EVO_LEVEL, 48, SPECIES_HYDREIGON}),
     },
-
     [SPECIES_HYDREIGON] =
     {
-        .baseHP        = 92,
-        .baseAttack    = 105,
+        .baseHP        = 93,
+        .baseAttack    = 96,
         .baseDefense   = 90,
-        .baseSpeed     = 98,
-        .baseSpAttack  = 125,
+        .baseSpeed     = 102,
+        .baseSpAttack  = 129,
         .baseSpDefense = 90,
         .types = MON_TYPES(TYPE_DARK, TYPE_DRAGON),
         .catchRate = 45,
-        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_8) ? 300 : 270,
+        .expYield = 300,
         .evYield_SpAttack = 3,
         .genderRatio = PERCENT_FEMALE(50),
         .eggCycles = 40,
@@ -10780,9 +10872,9 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .weight = 1600,
         .description = COMPOUND_STRING(
             "This brutal Pokémon travels the skies on\n"
-            "its six wings. The heads on their arms do\n"
-            "not have brains. They use all three heads\n"
-            "to consume and destroy everything."),
+            "its six wings. The heads on their arms\n"
+            "lack brains. They use all three heads to\n"
+            "destroy everything. 93/96/90/129/90/102"),
         .pokemonScale = 267,
         .pokemonOffset = 2,
         .trainerScale = 286,
@@ -10811,11 +10903,11 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
             gOverworldPalette_Hydreigon,
             gShinyOverworldPalette_Hydreigon
         )
-        .levelUpLearnset = sHydreigonLevelUpLearnset,
-        .teachableLearnset = sHydreigonTeachableLearnset,
+		.perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,
+        .levelUpLearnset = sDeinoLevelUpLearnset,
+        .teachableLearnset = sDeinoTeachableLearnset,
     },
 #endif //P_FAMILY_DEINO
-
 #if P_FAMILY_LARVESTA
     [SPECIES_LARVESTA] =
     {

@@ -4410,6 +4410,326 @@
       "secondary_tileset": "gTileset_MysteryEventsHouse",
       "border_filepath": "data/layouts/SootopolisCity_MysteryEventsHouse_1F_StairsUnblocked/border.bin",
       "blockdata_filepath": "data/layouts/SootopolisCity_MysteryEventsHouse_1F_StairsUnblocked/map.bin"
+    },
+    {
+      "id": "LAYOUT_EASTFORD_OW",
+      "name": "EastfordOW_Layout",
+      "width": 29,
+      "height": 34,
+      "primary_tileset": "gTileset_snow",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/EastfordOW/border.bin",
+      "blockdata_filepath": "data/layouts/EastfordOW/map.bin"
+    },
+    {
+      "id": "LAYOUT_SELENIA_ROUTE1",
+      "name": "SeleniaRoute1_Layout",
+      "width": 35,
+      "height": 19,
+      "primary_tileset": "gTileset_snow",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/SeleniaRoute1/border.bin",
+      "blockdata_filepath": "data/layouts/SeleniaRoute1/map.bin"
+    },
+    {
+      "id": "LAYOUT_KIRKOPOLIS_OW",
+      "name": "KirkopolisOW_Layout",
+      "width": 19,
+      "height": 27,
+      "primary_tileset": "gTileset_snow",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/KirkopolisOW/border.bin",
+      "blockdata_filepath": "data/layouts/KirkopolisOW/map.bin"
+    },
+    {
+      "id": "LAYOUT_PIRATE_BRIDGE",
+      "name": "PirateBridge_Layout",
+      "width": 30,
+      "height": 27,
+      "primary_tileset": "gTileset_snow",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/PirateBridge/border.bin",
+      "blockdata_filepath": "data/layouts/PirateBridge/map.bin"
+    },
+    {
+      "id": "LAYOUT_PETESBURG_OW",
+      "name": "PetesburgOW_Layout",
+      "width": 35,
+      "height": 28,
+      "primary_tileset": "gTileset_snow",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/PetesburgOW/border.bin",
+      "blockdata_filepath": "data/layouts/PetesburgOW/map.bin"
+    },
+    {
+      "id": "LAYOUT_PLAYER_HOUSE",
+      "name": "PlayerHouse_Layout",
+      "width": 11,
+      "height": 9,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_BrendansMaysHouse",
+      "border_filepath": "data/layouts/PlayerHouse/border.bin",
+      "blockdata_filepath": "data/layouts/PlayerHouse/map.bin"
+    },
+    {
+      "id": "LAYOUT_MAPLE_LAB",
+      "name": "MapleLab_Layout",
+      "width": 13,
+      "height": 13,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Lab",
+      "border_filepath": "data/layouts/MapleLab/border.bin",
+      "blockdata_filepath": "data/layouts/MapleLab/map.bin"
+    },
+    {
+      "id": "LAYOUT_EASTFORD_NPCS",
+      "name": "EastfordNPCs_Layout",
+      "width": 21,
+      "height": 17,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/EastfordNPCs/border.bin",
+      "blockdata_filepath": "data/layouts/EastfordNPCs/map.bin"
+    },
+    {
+      "id": "LAYOUT_EASTFORD_POKE_CENTER",
+      "name": "EastfordPokeCenter_Layout",
+      "width": 14,
+      "height": 9,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_PokemonCenter",
+      "border_filepath": "data/layouts/EastfordPokeCenter/border.bin",
+      "blockdata_filepath": "data/layouts/EastfordPokeCenter/map.bin"
+    },
+    {
+      "id": "LAYOUT_EASTFORD_MART",
+      "name": "EastfordMart_Layout",
+      "width": 11,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Shop",
+      "border_filepath": "data/layouts/EastfordMart/border.bin",
+      "blockdata_filepath": "data/layouts/EastfordMart/map.bin"
+    },
+    {
+      "id": "LAYOUT_KIRKOPOLIS_POKE_CENTER",
+      "name": "KirkopolisPokeCenter_Layout",
+      "width": 14,
+      "height": 9,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_PokemonCenter",
+      "border_filepath": "data/layouts/KirkopolisPokeCenter/border.bin",
+      "blockdata_filepath": "data/layouts/KirkopolisPokeCenter/map.bin"
+    },
+    {
+      "id": "LAYOUT_PETESBURG_POKE_CENTER",
+      "name": "PetesburgPokeCenter_Layout",
+      "width": 14,
+      "height": 9,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_PokemonCenter",
+      "border_filepath": "data/layouts/PetesburgPokeCenter/border.bin",
+      "blockdata_filepath": "data/layouts/PetesburgPokeCenter/map.bin"
+    },
+    {
+      "id": "LAYOUT_PETESBURG_MART",
+      "name": "PetesburgMart_Layout",
+      "width": 11,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Shop",
+      "border_filepath": "data/layouts/PetesburgMart/border.bin",
+      "blockdata_filepath": "data/layouts/PetesburgMart/map.bin"
+    },
+    {
+      "id": "LAYOUT_PETESBURG_NPCS",
+      "name": "PetesburgNPCs_Layout",
+      "width": 32,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/PetesburgNPCs/border.bin",
+      "blockdata_filepath": "data/layouts/PetesburgNPCs/map.bin"
+    },
+    {
+      "id": "LAYOUT_BARST_HOUSE",
+      "name": "BarstHouse_Layout",
+      "width": 10,
+      "height": 9,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/BarstHouse/border.bin",
+      "blockdata_filepath": "data/layouts/BarstHouse/map.bin"
+    },
+    {
+      "id": "LAYOUT_SELENIA_ROUTE2",
+      "name": "SeleniaRoute2_Layout",
+      "width": 39,
+      "height": 45,
+      "primary_tileset": "gTileset_snow",
+      "secondary_tileset": "gTileset_Rustboro",
+      "border_filepath": "data/layouts/SeleniaRoute2/border.bin",
+      "blockdata_filepath": "data/layouts/SeleniaRoute2/map.bin"
+    },
+    {
+      "id": "LAYOUT_SANCTUM_OW",
+      "name": "SanctumOW_Layout",
+      "width": 46,
+      "height": 28,
+      "primary_tileset": "gTileset_snow",
+      "secondary_tileset": "gTileset_Sootopolis",
+      "border_filepath": "data/layouts/SanctumOW/border.bin",
+      "blockdata_filepath": "data/layouts/SanctumOW/map.bin"
+    },
+    {
+      "id": "LAYOUT_SANCTUM_POKE_CENTER",
+      "name": "SanctumPokeCenter_Layout",
+      "width": 14,
+      "height": 9,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_PokemonCenter",
+      "border_filepath": "data/layouts/SanctumPokeCenter/border.bin",
+      "blockdata_filepath": "data/layouts/SanctumPokeCenter/map.bin"
+    },
+    {
+      "id": "LAYOUT_SANCTUM_MART",
+      "name": "SanctumMart_Layout",
+      "width": 11,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Shop",
+      "border_filepath": "data/layouts/SanctumMart/border.bin",
+      "blockdata_filepath": "data/layouts/SanctumMart/map.bin"
+    },
+    {
+      "id": "LAYOUT_DRAGON_PASS",
+      "name": "DragonPass_Layout",
+      "width": 53,
+      "height": 28,
+      "primary_tileset": "gTileset_snow",
+      "secondary_tileset": "gTileset_Sootopolis",
+      "border_filepath": "data/layouts/DragonPass/border.bin",
+      "blockdata_filepath": "data/layouts/DragonPass/map.bin"
+    },
+    {
+      "id": "LAYOUT_SANCTUM_NPCS",
+      "name": "SanctumNPCs_Layout",
+      "width": 8,
+      "height": 26,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/SanctumNPCs/border.bin",
+      "blockdata_filepath": "data/layouts/SanctumNPCs/map.bin"
+    },
+    {
+      "id": "LAYOUT_APPRENTICE_HOUSE",
+      "name": "ApprenticeHouse_Layout",
+      "width": 10,
+      "height": 10,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/ApprenticeHouse/border.bin",
+      "blockdata_filepath": "data/layouts/ApprenticeHouse/map.bin"
+    },
+    {
+      "id": "LAYOUT_MAREEP_MEADOW",
+      "name": "MareepMeadow_Layout",
+      "width": 23,
+      "height": 28,
+      "primary_tileset": "gTileset_snow",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/MareepMeadow/border.bin",
+      "blockdata_filepath": "data/layouts/MareepMeadow/map.bin"
+    },
+    {
+      "id": "LAYOUT_FORT_TARIF",
+      "name": "FortTarif_Layout",
+      "width": 24,
+      "height": 26,
+      "primary_tileset": "gTileset_snow",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/FortTarif/border.bin",
+      "blockdata_filepath": "data/layouts/FortTarif/map.bin"
+    },
+    {
+      "id": "LAYOUT_FORT_TARIF_CAVE",
+      "name": "FortTarifCave_Layout",
+      "width": 23,
+      "height": 20,
+      "primary_tileset": "gTileset_snow",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/FortTarifCave/border.bin",
+      "blockdata_filepath": "data/layouts/FortTarifCave/map.bin"
+    },
+    {
+      "id": "LAYOUT_SELENIA_ROUTE3NORTH",
+      "name": "SeleniaRoute3North_Layout",
+      "width": 28,
+      "height": 86,
+      "primary_tileset": "gTileset_snow",
+      "secondary_tileset": "gTileset_Slateport",
+      "border_filepath": "data/layouts/SeleniaRoute3North/border.bin",
+      "blockdata_filepath": "data/layouts/SeleniaRoute3North/map.bin"
+    },
+    {
+      "id": "LAYOUT_SELENIA_ROUTE3SOUTH",
+      "name": "SeleniaRoute3South_Layout",
+      "width": 32,
+      "height": 55,
+      "primary_tileset": "gTileset_snow",
+      "secondary_tileset": "gTileset_Slateport",
+      "border_filepath": "data/layouts/SeleniaRoute3South/border.bin",
+      "blockdata_filepath": "data/layouts/SeleniaRoute3South/map.bin"
+    },
+    {
+      "id": "LAYOUT_SOUTHPORT_OW",
+      "name": "SouthportOW_Layout",
+      "width": 45,
+      "height": 31,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Slateport",
+      "border_filepath": "data/layouts/SouthportOW/border.bin",
+      "blockdata_filepath": "data/layouts/SouthportOW/map.bin"
+    },
+    {
+      "id": "LAYOUT_OLD_ROD_HOUSE",
+      "name": "OldRodHouse_Layout",
+      "width": 10,
+      "height": 9,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/OldRodHouse/border.bin",
+      "blockdata_filepath": "data/layouts/OldRodHouse/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE3LODGE",
+      "name": "Route3Lodge_Layout",
+      "width": 17,
+      "height": 21,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/Route3Lodge/border.bin",
+      "blockdata_filepath": "data/layouts/Route3Lodge/map.bin"
+    },
+    {
+      "id": "LAYOUT_SOUTHPORT_POKE_CENTER",
+      "name": "SouthportPokeCenter_Layout",
+      "width": 14,
+      "height": 9,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_PokemonCenter",
+      "border_filepath": "data/layouts/SouthportPokeCenter/border.bin",
+      "blockdata_filepath": "data/layouts/SouthportPokeCenter/map.bin"
+    },
+    {
+      "id": "LAYOUT_SOUTHPORT_MART",
+      "name": "SouthportMart_Layout",
+      "width": 11,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Shop",
+      "border_filepath": "data/layouts/SouthportMart/border.bin",
+      "blockdata_filepath": "data/layouts/SouthportMart/map.bin"
     }
   ]
 }
