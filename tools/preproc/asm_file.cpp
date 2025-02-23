@@ -679,11 +679,19 @@ void AsmFile::RaiseWarning(const char* format, ...)
 int AsmFile::SkipWhitespaceAndEol()
 {
     int newlines = 0;
-    while (m_buffer[m_pos] == '\t' || m_buffer[m_pos] == ' ' || m_buffer[m_pos] == '\n')
+    while (m_buffer[m_pos] == '\t' || m_buffer[m_pos] == ' ' || (m_pos+1 < m_size && m_buffer[m_pos] == '\r' && m_buffer[m_pos+1] == '\n') || m_buffer[m_pos] == '\n')
     {
-        if (m_buffer[m_pos] == '\n')
+        if (m_pos+1 < m_size && m_buffer[m_pos] == '\r' && m_buffer[m_pos+1] == '\n')
+        {
             newlines++;
-        m_pos++;
+            m_pos += 2;
+        }
+        else
+        {
+            if (m_buffer[m_pos] == '\n')
+                newlines++;
+            m_pos++;
+        }
     }
     return newlines;
 }

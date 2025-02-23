@@ -1684,13 +1684,9 @@ Cry_Wooper::
 	.align 2
 Cry_Quagsire::
 	.incbin "sound/direct_sound_samples/cries/quagsire.bin"
-
-.if P_PALDEAN_FORMS == TRUE
 	.align 2
 Cry_Clodsire::
 	.incbin "sound/direct_sound_samples/cries/clodsire.bin"
-
-.endif @ P_PALDEAN_FORMS
 .endif @ P_FAMILY_WOOPER
 
 .if P_FAMILY_MURKROW == TRUE
@@ -1735,12 +1731,9 @@ Cry_Wobbuffet::
 	.align 2
 Cry_Girafarig::
 	.incbin "sound/direct_sound_samples/cries/girafarig.bin"
-
-.if P_GEN_9_CROSS_EVOS == TRUE
 	.align 2
 Cry_Farigiraf::
 	.incbin "sound/direct_sound_samples/cries/farigiraf.bin"
-.endif @ P_GEN_9_CROSS_EVOS
 .endif @ P_FAMILY_GIRAFARIG
 
 .if P_FAMILY_PINECO == TRUE
@@ -2109,13 +2102,9 @@ Cry_Zigzagoon::
 	.align 2
 Cry_Linoone::
 	.incbin "sound/direct_sound_samples/cries/linoone.bin"
-
-.if P_GALARIAN_FORMS == TRUE
 	.align 2
 Cry_Obstagoon::
 	.incbin "sound/direct_sound_samples/cries/obstagoon.bin"
-
-.endif @ P_GALARIAN_FORMS
 .endif @ P_FAMILY_ZIGZAGOON
 
 .if P_FAMILY_WURMPLE == TRUE
@@ -5320,11 +5309,11 @@ Cry_Grimmsnarl::
 	.align 2
 Cry_Milcery::
 	.incbin "sound/direct_sound_samples/cries/milcery.bin"
-
+.endif @ P_FAMILY_MILCERY
 	.align 2
 Cry_Alcremie::
 	.incbin "sound/direct_sound_samples/cries/alcremie.bin"
-.endif @ P_FAMILY_MILCERY
+
 
 .if P_FAMILY_FALINKS == TRUE
 	.align 2

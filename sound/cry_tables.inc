@@ -550,9 +550,7 @@ gCryTable::
 .if P_FAMILY_WOOPER == TRUE
 	cry Cry_Wooper
 	cry Cry_Quagsire
-.if P_PALDEAN_FORMS == TRUE
 	cry Cry_Clodsire
-.endif @ P_PALDEAN_FORMS
 .endif @ P_FAMILY_WOOPER
 .if P_FAMILY_MURKROW == TRUE
 	cry Cry_Murkrow
@@ -573,9 +571,7 @@ gCryTable::
 .endif @ P_FAMILY_WOBBUFFET
 .if P_FAMILY_GIRAFARIG == TRUE
 	cry Cry_Girafarig
-.if P_GEN_9_CROSS_EVOS == TRUE
 	cry Cry_Farigiraf
-.endif @ P_GEN_9_CROSS_EVOS
 .endif @ P_FAMILY_GIRAFARIG
 .if P_FAMILY_PINECO == TRUE
 	cry Cry_Pineco
@@ -741,9 +737,7 @@ gCryTable::
 .if P_FAMILY_ZIGZAGOON == TRUE
 	cry Cry_Zigzagoon
 	cry Cry_Linoone
-.if P_GALARIAN_FORMS == TRUE
 	cry Cry_Obstagoon
-.endif @ P_GALARIAN_FORMS
 .endif @ P_FAMILY_ZIGZAGOON
 .if P_FAMILY_WURMPLE == TRUE
 	cry Cry_Wurmple
@@ -2066,8 +2060,8 @@ gCryTable::
 .endif @ P_FAMILY_IMPIDIMP
 .if P_FAMILY_MILCERY == TRUE
 	cry Cry_Milcery
-	cry Cry_Alcremie
 .endif @ P_FAMILY_MILCERY
+	cry Cry_Alcremie
 .if P_FAMILY_FALINKS == TRUE
 	cry Cry_Falinks
 .endif @ P_FAMILY_FALINKS
@@ -2978,9 +2972,7 @@ gCryTable_Reverse::
 .if P_FAMILY_WOOPER == TRUE
 	cry_reverse Cry_Wooper
 	cry_reverse Cry_Quagsire
-.if P_PALDEAN_FORMS == TRUE
 	cry_reverse Cry_Clodsire
-.endif @ P_PALDEAN_FORMS
 .endif @ P_FAMILY_WOOPER
 .if P_FAMILY_MURKROW == TRUE
 	cry_reverse Cry_Murkrow
@@ -3001,9 +2993,7 @@ gCryTable_Reverse::
 .endif @ P_FAMILY_WOBBUFFET
 .if P_FAMILY_GIRAFARIG == TRUE
 	cry_reverse Cry_Girafarig
-.if P_GEN_9_CROSS_EVOS == TRUE
 	cry_reverse Cry_Farigiraf
-.endif @ P_GEN_9_CROSS_EVOS
 .endif @ P_FAMILY_GIRAFARIG
 .if P_FAMILY_PINECO == TRUE
 	cry_reverse Cry_Pineco
@@ -3169,9 +3159,7 @@ gCryTable_Reverse::
 .if P_FAMILY_ZIGZAGOON == TRUE
 	cry_reverse Cry_Zigzagoon
 	cry_reverse Cry_Linoone
-.if P_GALARIAN_FORMS == TRUE
 	cry_reverse Cry_Obstagoon
-.endif @ P_GALARIAN_FORMS
 .endif @ P_FAMILY_ZIGZAGOON
 .if P_FAMILY_WURMPLE == TRUE
 	cry_reverse Cry_Wurmple
@@ -4494,8 +4482,8 @@ gCryTable_Reverse::
 .endif @ P_FAMILY_IMPIDIMP
 .if P_FAMILY_MILCERY == TRUE
 	cry_reverse Cry_Milcery
-	cry_reverse Cry_Alcremie
 .endif @ P_FAMILY_MILCERY
+	cry_reverse Cry_Alcremie
 .if P_FAMILY_FALINKS == TRUE
 	cry_reverse Cry_Falinks
 .endif @ P_FAMILY_FALINKS
