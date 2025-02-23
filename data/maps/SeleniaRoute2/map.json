@@ -15,12 +15,12 @@
   "connections": [
     {
       "map": "MAP_PETESBURG_OW",
-      "offset": 12,
+      "offset": 13,
       "direction": "down"
     },
     {
       "map": "MAP_SANCTUM_OW",
-      "offset": 20,
+      "offset": 21,
       "direction": "up"
     },
     {
@@ -32,7 +32,7 @@
   "object_events": [
     {
       "graphics_id": "OBJ_EVENT_GFX_BUG_CATCHER",
-      "x": 20,
+      "x": 21,
       "y": 37,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
@@ -45,7 +45,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_BUG_CATCHER",
-      "x": 20,
+      "x": 21,
       "y": 7,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
@@ -58,7 +58,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_YOUNGSTER",
-      "x": 26,
+      "x": 27,
       "y": 31,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
@@ -71,7 +71,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_CAMPER",
-      "x": 20,
+      "x": 21,
       "y": 25,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
@@ -84,7 +84,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_PICNICKER",
-      "x": 26,
+      "x": 27,
       "y": 25,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
@@ -97,7 +97,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_CAMPER",
-      "x": 20,
+      "x": 21,
       "y": 11,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
@@ -110,7 +110,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_CAMPER",
-      "x": 26,
+      "x": 27,
       "y": 11,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
@@ -123,7 +123,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_PICNICKER",
-      "x": 26,
+      "x": 27,
       "y": 14,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
@@ -135,8 +135,8 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_MAGMA_MEMBER_M",
-      "x": 35,
+      "graphics_id": "OBJ_EVENT_GFX_KNIGHT",
+      "x": 36,
       "y": 22,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
@@ -149,7 +149,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
-      "x": 38,
+      "x": 39,
       "y": 22,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_NONE",
@@ -162,7 +162,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_CAMPER",
-      "x": 35,
+      "x": 36,
       "y": 2,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
@@ -196,7 +196,7 @@
   "bg_events": [
     {
       "type": "sign",
-      "x": 27,
+      "x": 28,
       "y": 39,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
@@ -204,7 +204,7 @@
     },
     {
       "type": "sign",
-      "x": 27,
+      "x": 28,
       "y": 5,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",

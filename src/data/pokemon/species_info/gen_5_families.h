@@ -2599,7 +2599,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .baseAttack    = 80,
         .baseDefense   = 55,
         .baseSpeed     = 35,
-        .baseSpAttack  = 25,
+        .baseSpAttack  = 20,
         .baseSpDefense = 35,
         .types = MON_TYPES(TYPE_FIGHTING),
         .catchRate = 180,
@@ -2622,7 +2622,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
             "These Pokémon appear at building\n"
             "sites and help out with construction.\n"
             "They always carry squared logs.\n"
-            "75/80/55/25/35/35"),
+            "75/80/55/20/35/35"),
         .pokemonScale = 422,
         .pokemonOffset = 14,
         .trainerScale = 256,
@@ -2661,7 +2661,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .baseAttack    = 105,
         .baseDefense   = 85,
         .baseSpeed     = 40,
-        .baseSpAttack  = 40,
+        .baseSpAttack  = 35,
         .baseSpDefense = 50,
         .types = MON_TYPES(TYPE_FIGHTING),
         .catchRate = 90,
@@ -2684,7 +2684,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
             "They strengthen their bodies by carrying\n"
             "steel beams. This Pokémon is so muscular\n"
             "and strongly built that even wrestlers\n"
-            "cannot move it. 85/105/85/40/50/40"),
+            "cannot move it. 85/105/85/35/50/40"),
         .pokemonScale = 282,
         .pokemonOffset = 3,
         .trainerScale = 256,
@@ -2715,8 +2715,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
 		.perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,
         .levelUpLearnset = sConkeldurrLevelUpLearnset,
         .teachableLearnset = sTimburrTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 35, SPECIES_CONKELDURR},
-                                {EVO_ITEM, ITEM_LINKING_CORD, SPECIES_CONKELDURR}),
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_LINKING_CORD, SPECIES_CONKELDURR}),
     },
     [SPECIES_CONKELDURR] =
     {
@@ -2724,7 +2723,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .baseAttack    = 140,
         .baseDefense   = 95,
         .baseSpeed     = 45,
-        .baseSpAttack  = 55,
+        .baseSpAttack  = 50,
         .baseSpDefense = 65,
         .types = MON_TYPES(TYPE_FIGHTING),
         .catchRate = 45,
@@ -2747,7 +2746,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
             "They use concrete pillars as walking\n"
             "canes. Rather than rely solely on force,\n"
             "they utilize the centrifugal force of\n"
-            "spinning concrete. 105/140/95/55/65/45"),
+            "spinning concrete. 105/140/95/50/65/45"),
         .pokemonScale = 265,
         .pokemonOffset = 3,
         .trainerScale = 262,

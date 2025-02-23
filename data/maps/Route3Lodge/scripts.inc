@@ -50,7 +50,7 @@ R3_Text_HelpUs:
 	.string "King Knight is blocking the exit!\p"
 	.string "It's bothering all of us here.\n"
 	.string "Could you please ask him to move?\p"
-	.string "His Slaking looks awfully strong...\p"
+	.string "His Slaking looks awfully strong…\p"
 	.string "You might want some kinda protection\n"
 	.string "from powerful Normal type attacks.$"
 R3_Text_Thanks:

@@ -3440,7 +3440,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MONSTER, EGG_GROUP_FIELD),
-        .abilities = { ABILITY_SOUNDPROOF, ABILITY_NONE, ABILITY_SCRAPPY },
+        .abilities = { ABILITY_BOOM_BOX, ABILITY_NONE, ABILITY_SCRAPPY },
         .bodyColor = BODY_COLOR_BLUE,
         .speciesName = _("Loudred"),
         .cryId = CRY_LOUDRED,
@@ -4216,11 +4216,11 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
 #if P_FAMILY_ARON
     [SPECIES_ARON] =
     {
-        .baseHP        = 50,
+        .baseHP        = 80,
         .baseAttack    = 70,
         .baseDefense   = 100,
         .baseSpeed     = 30,
-        .baseSpAttack  = 40,
+        .baseSpAttack  = 20,
         .baseSpDefense = 40,
         .types = MON_TYPES(TYPE_STEEL, TYPE_ROCK),
         .catchRate = 180,
@@ -4244,7 +4244,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
             "A Pokémon that is clad in steel armor.\n"
             "A new suit of armor is made when it evolves.\n"
             "The old, discarded armor is salvaged into\n"
-            "iron products. 50/70/100/40/40/30"),
+            "iron products. 80/70/100/20/40/30"),
         .pokemonScale = 419,
         .pokemonOffset = 23,
         .trainerScale = 256,
@@ -4279,11 +4279,11 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
     },
     [SPECIES_LAIRON] =
     {
-        .baseHP        = 60,
+        .baseHP        = 95,
         .baseAttack    = 90,
         .baseDefense   = 140,
         .baseSpeed     = 40,
-        .baseSpAttack  = 50,
+        .baseSpAttack  = 25,
         .baseSpDefense = 50,
         .types = MON_TYPES(TYPE_STEEL, TYPE_ROCK),
         .catchRate = 90,
@@ -4307,7 +4307,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
             "When two Lairon meet in the wild, they\n"
             "fight for territory by bashing into each\n"
             "other with their steel bodies. The clash\n"
-            "is very loud. 60/90/140/50/50/40"),
+            "is very loud. 95/90/140/25/50/40"),
         .pokemonScale = 275,
         .pokemonOffset = 12,
         .trainerScale = 256,
@@ -4342,11 +4342,11 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
     },
     [SPECIES_AGGRON] =
     {
-        .baseHP        = 70,
+        .baseHP        = 110,
         .baseAttack    = 110,
         .baseDefense   = 180,
         .baseSpeed     = 50,
-        .baseSpAttack  = 60,
+        .baseSpAttack  = 30,
         .baseSpDefense = 60,
         .types = MON_TYPES(TYPE_STEEL, TYPE_ROCK),
         .catchRate = 45,
@@ -4370,7 +4370,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
             "Its iron horns grow longer a little at\n"
             "a time. They are used to determine the\n"
             "Aggron's age. The gouges in its armor are\n"
-            "like battle scars. 70/110/180/60/60/50"),
+            "like battle scars. 110/110/180/30/60/50"),
         .pokemonScale = 256,
         .pokemonOffset = -1,
         .trainerScale = 350,
@@ -9345,7 +9345,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
 		.perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,
         .levelUpLearnset = sWalreinLevelUpLearnset,
         .teachableLearnset = sSphealTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 28, SPECIES_SEALEO}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 27, SPECIES_SEALEO}),
     },
     [SPECIES_SEALEO] =
     {
@@ -9407,7 +9407,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
 		.perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,
         .levelUpLearnset = sWalreinLevelUpLearnset,
         .teachableLearnset = sSphealTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 44, SPECIES_WALREIN}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 39, SPECIES_WALREIN}),
     },
     [SPECIES_WALREIN] =
     {

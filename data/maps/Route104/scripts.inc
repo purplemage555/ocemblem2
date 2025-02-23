@@ -23,7 +23,7 @@ Route104_OnTransition:
 	end
 
 Route104_EventScript_ShowOrHideWhiteHerbFlorist::
-	goto_if_unset FLAG_MET_PRETTY_PETAL_SHOP_OWNER, Route104_EventScript_HideWhiteHerbFlorist
+	goto_if_unset 0x0, Route104_EventScript_HideWhiteHerbFlorist
 	goto_if_unset FLAG_BADGE03_GET, Route104_EventScript_HideWhiteHerbFlorist
 	clearflag FLAG_HIDE_ROUTE_104_WHITE_HERB_FLORIST
 	return
@@ -95,7 +95,7 @@ Route104_EventScript_RivalEncounter::
 	end
 
 Route104_EventScript_MayEncounter::
-	goto_if_set FLAG_DEFEATED_RIVAL_ROUTE_104, Route104_EventScript_MayDefeated
+	goto_if_set 0x0, Route104_EventScript_MayDefeated
 	goto_if_set FLAG_REGISTER_RIVAL_POKENAV, Route104_EventScript_MayAskToBattle
 	setflag FLAG_REGISTER_RIVAL_POKENAV
 	msgbox Route104_Text_MayWeShouldRegister, MSGBOX_DEFAULT
@@ -164,24 +164,24 @@ Route104_EventScript_RestoreMusic::
 
 Route104_EventScript_BattleMayTreecko::
 	trainerbattle_no_intro TRAINER_MAY_RUSTBORO_TREECKO, Route104_Text_MayDefeat
-	setflag FLAG_DEFEATED_RIVAL_ROUTE_104
+	setflag 0x0
 	goto Route104_EventScript_MayDefeated
 	end
 
 Route104_EventScript_BattleMayTorchic::
 	trainerbattle_no_intro TRAINER_MAY_RUSTBORO_TORCHIC, Route104_Text_MayDefeat
-	setflag FLAG_DEFEATED_RIVAL_ROUTE_104
+	setflag 0x0
 	goto Route104_EventScript_MayDefeated
 	end
 
 Route104_EventScript_BattleMayMudkip::
 	trainerbattle_no_intro TRAINER_MAY_RUSTBORO_MUDKIP, Route104_Text_MayDefeat
-	setflag FLAG_DEFEATED_RIVAL_ROUTE_104
+	setflag 0x0
 	goto Route104_EventScript_MayDefeated
 	end
 
 Route104_EventScript_BrendanEncounter::
-	goto_if_set FLAG_DEFEATED_RIVAL_ROUTE_104, Route104_EventScript_BrendanDefeated
+	goto_if_set 0x0, Route104_EventScript_BrendanDefeated
 	goto_if_set FLAG_REGISTER_RIVAL_POKENAV, Route104_EventScript_BrendanAskToBattle
 	setflag FLAG_REGISTER_RIVAL_POKENAV
 	msgbox Route104_Text_BrendanWeShouldRegister, MSGBOX_DEFAULT
@@ -231,19 +231,19 @@ Route104_EventScript_BrendanDefeated::
 
 Route104_EventScript_BattleBrendanTreecko::
 	trainerbattle_no_intro TRAINER_BRENDAN_RUSTBORO_TREECKO, Route104_Text_BrendanDefeat
-	setflag FLAG_DEFEATED_RIVAL_ROUTE_104
+	setflag 0x0
 	goto Route104_EventScript_BrendanDefeated
 	end
 
 Route104_EventScript_BattleBrendanTorchic::
 	trainerbattle_no_intro TRAINER_BRENDAN_RUSTBORO_TORCHIC, Route104_Text_BrendanDefeat
-	setflag FLAG_DEFEATED_RIVAL_ROUTE_104
+	setflag 0x0
 	goto Route104_EventScript_BrendanDefeated
 	end
 
 Route104_EventScript_BattleBrendanMudkip::
 	trainerbattle_no_intro TRAINER_BRENDAN_RUSTBORO_MUDKIP, Route104_Text_BrendanDefeat
-	setflag FLAG_DEFEATED_RIVAL_ROUTE_104
+	setflag 0x0
 	goto Route104_EventScript_BrendanDefeated
 	end
 

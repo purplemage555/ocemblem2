@@ -240,13 +240,46 @@
 #define OBJ_EVENT_GFX_LINK_RS_MAY                236
 #define OBJ_EVENT_GFX_LUGIA                      237
 #define OBJ_EVENT_GFX_HOOH                       238
-#define OBJ_EVENT_GFX_POKE_BALL                  239
-#define OBJ_EVENT_GFX_OW_MON                     240
+#define OBJ_EVENT_GFX_MAPLE                      239
+#define OBJ_EVENT_GFX_KNIGHT                     240
+#define OBJ_EVENT_GFX_AGATHA					 241
+#define OBJ_EVENT_GFX_BALDING_MAN				 242
+#define OBJ_EVENT_GFX_BATTLE_GIRL				 243
+#define OBJ_EVENT_GFX_BILL						 244
+#define OBJ_EVENT_GFX_BLAINE					 245
+#define OBJ_EVENT_GFX_BOY_0						 246
+#define OBJ_EVENT_GFX_BROCK						 247
+#define OBJ_EVENT_GFX_BRUNO						 248
+#define OBJ_EVENT_GFX_CAPTAIN					 249
+#define OBJ_EVENT_GFX_CHANNELER					 250
+#define OBJ_EVENT_GFX_COOLTRAINER_F				 251
+#define OBJ_EVENT_GFX_COOLTRAINER_M				 252
+#define OBJ_EVENT_GFX_ERIKA						 253
+#define OBJ_EVENT_GFX_GIOVANNI					 254
+#define OBJ_EVENT_GFX_GYM_GUY					 255
+#define OBJ_EVENT_GFX_KOGA						 256
+#define OBJ_EVENT_GFX_LANCE						 257
+#define OBJ_EVENT_GFX_LORELEI					 258
+#define OBJ_EVENT_GFX_LT_SURGE					 259
+#define OBJ_EVENT_GFX_MAN_0						 260
+#define OBJ_EVENT_GFX_MISTY						 261
+#define OBJ_EVENT_GFX_ROCKER					 262
+#define OBJ_EVENT_GFX_SABRINA					 263
+#define OBJ_EVENT_GFX_SWIMMER_F_LAND			 264
+#define OBJ_EVENT_GFX_SWIMMER_M_LAND			 265
+#define OBJ_EVENT_GFX_WOMAN_K_1					 266
+#define OBJ_EVENT_GFX_WOMAN_K_2					 267
+#define OBJ_EVENT_GFX_WOMAN_K_3					 268
+#define OBJ_EVENT_GFX_WORKER_F					 269
+#define OBJ_EVENT_GFX_WORKER_M					 270
+#define OBJ_EVENT_GFX_KING						 271
+#define OBJ_EVENT_GFX_POKE_BALL                  272
+#define OBJ_EVENT_GFX_OW_MON                     273
 
 // NOTE: The maximum amount of object events has been expanded from 255 to 65535.
 // Since dynamic graphics ids still require at least 16 free values, the actual limit
 // is 65519, but even considering follower Pokémon, this should be more than enough :)
-#define NUM_OBJ_EVENT_GFX                        241
+#define NUM_OBJ_EVENT_GFX                        274
 
 
 // These are dynamic object gfx ids.
@@ -378,7 +411,14 @@
 #define OBJ_EVENT_PAL_TAG_LUGIA                   0x1121
 #define OBJ_EVENT_PAL_TAG_RS_BRENDAN              0x1122
 #define OBJ_EVENT_PAL_TAG_RS_MAY                  0x1123
-#define OBJ_EVENT_PAL_TAG_DYNAMIC                 0x1124
+#define OBJ_EVENT_PAL_TAG_MAPLE                   0x1124
+#define OBJ_EVENT_PAL_TAG_NPC_BLUE                0x1125
+#define OBJ_EVENT_PAL_TAG_NPC_PINK                0x1126
+#define OBJ_EVENT_PAL_TAG_NPC_GREEN               0x1127
+#define OBJ_EVENT_PAL_TAG_NPC_WHITE               0x1128
+#define OBJ_EVENT_PAL_TAG_ALLIES				  0x1129
+#define OBJ_EVENT_PAL_TAG_ENEMY					  0x112A
+#define OBJ_EVENT_PAL_TAG_DYNAMIC                 0x112B
 
 #if OW_FOLLOWERS_POKEBALLS
 // Vanilla

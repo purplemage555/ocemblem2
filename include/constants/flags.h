@@ -44,6 +44,7 @@
 #define NUM_TEMP_FLAGS   (TEMP_FLAGS_END - TEMP_FLAGS_START + 1)
 
 #define FLAG_UNUSED_0x020    0x20 // Unused Flag
+#define FLAG_SYS_SET_BATTLE_BGM    0x20
 #define FLAG_UNUSED_0x021    0x21 // Unused Flag
 #define FLAG_UNUSED_0x022    0x22 // Unused Flag
 #define FLAG_UNUSED_0x023    0x23 // Unused Flag
@@ -102,8 +103,8 @@
 #define FLAG_UNUSED_0x055                    0x55  // Unused Flag
 
 #define FLAG_HIDE_CONTEST_POKE_BALL          0x56  // Always set after new game, object it hides is added directly
-#define FLAG_MET_RIVAL_MOM                   0x57
-#define FLAG_BIRCH_AIDE_MET                  0x58
+#define FLAG_OC_GOT_TIMBURR                  0x57
+#define FLAG_UNLOCK_SANCTUM                  0x58
 #define FLAG_DECLINED_BIKE                   0x59
 #define FLAG_RECEIVED_BIKE                   0x5A
 #define FLAG_WATTSON_REMATCH_AVAILABLE       0x5B
@@ -115,12 +116,11 @@
 #define FLAG_MET_TEAM_AQUA_HARBOR            0x61
 #define FLAG_TV_EXPLAINED                    0x62
 #define FLAG_MAUVILLE_GYM_BARRIERS_STATE     0x63
-#define FLAG_MOSSDEEP_GYM_SWITCH_1           0x64 // Leftover from the RS version of Mossdeep Gym, functionally unused
-#define FLAG_MOSSDEEP_GYM_SWITCH_2           0x65 //
-#define FLAG_MOSSDEEP_GYM_SWITCH_3           0x66 //
-#define FLAG_MOSSDEEP_GYM_SWITCH_4           0x67 //
-
-#define FLAG_UNUSED_0x068                    0x68  // Unused Flag
+#define FLAG_OC_GOT_SPOON			         0x64
+#define FLAG_OC_GOT_VENONAT		             0x65
+#define FLAG_OC_GOT_VANILLITE	             0x66
+#define FLAG_R3_DEFEATED_KING	             0x67
+#define FLAG_R4_BEAT_MAPLE                   0x68  // Unused Flag
 
 #define FLAG_OCEANIC_MUSEUM_MET_REPORTER     0x69
 #define FLAG_RECEIVED_HM_STRENGTH            0x6A
@@ -140,13 +140,13 @@
 #define FLAG_CANCEL_BATTLE_ROOM_CHALLENGE    0x77
 
 #define FLAG_LANDMARK_MIRAGE_TOWER           0x78
-#define FLAG_RECEIVED_TM_BRICK_BREAK         0x79
+#define FLAG_OC_GOT_DIG				         0x79
 #define FLAG_RECEIVED_HM_SURF                0x7A
 #define FLAG_RECEIVED_HM_DIVE                0x7B
 #define FLAG_REGISTER_RIVAL_POKENAV          0x7C
-#define FLAG_DEFEATED_RIVAL_ROUTE_104        0x7D
+#define FLAG_OC_GOT_PORYGON			         0x7D
 #define FLAG_DEFEATED_WALLY_VICTORY_ROAD     0x7E
-#define FLAG_MET_PRETTY_PETAL_SHOP_OWNER     0x7F
+#define FLAG_OC_CLEARED_SPIDERCAVE		     0x7F
 #define FLAG_ENABLE_ROXANNE_FIRST_CALL       0x80 // Set after defeating Brawly. This will activate a call with Roxanne in order to register her.
 #define FLAG_KYOGRE_ESCAPED_SEAFLOOR_CAVERN  0x81
 #define FLAG_DEFEATED_RIVAL_ROUTE103         0x82
@@ -184,7 +184,7 @@
 #define FLAG_CUTE_PAINTING_MADE              0xA2
 #define FLAG_SMART_PAINTING_MADE             0xA3
 #define FLAG_TOUGH_PAINTING_MADE             0xA4
-#define FLAG_RECEIVED_TM_ROCK_TOMB           0xA5
+#define FLAG_RECEIVED_TM_BADGE1	             0xA5
 #define FLAG_RECEIVED_TM_BULK_UP             0xA6
 #define FLAG_RECEIVED_TM_SHOCK_WAVE          0xA7
 #define FLAG_RECEIVED_TM_OVERHEAT            0xA8
@@ -656,7 +656,7 @@
 #define FLAG_HIDDEN_ITEM_ROUTE_123_RARE_CANDY                (FLAG_HIDDEN_ITEMS_START + 0x6E)
 #define FLAG_HIDDEN_ITEM_ROUTE_105_BIG_PEARL                 (FLAG_HIDDEN_ITEMS_START + 0x6F)
 
-#define FLAG_UNUSED_0x264  0x264 // Unused Flag
+#define FLAG_UNUSED_0x264  0x264 // Debug Flag
 #define FLAG_UNUSED_0x265  0x265 // Unused Flag
 #define FLAG_UNUSED_0x266  0x266 // Unused Flag
 #define FLAG_UNUSED_0x267  0x267 // Unused Flag
@@ -775,7 +775,6 @@
 #define FLAG_HIDE_PETALBURG_CITY_WALLY                              0x2D6
 #define FLAG_HIDE_MOSSDEEP_CITY_STEVENS_HOUSE_INVISIBLE_NINJA_BOY   0x2D7
 #define FLAG_HIDE_PETALBURG_CITY_WALLYS_MOM                         0x2D8
-
 #define FLAG_UNUSED_0x2D9                                           0x2D9 // Unused Flag
 
 #define FLAG_HIDE_LILYCOVE_FAN_CLUB_INTERVIEWER                     0x2DA
@@ -1050,30 +1049,30 @@
 #define FLAG_HIDE_RUSTBORO_CITY_POKEMON_SCHOOL_SCOTT                0x3E7
 
 // Item Ball Flags
-#define FLAG_ITEM_ROUTE_102_POTION                                  0x3E8
-#define FLAG_ITEM_ROUTE_116_X_SPECIAL                               0x3E9
-#define FLAG_ITEM_ROUTE_104_PP_UP                                   0x3EA
-#define FLAG_ITEM_ROUTE_105_IRON                                    0x3EB
-#define FLAG_ITEM_ROUTE_106_PROTEIN                                 0x3EC
-#define FLAG_ITEM_ROUTE_109_PP_UP                                   0x3ED
-#define FLAG_ITEM_ROUTE_110_RARE_CANDY                              0x3EE
-#define FLAG_ITEM_ROUTE_110_DIRE_HIT                                0x3EF
-#define FLAG_ITEM_ROUTE_111_TM_SANDSTORM                            0x3F0
-#define FLAG_ITEM_ROUTE_111_STARDUST                                0x3F1
-#define FLAG_ITEM_ROUTE_111_HP_UP                                   0x3F2
-#define FLAG_ITEM_ROUTE_112_NUGGET                                  0x3F3
-#define FLAG_ITEM_ROUTE_113_MAX_ETHER                               0x3F4
-#define FLAG_ITEM_ROUTE_113_SUPER_REPEL                             0x3F5
-#define FLAG_ITEM_ROUTE_114_RARE_CANDY                              0x3F6
-#define FLAG_ITEM_ROUTE_114_PROTEIN                                 0x3F7
-#define FLAG_ITEM_ROUTE_115_SUPER_POTION                            0x3F8
-#define FLAG_ITEM_ROUTE_115_TM_FOCUS_PUNCH                          0x3F9
-#define FLAG_ITEM_ROUTE_115_IRON                                    0x3FA
-#define FLAG_ITEM_ROUTE_116_ETHER                                   0x3FB
-#define FLAG_ITEM_ROUTE_116_REPEL                                   0x3FC
-#define FLAG_ITEM_ROUTE_116_HP_UP                                   0x3FD
-#define FLAG_ITEM_ROUTE_117_GREAT_BALL                              0x3FE
-#define FLAG_ITEM_ROUTE_117_REVIVE                                  0x3FF
+#define FLAG_ITEM_ROUTE_1_ORAN	                                    0x3E8
+#define FLAG_ITEM_ROUTE_2_LEMONADE		                            0x3E9
+#define FLAG_ITEM_MM_NUGGET			                                0x3EA
+#define FLAG_ITEM_MM_MAGNET		                                    0x3EB
+#define FLAG_ITEM_DP_SODA             			                    0x3EC
+#define FLAG_ITEM_DP_CLAW        		                            0x3ED
+#define FLAG_ITEM_DP_HARD		 	                                0x3EE
+#define FLAG_ITEM_SANCTUM_CLEANSER	                                0x3EF
+#define FLAG_ITEM_FT_HELIX_FOSSIL           	                    0x3F0
+#define FLAG_ITEM_FT_JAW_FOSSIL		                                0x3F1
+#define FLAG_ITEM_ROUTE_3N_TM_PROTECT                               0x3F2
+#define FLAG_ITEM_ROUTE_3N_ICECREAM                                 0x3F3
+#define FLAG_ITEM_ROUTE_3N_MOOMOOMILK                               0x3F4
+#define FLAG_ITEM_ROUTE_3S_TM_SHOCK_WAVE                            0x3F5
+#define FLAG_ITEM_ROUTE_3S_MYSTIC_WATER                             0x3F6
+#define FLAG_ITEM_ROUTE_3S_PASSHO                                   0x3F7
+#define FLAG_ITEM_ROUTE_4_KASIB			                            0x3F8
+#define FLAG_ITEM_SC_AMULET_COIN		                            0x3F9
+#define FLAG_ITEM_SC_CANDY_XS	                                    0x3FA
+#define FLAG_ITEM_SC_CANDY_S	                                    0x3FB
+#define FLAG_ITEM_SC_CANDY_M	                                    0x3FC
+#define FLAG_ITEM_SC_SILVER_POWDER                                  0x3FD
+#define FLAG_ITEM_SC_MOON_STONE		                                0x3FE
+#define FLAG_ITEM_ROUTE_5_TM_ICY_WIND                               0x3FF
 #define FLAG_ITEM_ROUTE_119_SUPER_REPEL                             0x400
 #define FLAG_ITEM_ROUTE_119_ZINC                                    0x401
 #define FLAG_ITEM_ROUTE_119_ELIXIR_1                                0x402

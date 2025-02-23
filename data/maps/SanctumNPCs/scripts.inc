@@ -47,4 +47,4 @@ Sanctum_Text_NPC3:
 	.string "My precision with telekinesis isn't\n"
 	.string "quite there yet, so you can take it.$"
 Sanctum_Text_AfterSpoon:
-	.string "Maybe I should eat less ice cream...$"
+	.string "Maybe I should eat less ice cream…$"

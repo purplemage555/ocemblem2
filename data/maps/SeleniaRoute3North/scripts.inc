@@ -32,19 +32,19 @@ OC_ES_HieloDefeated::
 OC_ES_Hielo_VanilliteParty::
 	call OC_ES_GotVanilliteFanfare
 	msgbox gText_NicknameThisPokemon, MSGBOX_YESNO
-	goto_if_eq VAR_RESULT, NO, OS_ES_ReceivedVanillite
+	goto_if_eq VAR_RESULT, NO, OC_ES_ReceivedVanillite
 	call Common_EventScript_GetGiftMonPartySlot
 	call Common_EventScript_NameReceivedPartyMon
-	goto OS_ES_ReceivedVanillite
+	goto OC_ES_ReceivedVanillite
 	end
 OC_ES_Hielo_VanillitePC::
 	call OC_ES_GotVanilliteFanfare
 	msgbox gText_NicknameThisPokemon, MSGBOX_YESNO
-	goto_if_eq VAR_RESULT, NO, OS_ES_ReceivedVanillite
+	goto_if_eq VAR_RESULT, NO, OC_ES_ReceivedVanillite
 	call Common_EventScript_NameReceivedBoxMon
-	goto OS_ES_ReceivedVanillite
+	goto OC_ES_ReceivedVanillite
 	end
-OS_ES_ReceivedVanillite::
+OC_ES_ReceivedVanillite::
 	msgbox OC_HieloPostBattle, MSGBOX_DEFAULT
 	setflag FLAG_OC_GOT_VANILLITE
 	release
@@ -95,28 +95,28 @@ OC_Text_GotVanillite:
 	.string "{PLAYER} received Vanillite!$"
 OC_R3N_Trainer1Intro:
 	.string "Life must be the bubbles\n"
-	.string "if you live under the sea...$"
+	.string "if you live under the sea…$"
 OC_R3N_Trainer1Defeat:
 	.string "Darn, I got cooked!$"
 OC_R3N_Trainer1PostBattle:
 	.string "Sometimes I wonder what it'd\n"
-	.string "be like to live as a Corphish...$"
+	.string "be like to live as a Corphish…$"
 OC_R3N_Trainer2Intro:
 	.string "What would it be like to live\n"
 	.string "in these beautiful waters?$"
 OC_R3N_Trainer2Defeat:
 	.string "Alas, I cannot be a\n"
-	.string "part of that world...$"
+	.string "part of that world…$"
 OC_R3N_Trainer2PostBattle:
 	.string "Sometimes I wish I was a\n"
 	.string "mermaid princess, you know.$"
 OC_R3N_Trainer3Intro:
 	.string "Where the North Wind\n"
-	.string "meets the sea...$"
+	.string "meets the sea…$"
 OC_R3N_Trainer3Defeat:
 	.string "No! My muse!$"
 OC_R3N_Trainer3PostBattle:
-	.string "Perhaps it should be...\p"
+	.string "Perhaps it should be…\p"
 	.string "Where the eastern sea\n"
 	.string "meets the land? I dunno.$"
 OC_R3_Text_FisherSign:

@@ -213,6 +213,7 @@ static const struct MenuAction MultichoiceList_VendingMachine[] =
     {gText_FreshWaterAndPrice},
     {gText_SodaPopAndPrice},
     {gText_LemonadeAndPrice},
+	{gText_MoomooMilkAndPrice},
     {gText_Exit},
 };
 

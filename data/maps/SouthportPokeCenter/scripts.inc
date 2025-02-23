@@ -1,3 +1,4 @@
+.set LOCALID_NURSE, 1
 SouthportPokeCenter_MapScripts::
 	map_script MAP_SCRIPT_ON_TRANSITION, Southport_PC_OnTransition
 	.byte 0

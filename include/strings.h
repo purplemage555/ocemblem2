@@ -1012,6 +1012,7 @@ extern const u8 gText_DexSearchTypeNone[];
 extern const u8 gText_FreshWaterAndPrice[];
 extern const u8 gText_SodaPopAndPrice[];
 extern const u8 gText_LemonadeAndPrice[];
+extern const u8 gText_MoomooMilkAndPrice[];
 extern const u8 gText_HowToRide[];
 extern const u8 gText_HowToTurn[];
 extern const u8 gText_SandySlopes[];

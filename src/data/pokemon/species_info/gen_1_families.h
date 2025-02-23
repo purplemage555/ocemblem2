@@ -4090,11 +4090,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MONSTER, EGG_GROUP_FIELD),
-    #if P_UPDATED_ABILITIES >= GEN_4
-        .abilities = { ABILITY_POISON_POINT, ABILITY_SHEER_FORCE, ABILITY_SHEER_FORCE },
-    #else
-        .abilities = { ABILITY_POISON_POINT, ABILITY_NONE, ABILITY_SHEER_FORCE },
-    #endif
+        .abilities = { ABILITY_SERENE_GRACE, ABILITY_SHEER_FORCE, ABILITY_SHEER_FORCE },
         .bodyColor = BODY_COLOR_BLUE,
         .speciesName = _("Nidoqueen"),
         .cryId = CRY_NIDOQUEEN,
@@ -4279,7 +4275,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MONSTER, EGG_GROUP_FIELD),
-        .abilities = { ABILITY_POISON_POINT, ABILITY_SHEER_FORCE, ABILITY_SHEER_FORCE },
+        .abilities = { ABILITY_SERENE_GRACE, ABILITY_SHEER_FORCE, ABILITY_SHEER_FORCE },
         .bodyColor = BODY_COLOR_PURPLE,
         .speciesName = _("Nidoking"),
         .cryId = CRY_NIDOKING,
@@ -5947,11 +5943,11 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
     },
     [SPECIES_DUGTRIO] =
     {
-        .baseHP        = 60,
+        .baseHP        = 45,
         .baseAttack    = 105,
         .baseDefense   = 60,
-        .baseSpeed     = 125,
-        .baseSpAttack  = 55,
+        .baseSpeed     = 120,
+        .baseSpAttack  = 45,
         .baseSpDefense = 75,
         .types = MON_TYPES(TYPE_GROUND),
         .catchRate = 50,
@@ -5975,7 +5971,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
             "Because the triplets originally split from\n"
             "one body, they think exactly alike.\n"
             "They cooperate to dig endlessly through\n"
-            "the ground. 60/105/60/55/75/120"),
+            "the ground. 45/105/60/45/75/120"),
         .pokemonScale = 406,
         .pokemonOffset = 18,
         .trainerScale = 256,
@@ -7602,8 +7598,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
 		.perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,
         .levelUpLearnset = sAlakazamLevelUpLearnset,
         .teachableLearnset = sAlakazamTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 32, SPECIES_ALAKAZAM},
-                                {EVO_ITEM, ITEM_LINKING_CORD, SPECIES_ALAKAZAM}),
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_LINKING_CORD, SPECIES_ALAKAZAM}),
     },
     [SPECIES_ALAKAZAM] =
     {
@@ -7623,7 +7618,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_HUMAN_LIKE),
-        .abilities = { ABILITY_SYNCHRONIZE, ABILITY_MAGIC_GUARD, ABILITY_MAGIC_GUARD },
+        .abilities = { ABILITY_TRACE, ABILITY_MAGIC_GUARD, ABILITY_MAGIC_GUARD },
         .bodyColor = BODY_COLOR_BROWN,
         .speciesName = _("Alakazam"),
         .cryId = CRY_ALAKAZAM,
@@ -8095,7 +8090,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .baseDefense   = 50,
         .baseSpeed     = 55,
         .baseSpAttack  = 85,
-        .baseSpDefense = 45,
+        .baseSpDefense = 55,
         .types = MON_TYPES(TYPE_GRASS, TYPE_POISON),
         .catchRate = 120,
         .expYield = 151,
@@ -8232,7 +8227,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_3),
-        .abilities = { ABILITY_CLEAR_BODY, ABILITY_LIQUID_OOZE, ABILITY_RAIN_DISH },
+        .abilities = { ABILITY_CLEAR_BODY, ABILITY_RAIN_DISH },
         .bodyColor = BODY_COLOR_BLUE,
         .speciesName = _("Tentacool"),
         .cryId = CRY_TENTACOOL,
@@ -8295,7 +8290,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_3),
-        .abilities = { ABILITY_CLEAR_BODY, ABILITY_LIQUID_OOZE, ABILITY_RAIN_DISH },
+        .abilities = { ABILITY_CLEAR_BODY, ABILITY_RAIN_DISH },
         .bodyColor = BODY_COLOR_BLUE,
         .speciesName = _("Tentacruel"),
         .cryId = CRY_TENTACRUEL,
@@ -8468,8 +8463,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .levelUpLearnset = sGeodudeLevelUpLearnset,
         .teachableLearnset = sGeodudeTeachableLearnset,
         .formSpeciesIdTable = sGravelerFormSpeciesIdTable,
-        .evolutions = EVOLUTION({EVO_LEVEL, 35, SPECIES_GOLEM},
-                                {EVO_ITEM, ITEM_LINKING_CORD, SPECIES_GOLEM}),
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_LINKING_CORD, SPECIES_GOLEM}),
     },
     [SPECIES_GOLEM] =
     {
@@ -9849,10 +9843,10 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
 #if P_FAMILY_DODUO
     [SPECIES_DODUO] =
     {
-        .baseHP        = 50,
-        .baseAttack    = 80,
+        .baseHP        = 42,
+        .baseAttack    = 74,
         .baseDefense   = 50,
-        .baseSpeed     = 80,
+        .baseSpeed     = 74,
         .baseSpAttack  = 40,
         .baseSpDefense = 40,
         .types = MON_TYPES(TYPE_GROUND, TYPE_FLYING),
@@ -9877,7 +9871,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
             "Even while eating or sleeping, one of the\n"
             "heads remains always vigilant for any sign\n"
             "of danger. When threatened, it flees at\n"
-            "over 100km/h. 50/80/50/40/40/80"),
+            "over 100km/h. 42/74/50/40/40/74"),
         .pokemonScale = 256,
         .pokemonOffset = 3,
         .trainerScale = 257,
@@ -9924,10 +9918,10 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
     },
     [SPECIES_DODRIO] =
     {
-        .baseHP        = 75,
-        .baseAttack    = 120,
+        .baseHP        = 63,
+        .baseAttack    = 111,
         .baseDefense   = 75,
-        .baseSpeed     = 120,
+        .baseSpeed     = 111,
         .baseSpAttack  = 60,
         .baseSpDefense = 60,
         .types = MON_TYPES(TYPE_GROUND, TYPE_FLYING),
@@ -9952,7 +9946,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
             "A peculiar Pokémon species with three\n"
             "heads. It vigorously races across grassy\n"
             "plains even in arid seasons with little\n"
-            "rainfall. 75/120/75/60/60/120"),
+            "rainfall. 63/111/75/60/60/111"),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 268,
@@ -10652,8 +10646,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
 		.perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,
         .levelUpLearnset = sGengarLevelUpLearnset,
         .teachableLearnset = sGengarTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 35, SPECIES_GENGAR},
-                                {EVO_ITEM, ITEM_LINKING_CORD, SPECIES_GENGAR}),
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_LINKING_CORD, SPECIES_GENGAR}),
     },
     [SPECIES_GENGAR] =
     {

@@ -22,8 +22,8 @@
   "object_events": [
     {
       "graphics_id": "OBJ_EVENT_GFX_CUTTABLE_TREE",
-      "x": 11,
-      "y": 12,
+      "x": 13,
+      "y": 10,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_NONE",
       "movement_range_x": 1,
@@ -34,9 +34,9 @@
       "flag": "FLAG_TEMP_11"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_WOMAN_2",
-      "x": 12,
-      "y": 22,
+      "graphics_id": "OBJ_EVENT_GFX_WOMAN_K_1",
+      "x": 14,
+      "y": 20,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_WANDER_LEFT_AND_RIGHT",
       "movement_range_x": 1,
@@ -49,57 +49,57 @@
   ],
   "warp_events": [
     {
-      "x": 26,
-      "y": 9,
+      "x": 28,
+      "y": 7,
       "elevation": 0,
       "dest_map": "MAP_PLAYER_HOUSE",
       "dest_warp_id": "0"
     },
     {
-      "x": 20,
-      "y": 9,
+      "x": 22,
+      "y": 7,
       "elevation": 0,
       "dest_map": "MAP_MAPLE_LAB",
       "dest_warp_id": "0"
     },
     {
-      "x": 22,
-      "y": 16,
+      "x": 24,
+      "y": 14,
       "elevation": 0,
       "dest_map": "MAP_EASTFORD_NPCS",
       "dest_warp_id": "1"
     },
     {
-      "x": 26,
-      "y": 16,
+      "x": 28,
+      "y": 14,
       "elevation": 0,
       "dest_map": "MAP_EASTFORD_NPCS",
       "dest_warp_id": "2"
     },
     {
-      "x": 22,
-      "y": 21,
+      "x": 24,
+      "y": 19,
       "elevation": 0,
       "dest_map": "MAP_EASTFORD_NPCS",
       "dest_warp_id": "5"
     },
     {
-      "x": 26,
-      "y": 21,
+      "x": 28,
+      "y": 19,
       "elevation": 0,
       "dest_map": "MAP_EASTFORD_NPCS",
       "dest_warp_id": "6"
     },
     {
-      "x": 25,
-      "y": 26,
+      "x": 27,
+      "y": 24,
       "elevation": 0,
       "dest_map": "MAP_EASTFORD_POKE_CENTER",
       "dest_warp_id": "0"
     },
     {
-      "x": 21,
-      "y": 26,
+      "x": 23,
+      "y": 24,
       "elevation": 0,
       "dest_map": "MAP_EASTFORD_MART",
       "dest_warp_id": "0"
@@ -111,16 +111,16 @@
   "bg_events": [
     {
       "type": "sign",
-      "x": 16,
-      "y": 15,
+      "x": 18,
+      "y": 13,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "Eastford_EventScript_TownSign"
     },
     {
       "type": "sign",
-      "x": 12,
-      "y": 23,
+      "x": 14,
+      "y": 21,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "Eastford_EventScript_TriSign"

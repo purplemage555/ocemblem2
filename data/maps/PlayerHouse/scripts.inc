@@ -3,6 +3,7 @@ PlayerHouse_MapScripts::
 	.byte 0
 PlayerHouse_EventScript_ReceiveWhismur::
 	lockall
+	playbgm MUS_ENCOUNTER_MAY, TRUE
 	setrespawn HEAL_LOCATION_EASTFORD
 	setflag FLAG_RECEIVED_RUNNING_SHOES
 	setflag FLAG_SYS_B_DASH

@@ -9,12 +9,13 @@ Sanctum_ES_SodaJunkie::
 OC_ES_Clerk_Drinks::
 	lock
 	faceplayer
-	message gText_HowMayIServeYou
+	message gText_DrinksShop
 	waitmessage
 	pokemart OC_Mart_Drinks
 	msgbox gText_PleaseComeAgain, MSGBOX_DEFAULT
 	release
 	end
+	.align 2
 OC_Mart_Drinks:
 	.2byte ITEM_FRESH_WATER
 	.2byte ITEM_SODA_POP
@@ -28,3 +29,6 @@ Sanctum_Text_SodaJunkie:
 	.string "sells lots of different drinks!\p"
 	.string "Fresh Water may be the healthiest,\n"
 	.string "but Soda Pop's my favorite drink!$"
+gText_DrinksShop:
+	.string "Would you like some drinks?\n"
+	.string "They're ice-cold and refreshing!$"

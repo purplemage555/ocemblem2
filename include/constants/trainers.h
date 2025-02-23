@@ -84,7 +84,7 @@
 #define TRAINER_PIC_SWIMMER_F             66
 #define TRAINER_PIC_TWINS                 67
 #define TRAINER_PIC_SAILOR                68
-#define TRAINER_PIC_MAGMA_ADMIN           69
+#define TRAINER_PIC_MAGMA_ADMIN_M         69
 #define TRAINER_PIC_WALLY                 70
 #define TRAINER_PIC_BRENDAN               71
 #define TRAINER_PIC_MAY                   72
@@ -108,7 +108,26 @@
 #define TRAINER_PIC_LEAF                  90
 #define TRAINER_PIC_RS_BRENDAN            91
 #define TRAINER_PIC_RS_MAY                92
-#define TRAINER_PIC_COUNT                 93
+#define TRAINER_PIC_MAPLE				  93
+#define TRAINER_PIC_KING				  94
+#define TRAINER_PIC_SPECTER				  95
+#define TRAINER_PIC_TREASURE			  96
+#define TRAINER_PIC_PLAGUE				  97
+#define TRAINER_PIC_MOLE				  98
+#define TRAINER_PIC_PROPELLER			  99
+#define TRAINER_PIC_TINKER				 100
+#define TRAINER_PIC_POLAR				 101
+#define TRAINER_PIC_SCIENTIST			 102
+#define TRAINER_PIC_SUPER_NERD			 103
+#define TRAINER_PIC_LEADER_BROCK		 104
+#define TRAINER_PIC_LEADER_MISTY		 105
+#define TRAINER_PIC_LEADER_LT_SURGE		 106
+#define TRAINER_PIC_LEADER_ERIKA		 107
+#define TRAINER_PIC_LEADER_KOGA			 108
+#define TRAINER_PIC_LEADER_SABRINA		 109
+#define TRAINER_PIC_LEADER_BLAINE		 110
+#define TRAINER_PIC_LEADER_GIOVANNI		 111
+#define TRAINER_PIC_COUNT                112
 
 // The player back pics are assumed to alternate according to the gender values (MALE/FEMALE)
 #define TRAINER_BACK_PIC_BRENDAN                0
@@ -351,7 +370,8 @@
 #define TRAINER_CLASS_PIKE_QUEEN     0x3f
 #define TRAINER_CLASS_PYRAMID_KING   0x40
 #define TRAINER_CLASS_RS_PROTAG      0x41
-#define TRAINER_CLASS_COUNT          0x42
+#define TRAINER_CLASS_SCIENTIST		 0x42
+#define TRAINER_CLASS_COUNT          0x43
 
 #define TRAINER_ENCOUNTER_MUSIC_MALE         0 // standard male encounter music
 #define TRAINER_ENCOUNTER_MUSIC_FEMALE       1 // standard female encounter music
@@ -367,6 +387,7 @@
 #define TRAINER_ENCOUNTER_MUSIC_HIKER       11 // used for other trainer classes too
 #define TRAINER_ENCOUNTER_MUSIC_INTERVIEWER 12
 #define TRAINER_ENCOUNTER_MUSIC_RICH        13 // Rich Boys and Gentlemen
+#define TRAINER_ENCOUNTER_MUSIC_MAY			14
 
 #define F_TRAINER_FEMALE (1 << 7)
 

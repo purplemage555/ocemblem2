@@ -715,7 +715,7 @@ DewfordTown_Text_ThrowInFishingAdvice:
 	.string "You might wanna keep an eye\n"
 	.string "out for better fishing rods.\p"
 	.string "Grandpa's rod may be reliable,\n"
-	.string "but it only catches two things...$"
+	.string "but it only catches two things…$"
 
 DewfordTown_Text_ThatsTooBadThen:
 	.string "Alright. I'm always here!$"

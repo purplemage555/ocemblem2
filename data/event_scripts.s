@@ -343,6 +343,7 @@ gStdScripts_End::
 	.include "data/maps/Route116_TunnelersRestHouse/scripts.inc"
 	.include "data/maps/Route117_PokemonDayCare/scripts.inc"
 	.include "data/maps/Route121_SafariZoneEntrance/scripts.inc"
+	.include "data/maps/SpiderCave_1F/scripts.inc"
 	.include "data/maps/MeteorFalls_1F_1R/scripts.inc"
 	.include "data/maps/MeteorFalls_1F_2R/scripts.inc"
 	.include "data/maps/MeteorFalls_B1F_1R/scripts.inc"
@@ -1215,3 +1216,29 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/SouthportPokeCenter/scripts.inc"
 
 	.include "data/maps/SouthportMart/scripts.inc"
+
+	.include "data/maps/SeleniaRoute4/scripts.inc"
+
+	.include "data/maps/AlienCrashSite/scripts.inc"
+
+	.include "data/maps/SeleniaRoute5/scripts.inc"
+
+	.include "data/maps/RadioOutpost/scripts.inc"
+
+	.include "data/maps/SouthportBadge/scripts.inc"
+
+	.include "data/maps/ACSPokeCenter/scripts.inc"
+
+	.include "data/maps/ACSMart/scripts.inc"
+
+	.include "data/maps/SpiderCave_B1F/scripts.inc"
+
+	.include "data/maps/SpiderCave_B2F/scripts.inc"
+
+	.include "data/maps/Route4DigHouse/scripts.inc"
+
+	.include "data/maps/Route4SailorHouse/scripts.inc"
+
+	.include "data/maps/SpiderCave_Lab/scripts.inc"
+
+	.include "data/maps/ACS_Houses/scripts.inc"

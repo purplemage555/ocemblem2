@@ -170,6 +170,12 @@ static const struct HealLocation sHealLocationsPokemonCenter[HEAL_LOCATION_COUNT
         .map = MAP_NUM(SOUTHPORT_POKE_CENTER),
         DEFAULT_POKEMON_CENTER_COORDS,
     },
+	[HEAL_LOCATION_CRASHSITE - 1] =
+    {
+        .group = MAP_GROUP(ACSPOKE_CENTER),
+        .map = MAP_NUM(ACSPOKE_CENTER),
+        DEFAULT_POKEMON_CENTER_COORDS,
+    },
 };
 
 #undef DEFAULT_POKEMON_CENTER_COORDS
@@ -207,4 +213,5 @@ static const u8 sHealNpcLocalId[HEAL_LOCATION_COUNT - 1] =
 	[HEAL_LOCATION_PETESBURG - 1] = 1,
 	[HEAL_LOCATION_SANCTUM - 1] = 1,
 	[HEAL_LOCATION_SOUTHPORT - 1] = 1,
+	[HEAL_LOCATION_CRASHSITE - 1] = 1,
 };

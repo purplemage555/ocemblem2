@@ -98,8 +98,10 @@ Pic: Maple
 Gender: Female
 Music: Female
 
-Swablu (F)
+Artoria (Swablu) (F)
 Level: 4
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Bashful
 
 === TRAINER_OC_ROUTE1_IAN ===
 Name: Ian
@@ -202,7 +204,7 @@ AI: Check Bad Move
 
 Vulpix (F)
 Level: 7
-Ball: ITEM_LUXURY_BALL
+Ball: Luxury Ball
 
 === TRAINER_OC_R2_HECTOR ===
 Name: Hector
@@ -214,7 +216,7 @@ AI: Check Bad Move
 
 Corphish (M)
 Level: 7
-Ball: ITEM_LUXURY_BALL
+Ball: Luxury Ball
 
 === TRAINER_OC_R2_LYNDIS ===
 Name: Lyndis
@@ -226,7 +228,7 @@ AI: Check Bad Move
 
 Shroomish (F)
 Level: 7
-Ball: ITEM_LUXURY_BALL
+Ball: Safari Ball
 
 === TRAINER_OC_R2_ERROR ===
 Name: Error
@@ -237,11 +239,11 @@ Music: Male
 
 Venipede
 Level: 8
-Ball: ITEM_NET_BALL
+Ball: Net Ball
 
 Venipede
 Level: 7
-Ball: ITEM_NET_BALL
+Ball: Net Ball
 
 === TRAINER_OC_R2_BAGU ===
 Name: Bagu
@@ -252,11 +254,11 @@ Music: Male
 
 Sewaddle
 Level: 8
-Ball: ITEM_NET_BALL
+Ball: Net Ball
 
 Sewaddle
 Level: 7
-Ball: ITEM_NET_BALL
+Ball: Net Ball
 
 === TRAINER_OC_R2_JOE ===
 Name: Joe
@@ -279,10 +281,10 @@ Gender: Male
 Music: Male
 AI: Check Bad Move
 
-Bellsprout (M) @ ITEM_CHERI_BERRY
+Peashooter (Bellsprout) (M) @ ITEM_CHERI_BERRY
 Level: 9
 
-Geodude (M) @ ITEM_CHERI_BERRY
+Squash (Geodude) @ ITEM_CHERI_BERRY
 Level: 9
 
 === TRAINER_OC_R2_LAURA ===
@@ -293,10 +295,10 @@ Gender: Male
 Music: Male
 AI: Check Bad Move
 
-Lotad (F) @ ITEM_CHERI_BERRY
+Lily Pad (Lotad) (F) @ ITEM_CHERI_BERRY
 Level: 9
 
-Meowth (F) @ ITEM_CHERI_BERRY
+Cattail (Meowth) (F) @ ITEM_CHERI_BERRY
 Level: 9
 
 === TRAINER_OC_R2_KNIGHT ===
@@ -375,27 +377,27 @@ Pic: Hiker
 Gender: Male
 Music: Hiker
 
-Geodude (M)
+Rock (Geodude) (M)
 Level: 9
 Ability: Rock Head
 
-Geodude (M)
+Rock (Geodude) (M)
 Level: 9
 Ability: Rock Head
 
-Geodude (M)
+Rock (Geodude) (M)
 Level: 10
 Ability: Rock Head
 
-Geodude (M)
+Rock (Geodude) (M)
 Level: 10
 Ability: Rock Head
 
-Geodude (M)
+Rock (Geodude) (M)
 Level: 11
 Ability: Rock Head
 
-Geodude (M)
+Rock (Geodude) (M)
 Level: 11
 Ability: Rock Head
 
@@ -406,7 +408,7 @@ Pic: Fisherman
 Gender: Male
 Music: Hiker
 
-Remoraid
+Rem (Remoraid)
 Level: 8
 
 === TRAINER_OC_DP_MYSTIC1 ===
@@ -473,7 +475,7 @@ Level: 13
 
 === TRAINER_OC_FT_WALLACE ===
 Name: Wallace
-Class: Gentleman
+Class: Scientist
 Pic: Gentleman
 Gender: Male
 Music: Rich
@@ -560,20 +562,20 @@ Gender: Male
 Music: Cool
 AI: Check Bad Move
 
-Vanillite
+Soft-Serve (Vanillite)
 Level: 13
 Ball: Great Ball
 
-Vanillite
+Gelato (Vanillite) (M)
 Level: 14
 Ball: Great Ball
 
-Vanillite
+Sorbetes (Vanillite)
 Level: 15
 Ball: Great Ball
 
 === TRAINER_OC_R3_KING ===
-Name: King Kn.
+Name: King
 Class: TRAINER_CLASS_MAGMA_ADMIN
 Pic: King
 Gender: Male
@@ -638,10 +640,30 @@ Level: 13
 Staryu
 Level: 14
 
+=== TRAINER_OC_BADGE1HINT ===
+Name: Guide
+Class: Cooltrainer
+Pic: Super Nerd
+Gender: Male
+Music: Cool
+AI: Basic Trainer
+
+Shellder
+Level: 16
+Ability: Skill Link
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 252 HP / 252 Def
+Ball: Net Ball
+Nature: Bold
+-Bubble
+-Withdraw
+-Protect
+-Supersonic
+
 === TRAINER_OC_BADGE1 ===
 Name: Erina
 Class: Leader
-Pic: Waterstone
+Pic: Leader Misty
 Gender: Female
 Music: Female
 Items: Fresh Water / Fresh Water / Fresh Water
@@ -664,12 +686,394 @@ Ball: Net Ball
 -Protect
 -Leer
 
-Cloyster (F) @ Apicot Berry
+Pearlice (Cloyster) (F) @ Apicot Berry
 Level: 20
 Ability: Skill Link
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 252 HP / 252 Def
 Ball: Net Ball
+Nature: Bold
 -Water Pulse
 -Withdraw
 -Protect
 -Supersonic
+
+=== TRAINER_OC_R4_MAPLE ===
+Name: Maple
+Class: Rival
+Pic: Maple
+Gender: Female
+Music: May
+AI: Basic Trainer
+
+Terra (Eevee) (F)
+Level: 20
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Ball: Luxury Ball
+Nature: Adamant
+-Quick Attack
+-Bite
+-Sand Attack
+-Charm
+
+Snowcone (Vanillite) (M)
+Level: 22
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 3 HP / 9 Atk / 5 Def / 3 SpA / 2 SpD / 3 Spe
+Ball: Great Ball
+Nature: Modest
+-Aurora Beam
+-Icy Wind
+-Shock Wave
+-Mirror Shot
+
+Artoria (Swablu) (F)
+Level: 24
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 7 HP / 15 Atk / 17 Def / 15 SpA / 6 SpD / 15 Spe
+Nature: Bashful
+-Wing Attack
+-Twister
+-Uproar
+-Water Pulse
+
+=== TRAINER_OC_R4_NEIL ===
+Name: Neil
+Class: Scientist
+Pic: Scientist
+Gender: Male
+Music: Cool
+AI: Check Bad Move
+
+Baltoy
+Level: 16
+Ball: Moon Ball
+
+Makuhita (M)
+Level: 22
+Ball: Moon Ball
+-Mach Punch
+-Fake Out
+-Karate Chop
+-Whirlwind
+
+Magnemite
+Level: 24
+Ball: Moon Ball
+-Charge Beam
+-Mirror Shot
+-Thunder Wave
+-Supersonic
+
+=== TRAINER_OC_R4_BUZZ ===
+Name: Buzz
+Class: Scientist
+Pic: Scientist
+Gender: Male
+Music: Cool
+AI: Check Bad Move
+
+Baltoy
+Level: 16
+Ball: Moon Ball
+
+Meowth (M)
+Level: 22
+Ball: Moon Ball
+
+Magnemite
+Level: 24
+Ball: Moon Ball
+-Charge Beam
+-Mirror Shot
+-Thunder Wave
+-Supersonic
+
+=== TRAINER_OC_R4_MIKE ===
+Name: Mike
+Class: Scientist
+Pic: Scientist
+Gender: Male
+Music: Cool
+AI: Check Bad Move
+
+Baltoy
+Level: 16
+Ball: Moon Ball
+
+Voltorb
+Level: 22
+Ball: Moon Ball
+
+Magnemite
+Level: 24
+Ball: Moon Ball
+-Charge Beam
+-Mirror Shot
+-Thunder Wave
+-Supersonic
+
+=== TRAINER_OC_R4_WOODY ===
+Name: Woody
+Class: Pkmn Ranger
+Pic: Pokemon Ranger M
+Gender: Male
+Music: Cool
+AI: Check Bad Move
+
+Lombre (M)
+Level: 19
+Ball: Safari Ball
+-Mega Drain
+-Bubble
+-Fake Out
+-Swift
+
+Timburr (M)
+Level: 21
+Ball: Safari Ball
+
+Onix (M)
+Level: 22
+Ball: Safari Ball
+-Rock Tomb
+-Bulldoze
+-Wrap
+-Curse
+
+Sandile (M)
+Level: 23
+Ball: Safari Ball
+
+=== TRAINER_OC_R4_JESSIE ===
+Name: Jessie
+Class: Pkmn Ranger
+Pic: Pokemon Ranger F
+Gender: Female
+Music: Cool
+AI: Check Bad Move
+
+Lombre (F)
+Level: 19
+Ball: Safari Ball
+-Mega Drain
+-Bubble
+-Fake Out
+-Swift
+
+Zubat (F)
+Level: 21
+Ball: Safari Ball
+
+Meowth (F)
+Level: 22
+Ball: Safari Ball
+
+Sandile (F)
+Level: 23
+Ball: Safari Ball
+
+=== TRAINER_OC_SPIDERCAVE_KNIGHT1 ===
+Name: Scout
+Class: TRAINER_CLASS_TEAM_MAGMA
+Pic: TRAINER_PIC_MAGMA_GRUNT_M
+Gender: Male
+Music: Magma
+
+Pawniard (M)
+Level: 20
+Ability: Defiant
+-Faint Attack
+-Metal Claw
+-Pursuit
+-Leer
+
+Pawniard (M)
+Level: 20
+Ability: Defiant
+-Faint Attack
+-Metal Claw
+-Pursuit
+-Leer
+
+=== TRAINER_OC_SPIDERCAVE_KNIGHT2 ===
+Name: Scout
+Class: TRAINER_CLASS_TEAM_MAGMA
+Pic: TRAINER_PIC_MAGMA_GRUNT_M
+Gender: Male
+Music: Magma
+
+Scraggy (M)
+Level: 20
+
+Scraggy (M)
+Level: 20
+
+=== TRAINER_OC_SPIDERCAVE_KNIGHT3 ===
+Name: Guard
+Class: TRAINER_CLASS_TEAM_MAGMA
+Pic: TRAINER_PIC_MAGMA_GRUNT_M
+Gender: Male
+Music: Magma
+
+Aron (M)
+Level: 20
+Ability: Sturdy
+
+Aron (M)
+Level: 21
+Ability: Sturdy
+
+=== TRAINER_OC_SPIDERCAVE_KNIGHT4 ===
+Name: Guard
+Class: TRAINER_CLASS_TEAM_MAGMA
+Pic: TRAINER_PIC_MAGMA_GRUNT_M
+Gender: Male
+Music: Magma
+
+Aron (M)
+Level: 20
+Ability: Sturdy
+
+Aron (M)
+Level: 21
+Ability: Sturdy
+
+=== TRAINER_OC_SPIDERCAVE_KNIGHT5 ===
+Name: Tunneler
+Class: TRAINER_CLASS_TEAM_MAGMA
+Pic: TRAINER_PIC_MAGMA_GRUNT_M
+Gender: Male
+Music: Magma
+
+Diglett (M)
+Level: 21
+Ability: Arena Trap
+
+Geodude (M)
+Level: 22
+Ability: Sturdy
+
+=== TRAINER_OC_SPIDERCAVE_KNIGHT6 ===
+Name: Tunneler
+Class: TRAINER_CLASS_TEAM_MAGMA
+Pic: TRAINER_PIC_MAGMA_GRUNT_M
+Gender: Male
+Music: Magma
+
+Diglett (M)
+Level: 21
+Ability: Arena Trap
+
+Rhyhorn (M)
+Level: 23
+
+=== TRAINER_OC_SPIDERCAVE_KNIGHT7 ===
+Name: Tunneler
+Class: TRAINER_CLASS_TEAM_MAGMA
+Pic: TRAINER_PIC_MAGMA_GRUNT_M
+Gender: Male
+Music: Magma
+
+Diglett (M)
+Level: 21
+Ability: Arena Trap
+
+Rhyhorn (M)
+Level: 23
+
+=== TRAINER_OC_SPIDERCAVE_KNIGHT8 ===
+Name: Sapper
+Class: TRAINER_CLASS_TEAM_MAGMA
+Pic: TRAINER_PIC_MAGMA_GRUNT_M
+Gender: Male
+Music: Magma
+
+Voltorb
+Level: 21
+
+Magnemite
+Level: 23
+Ability: Magnet Pull
+
+=== TRAINER_OC_SPIDERCAVE_KNIGHT9 ===
+Name: Sapper
+Class: TRAINER_CLASS_TEAM_MAGMA
+Pic: TRAINER_PIC_MAGMA_GRUNT_M
+Gender: Male
+Music: Magma
+
+Voltorb
+Level: 21
+
+Magnemite
+Level: 23
+Ability: Magnet Pull
+
+=== TRAINER_OC_SPIDERCAVE_ADMIN ===
+Name: Specter
+Class: TRAINER_CLASS_MAGMA_ADMIN
+Pic: Specter
+Gender: Male
+Music: Magma
+AI: Basic Trainer
+
+Lampent (M) @ Passho Berry
+Level: 25
+Ball: Dusk Ball
+Nature: Calm
+-Mystical Fire
+-Confuse Ray
+-Will-O-Wisp
+-Curse
+
+Golett @ Passho Berry
+Level: 25
+Ball: Dusk Ball
+Nature: Careful
+-Mud-Slap
+-Shadow Punch
+-Thunder Punch
+-Iron Defense
+
+Yamask (M) @ Oran Berry
+Level: 25
+Ball: Dusk Ball
+Nature: Calm
+-Night Shade
+-Shock Wave
+-Disable
+-Protect
+
+=== TRAINER_OC_R5_TRAINER1 ===
+Name: Ivan
+Class: Camper
+Pic: Camper
+Gender: Male
+Music: Male
+AI: Check Bad Move
+
+Vanillite
+Level: 23
+
+=== TRAINER_OC_R5_TRAINER2 ===
+Name: Wicki
+Class: Picnicker
+Pic: Picnicker
+Gender: Female
+Music: Female
+AI: Check Bad Move
+
+Litwick
+Level: 23
+
+=== TRAINER_OC_R5_TRAINER3 ===
+Name: Maggie
+Class: Picnicker
+Pic: Picnicker
+Gender: Female
+Music: Female
+AI: Check Bad Move
+
+Magnemite
+Level: 23

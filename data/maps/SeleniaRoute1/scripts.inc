@@ -31,7 +31,7 @@ OC_Route1_IanDefeat:
 	.string "Aw, man!$"
 OC_Route1_IanPostBattle:
 	.string "My buddy Anthony is\n"
-	.string "looking for a Pikachu...$"
+	.string "looking for a Pikachu…$"
 OC_Route1_AnthonyIntro:
 	.string "Hey, you! Have you seen\n"
 	.string "any Pikachu around here?$"
@@ -48,4 +48,4 @@ OC_Route1_HedgePostBattle:
 	.string "Trimming hedges is busy work,\n"
 	.string "but it makes everyone happy.\p"
 	.string "Seeing all the youngsters running\n"
-	.string "around reminds me of my childhood...$"
+	.string "around reminds me of my childhood…$"

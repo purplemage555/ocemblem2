@@ -17,19 +17,19 @@ OC_ES_NatDefeated::
 OC_ES_Nat_VenonatParty::
 	call OC_ES_GotVenonatFanfare
 	msgbox gText_NicknameThisPokemon, MSGBOX_YESNO
-	goto_if_eq VAR_RESULT, NO, OS_ES_ReceivedVenonat
+	goto_if_eq VAR_RESULT, NO, OC_ES_ReceivedVenonat
 	call Common_EventScript_GetGiftMonPartySlot
 	call Common_EventScript_NameReceivedPartyMon
-	goto OS_ES_ReceivedVenonat
+	goto OC_ES_ReceivedVenonat
 	end
 OC_ES_Nat_VenonatPC::
 	call OC_ES_GotVenonatFanfare
 	msgbox gText_NicknameThisPokemon, MSGBOX_YESNO
-	goto_if_eq VAR_RESULT, NO, OS_ES_ReceivedVenonat
+	goto_if_eq VAR_RESULT, NO, OC_ES_ReceivedVenonat
 	call Common_EventScript_NameReceivedBoxMon
-	goto OS_ES_ReceivedVenonat
+	goto OC_ES_ReceivedVenonat
 	end
-OS_ES_ReceivedVenonat::
+OC_ES_ReceivedVenonat::
 	msgbox OC_NatPostBattle, MSGBOX_DEFAULT
 	setflag FLAG_OC_GOT_VENONAT
 	release

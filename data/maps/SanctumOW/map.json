@@ -15,7 +15,7 @@
   "connections": [
     {
       "map": "MAP_SELENIA_ROUTE2",
-      "offset": -20,
+      "offset": -21,
       "direction": "down"
     },
     {

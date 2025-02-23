@@ -25,11 +25,11 @@ Kirkopolis_ES_Fisher::
 Kirkopolis_Text_Sailor:
 	.string "Yarrr!\p"
 	.string "Pirates do be declinin' since\n"
-	.string "their heights centuries ago...\p"
+	.string "their heights centuries ago…\p"
 	.string "Then again, the digital age gave\n"
 	.string "rise to a new breed o' piracy!$"
 Kirkopolis_Text_Fisher:
 	.string "I love all kinds of seafood!\n"
 	.string "I stick to freshwater, though.\p"
 	.string "The seaside city of Southport\n"
-	.string "has a whole diferent menu...$"
+	.string "has a whole diferent menu…$"

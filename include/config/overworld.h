@@ -8,7 +8,7 @@
 // Other settings
 #define OW_POISON_DAMAGE                GEN_LATEST // In Gen4, Pokémon no longer faint from Poison in the overworld. In Gen5+, they no longer take damage at all.
 #define OW_DOUBLE_APPROACH_WITH_ONE_MON FALSE      // If enabled, you can be spotted by two trainers at the same time even if you only have one eligible Pokémon in your party.
-#define OW_HIDE_REPEAT_MAP_POPUP        FALSE      // If enabled, map popups will not appear if entering a map with the same Map Section Id as the last.
+#define OW_HIDE_REPEAT_MAP_POPUP        TRUE      // If enabled, map popups will not appear if entering a map with the same Map Section Id as the last.
 #define OW_FRLG_WHITEOUT                FALSE      // If enabled, shows an additional whiteout message and post whiteout event script with healing NPC.
 
 // Item Obtain Description Box
@@ -43,7 +43,7 @@
 #define OW_BERRY_IMMORTAL              FALSE      // If enabled, once a Berry tree has grown a Berry, the tree will not disappear until picked by the player.
 
 // Overworld Pokémon
-#define OW_POKEMON_OBJECT_EVENTS       TRUE       // Adds Object Event fields for every species. Can be used for NPCs using the OBJ_EVENT_GFX_SPECIES macro (eg. OBJ_EVENT_GFX_SPECIES(BULBASAUR))
+#define OW_POKEMON_OBJECT_EVENTS       FALSE       // Adds Object Event fields for every species. Can be used for NPCs using the OBJ_EVENT_GFX_SPECIES macro (eg. OBJ_EVENT_GFX_SPECIES(BULBASAUR))
 #define OW_SUBSTITUTE_PLACEHOLDER      TRUE       // Use a substitute OW for Pokémon that are missing overworld sprites
 #define OW_LARGE_OW_SUPPORT            TRUE       // If true, adds a small amount of overhead to OW code so that large (48x48, 64x64) OWs will display correctly under bridges, etc.
 #define OW_PKMN_OBJECTS_SHARE_PALETTES FALSE      // [WIP!! NOT ALL PALETTES HAVE BEEN ADJUSTED FOR THIS!!] If TRUE, follower palettes are taken from battle sprites.
@@ -83,12 +83,12 @@
 #define OW_FLAG_PAUSE_TIME          0  // If this flag is set and OW_USE_FAKE_RTC is enabled, seconds on the in-game clock will not advance.
 #define OW_FLAG_NO_ENCOUNTER        0  // If this flag is set, wild encounters will be disabled.
 #define OW_FLAG_NO_TRAINER_SEE      0  // If this flag is set, trainers will not battle the player unless they're talked to.
-#define OW_FLAG_NO_COLLISION        0  // If this flag is set, the player will be able to walk over tiles with collision. Mainly intended for debugging purposes.
+#define OW_FLAG_NO_COLLISION        FLAG_UNUSED_0x264  // If this flag is set, the player will be able to walk over tiles with collision. Mainly intended for debugging purposes.
 
 #define BATTLE_PYRAMID_RANDOM_ENCOUNTERS    FALSE    // If set to TRUE, battle pyramid Pokemon will be generated randomly based on the round's challenge instead of hardcoded in src/data/battle_frontier/battle_pyramid_level_50_wild_mons.h (or open_level_wild_mons.h)
 
 // Map pop-up config
-#define OW_POPUP_GENERATION        GEN_3    // Different generations display location names in overworld pop-ups differently.
+#define OW_POPUP_GENERATION        GEN_5    // Different generations display location names in overworld pop-ups differently.
                                             // Only choices are currently GEN_3 and GEN_5, all others will default to Gen3 pop-ups.
 
 // Gen5 map pop-up config
@@ -103,7 +103,7 @@
 // Configuration
 #define OW_POPUP_BW_COLOR          OW_POPUP_BW_COLOR_BLACK  // B2W2 use different colors for their map pop-ups.
 #define OW_POPUP_BW_TIME_MODE      OW_POPUP_BW_TIME_NONE    // Determines what type of time is shown.
-#define OW_POPUP_BW_ALPHA_BLEND    FALSE                    // Enables alpha blending/transparency for the pop-ups. Mainly intended to be used with the black color option.
+#define OW_POPUP_BW_ALPHA_BLEND    TRUE                    // Enables alpha blending/transparency for the pop-ups. Mainly intended to be used with the black color option.
 
 // Pokémon Center
 #define OW_IGNORE_EGGS_ON_HEAL           GEN_LATEST         // In Gen 4+, the nurse in the Pokémon Center does not heal Eggs on healing machine.

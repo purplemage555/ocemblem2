@@ -4414,8 +4414,8 @@
     {
       "id": "LAYOUT_EASTFORD_OW",
       "name": "EastfordOW_Layout",
-      "width": 29,
-      "height": 34,
+      "width": 40,
+      "height": 40,
       "primary_tileset": "gTileset_snow",
       "secondary_tileset": "gTileset_Petalburg",
       "border_filepath": "data/layouts/EastfordOW/border.bin",
@@ -4424,8 +4424,8 @@
     {
       "id": "LAYOUT_SELENIA_ROUTE1",
       "name": "SeleniaRoute1_Layout",
-      "width": 35,
-      "height": 19,
+      "width": 60,
+      "height": 20,
       "primary_tileset": "gTileset_snow",
       "secondary_tileset": "gTileset_Petalburg",
       "border_filepath": "data/layouts/SeleniaRoute1/border.bin",
@@ -4434,8 +4434,8 @@
     {
       "id": "LAYOUT_KIRKOPOLIS_OW",
       "name": "KirkopolisOW_Layout",
-      "width": 19,
-      "height": 27,
+      "width": 20,
+      "height": 40,
       "primary_tileset": "gTileset_snow",
       "secondary_tileset": "gTileset_Petalburg",
       "border_filepath": "data/layouts/KirkopolisOW/border.bin",
@@ -4445,7 +4445,7 @@
       "id": "LAYOUT_PIRATE_BRIDGE",
       "name": "PirateBridge_Layout",
       "width": 30,
-      "height": 27,
+      "height": 40,
       "primary_tileset": "gTileset_snow",
       "secondary_tileset": "gTileset_Petalburg",
       "border_filepath": "data/layouts/PirateBridge/border.bin",
@@ -4455,7 +4455,7 @@
       "id": "LAYOUT_PETESBURG_OW",
       "name": "PetesburgOW_Layout",
       "width": 35,
-      "height": 28,
+      "height": 30,
       "primary_tileset": "gTileset_snow",
       "secondary_tileset": "gTileset_Petalburg",
       "border_filepath": "data/layouts/PetesburgOW/border.bin",
@@ -4564,7 +4564,7 @@
     {
       "id": "LAYOUT_SELENIA_ROUTE2",
       "name": "SeleniaRoute2_Layout",
-      "width": 39,
+      "width": 40,
       "height": 45,
       "primary_tileset": "gTileset_snow",
       "secondary_tileset": "gTileset_Rustboro",
@@ -4634,8 +4634,8 @@
     {
       "id": "LAYOUT_MAREEP_MEADOW",
       "name": "MareepMeadow_Layout",
-      "width": 23,
-      "height": 28,
+      "width": 24,
+      "height": 30,
       "primary_tileset": "gTileset_snow",
       "secondary_tileset": "gTileset_Petalburg",
       "border_filepath": "data/layouts/MareepMeadow/border.bin",
@@ -4645,7 +4645,7 @@
       "id": "LAYOUT_FORT_TARIF",
       "name": "FortTarif_Layout",
       "width": 24,
-      "height": 26,
+      "height": 32,
       "primary_tileset": "gTileset_snow",
       "secondary_tileset": "gTileset_Petalburg",
       "border_filepath": "data/layouts/FortTarif/border.bin",
@@ -4656,7 +4656,7 @@
       "name": "FortTarifCave_Layout",
       "width": 23,
       "height": 20,
-      "primary_tileset": "gTileset_snow",
+      "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Cave",
       "border_filepath": "data/layouts/FortTarifCave/border.bin",
       "blockdata_filepath": "data/layouts/FortTarifCave/map.bin"
@@ -4665,7 +4665,7 @@
       "id": "LAYOUT_SELENIA_ROUTE3NORTH",
       "name": "SeleniaRoute3North_Layout",
       "width": 28,
-      "height": 86,
+      "height": 90,
       "primary_tileset": "gTileset_snow",
       "secondary_tileset": "gTileset_Slateport",
       "border_filepath": "data/layouts/SeleniaRoute3North/border.bin",
@@ -4684,9 +4684,9 @@
     {
       "id": "LAYOUT_SOUTHPORT_OW",
       "name": "SouthportOW_Layout",
-      "width": 45,
-      "height": 31,
-      "primary_tileset": "gTileset_General",
+      "width": 46,
+      "height": 38,
+      "primary_tileset": "gTileset_snow",
       "secondary_tileset": "gTileset_Slateport",
       "border_filepath": "data/layouts/SouthportOW/border.bin",
       "blockdata_filepath": "data/layouts/SouthportOW/map.bin"
@@ -4730,6 +4730,146 @@
       "secondary_tileset": "gTileset_Shop",
       "border_filepath": "data/layouts/SouthportMart/border.bin",
       "blockdata_filepath": "data/layouts/SouthportMart/map.bin"
+    },
+    {
+      "id": "LAYOUT_SELENIA_ROUTE4",
+      "name": "SeleniaRoute4_Layout",
+      "width": 116,
+      "height": 32,
+      "primary_tileset": "gTileset_snow",
+      "secondary_tileset": "gTileset_Mossdeep",
+      "border_filepath": "data/layouts/SeleniaRoute4/border.bin",
+      "blockdata_filepath": "data/layouts/SeleniaRoute4/map.bin"
+    },
+    {
+      "id": "LAYOUT_ALIEN_CRASH_SITE",
+      "name": "AlienCrashSite_Layout",
+      "width": 40,
+      "height": 52,
+      "primary_tileset": "gTileset_snow",
+      "secondary_tileset": "gTileset_Mossdeep",
+      "border_filepath": "data/layouts/AlienCrashSite/border.bin",
+      "blockdata_filepath": "data/layouts/AlienCrashSite/map.bin"
+    },
+    {
+      "id": "LAYOUT_SELENIA_ROUTE5",
+      "name": "SeleniaRoute5_Layout",
+      "width": 40,
+      "height": 60,
+      "primary_tileset": "gTileset_snow",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/SeleniaRoute5/border.bin",
+      "blockdata_filepath": "data/layouts/SeleniaRoute5/map.bin"
+    },
+    {
+      "id": "LAYOUT_RADIO_OUTPOST",
+      "name": "RadioOutpost_Layout",
+      "width": 116,
+      "height": 16,
+      "primary_tileset": "gTileset_snow",
+      "secondary_tileset": "gTileset_Mossdeep",
+      "border_filepath": "data/layouts/RadioOutpost/border.bin",
+      "blockdata_filepath": "data/layouts/RadioOutpost/map.bin"
+    },
+    {
+      "id": "LAYOUT_SOUTHPORT_BADGE",
+      "name": "SouthportBadge_Layout",
+      "width": 24,
+      "height": 15,
+      "primary_tileset": "gTileset_snow",
+      "secondary_tileset": "gTileset_Facility",
+      "border_filepath": "data/layouts/SouthportBadge/border.bin",
+      "blockdata_filepath": "data/layouts/SouthportBadge/map.bin"
+    },
+    {
+      "id": "LAYOUT_ACSPOKE_CENTER",
+      "name": "ACSPokeCenter_Layout",
+      "width": 14,
+      "height": 9,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_PokemonCenter",
+      "border_filepath": "data/layouts/ACSPokeCenter/border.bin",
+      "blockdata_filepath": "data/layouts/ACSPokeCenter/map.bin"
+    },
+    {
+      "id": "LAYOUT_ACSMART",
+      "name": "ACSMart_Layout",
+      "width": 11,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Shop",
+      "border_filepath": "data/layouts/ACSMart/border.bin",
+      "blockdata_filepath": "data/layouts/ACSMart/map.bin"
+    },
+    {
+      "id": "LAYOUT_SPIDER_CAVE_1F",
+      "name": "SpiderCave_1F_Layout",
+      "width": 29,
+      "height": 43,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/SpiderCave_1F/border.bin",
+      "blockdata_filepath": "data/layouts/SpiderCave_1F/map.bin"
+    },
+    {
+      "id": "LAYOUT_SPIDER_CAVE_B1F",
+      "name": "SpiderCave_B1F_Layout",
+      "width": 29,
+      "height": 43,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/SpiderCave_B1F/border.bin",
+      "blockdata_filepath": "data/layouts/SpiderCave_B1F/map.bin"
+    },
+    {
+      "id": "LAYOUT_SPIDER_CAVE_B2F",
+      "name": "SpiderCave_B2F_Layout",
+      "width": 29,
+      "height": 28,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Lavaridge",
+      "border_filepath": "data/layouts/SpiderCave_B2F/border.bin",
+      "blockdata_filepath": "data/layouts/SpiderCave_B2F/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE4DIG_HOUSE",
+      "name": "Route4DigHouse_Layout",
+      "width": 10,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/Route4DigHouse/border.bin",
+      "blockdata_filepath": "data/layouts/Route4DigHouse/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE4SAILOR_HOUSE",
+      "name": "Route4SailorHouse_Layout",
+      "width": 10,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/Route4SailorHouse/border.bin",
+      "blockdata_filepath": "data/layouts/Route4SailorHouse/map.bin"
+    },
+    {
+      "id": "LAYOUT_SPIDER_CAVE_LAB",
+      "name": "SpiderCave_Lab_Layout",
+      "width": 29,
+      "height": 28,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Lavaridge",
+      "border_filepath": "data/layouts/SpiderCave_Lab/border.bin",
+      "blockdata_filepath": "data/layouts/SpiderCave_Lab/map.bin"
+    },
+    {
+      "id": "LAYOUT_ACS_HOUSES",
+      "name": "ACS_Houses_Layout",
+      "width": 32,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/ACS_Houses/border.bin",
+      "blockdata_filepath": "data/layouts/ACS_Houses/map.bin"
     }
   ]
 }

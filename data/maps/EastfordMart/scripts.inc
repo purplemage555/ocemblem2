@@ -9,6 +9,7 @@ OC_ES_Clerk_Early::
 	msgbox gText_PleaseComeAgain, MSGBOX_DEFAULT
 	release
 	end
+	.align 2
 OC_Mart_Earlygame:
 	.2byte ITEM_POKE_BALL
 	.2byte ITEM_POTION

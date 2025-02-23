@@ -16,9 +16,9 @@ OC_R3N_Sailor1Intro:
 	.string "Tasty crustaceans everywhere,\n"
 	.string "as far as the eye can see!$"
 OC_R3N_Sailor2Intro:
-	.string "Those fish look awfully tasty...$"
+	.string "Those fish look awfully tasty…$"
 OC_R3N_Sailor1Defeat:
-	.string "Ran out of bait...$"
+	.string "Ran out of bait…$"
 OC_R3N_Sailor1PostBattle:
 	.string "My buddy Gump helps me supply\n"
 	.string "Southport's seafood market.$"
@@ -26,7 +26,7 @@ OC_R3N_Sailor2PostBattle:
 	.string "I help my friend Bubba\n"
 	.string "catch a lotta fish to sell.$"
 OC_R3N_Sailor3Intro:
-	.string "In the name of the Moon...\n"
+	.string "In the name of the Moon…\n"
 	.string "I shall defeat you!$"
 OC_R3N_Sailor3Defeat:
 	.string "Wait, which moon?!$"

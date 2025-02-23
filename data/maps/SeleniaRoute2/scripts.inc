@@ -56,7 +56,7 @@ OC_R2_EliwoodIntro:
 	.string "Hello! I'm Eliwood!\n"
 	.string "I love dragons!$"
 OC_R2_EliwoodDefeat:
-	.string "I can't... continue...$"
+	.string "I can't… continue…$"
 OC_R2_EliwoodPostBattle:
 	.string "Dragons are cool, but there aren't\n"
 	.string "really any around here, unfortunately.$"
@@ -98,7 +98,7 @@ OC_R2_JoeDefeat:
 OC_R2_JoePostBattle:
 	.string "Cotton is comfy and easy to wear!$"
 OC_R2_GeorgeIntro:
-	.string "Ready... Set... PLANT!$"
+	.string "Ready… Set… PLANT!$"
 OC_R2_GeorgeDefeat:
 	.string "The zombies ate my brains!$"
 OC_R2_GeorgePostBattle:
@@ -115,14 +115,14 @@ OC_R2_LauraPostBattle:
 OC_R2_KnightIntro:
 	.string "Halt! Who goes there?$"
 OC_R2_KnightDefeat:
-	.string "Urgh... I give up!$"
+	.string "Urgh… I give up!$"
 OC_R2_KnightPostBattle:
-	.string "The Forever Knights... Guess\n"
-	.string "I'm not cut out to join them...$"
+	.string "The Forever Knights… Guess\n"
+	.string "I'm not cut out to join them…$"
 OC_R2_BartIntro:
 	.string "Finally! I found a Slakoth!$"
 OC_R2_BartDefeat:
-	.string "No... My Slakoth!$"
+	.string "No… My Slakoth!$"
 OC_R2_BartPostBattle:
-	.string "Slakoth... For some reason, I just\n"
-	.string "really love this lazy Pokémon...$"
+	.string "Slakoth… For some reason, I just\n"
+	.string "really love this lazy Pokémon…$"

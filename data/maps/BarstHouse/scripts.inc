@@ -20,19 +20,19 @@ OC_ES_BarstDefeated::
 OC_ES_Barst_TimburrParty::
 	call OC_ES_GotTimburrFanfare
 	msgbox gText_NicknameThisPokemon, MSGBOX_YESNO
-	goto_if_eq VAR_RESULT, NO, OS_ES_ReceivedTimburr
+	goto_if_eq VAR_RESULT, NO, OC_ES_ReceivedTimburr
 	call Common_EventScript_GetGiftMonPartySlot
 	call Common_EventScript_NameReceivedPartyMon
-	goto OS_ES_ReceivedTimburr
+	goto OC_ES_ReceivedTimburr
 	end
 OC_ES_Barst_TimburrPC::
 	call OC_ES_GotTimburrFanfare
 	msgbox gText_NicknameThisPokemon, MSGBOX_YESNO
-	goto_if_eq VAR_RESULT, NO, OS_ES_ReceivedTimburr
+	goto_if_eq VAR_RESULT, NO, OC_ES_ReceivedTimburr
 	call Common_EventScript_NameReceivedBoxMon
-	goto OS_ES_ReceivedTimburr
+	goto OC_ES_ReceivedTimburr
 	end
-OS_ES_ReceivedTimburr::
+OC_ES_ReceivedTimburr::
 	msgbox OC_BarstPostBattle, MSGBOX_DEFAULT
 	setflag FLAG_OC_GOT_TIMBURR
 	release
