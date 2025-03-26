@@ -43,7 +43,9 @@ Sanctum_Text_YesPass:
 	.string "so far and deem you worthy. You may enter.$"
 Sanctum_Text_TownSign:
 	.string "The Sanctum Sanctorum:\n"
-	.string "Where humans first learned magic.$"
+	.string "Where humans first learned magic.\p"
+	.string "Office of the Sorcerer Supreme,\n"
+	.string "lead Master of the Mystic Arts.$"
 Sanctum_Text_VenonatSign:
 	.string "Looking for someone to help me with\n"
 	.string "researching Venonat. -Apprentice Nat$"

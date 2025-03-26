@@ -127,7 +127,17 @@
 #define TRAINER_PIC_LEADER_SABRINA		 109
 #define TRAINER_PIC_LEADER_BLAINE		 110
 #define TRAINER_PIC_LEADER_GIOVANNI		 111
-#define TRAINER_PIC_COUNT                112
+#define TRAINER_PIC_ENGINEER			 112
+#define TRAINER_PIC_BADGE1				 113
+#define TRAINER_PIC_BADGE2				 114
+#define TRAINER_PIC_BADGE3				 115
+#define TRAINER_PIC_BADGE4				 116
+#define TRAINER_PIC_BADGE5				 117
+#define TRAINER_PIC_BADGE6				 118
+#define TRAINER_PIC_COUNT                119
+//#define TRAINER_PIC_BADGE7				 119
+//#define TRAINER_PIC_BADGE8				 120
+//#define TRAINER_PIC_COUNT                121
 
 // The player back pics are assumed to alternate according to the gender values (MALE/FEMALE)
 #define TRAINER_BACK_PIC_BRENDAN                0
@@ -371,7 +381,8 @@
 #define TRAINER_CLASS_PYRAMID_KING   0x40
 #define TRAINER_CLASS_RS_PROTAG      0x41
 #define TRAINER_CLASS_SCIENTIST		 0x42
-#define TRAINER_CLASS_COUNT          0x43
+#define TRAINER_CLASS_ENGINEER		 0x43
+#define TRAINER_CLASS_COUNT          0x44
 
 #define TRAINER_ENCOUNTER_MUSIC_MALE         0 // standard male encounter music
 #define TRAINER_ENCOUNTER_MUSIC_FEMALE       1 // standard female encounter music

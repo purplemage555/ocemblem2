@@ -26763,3 +26763,7 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
     const u32 gMonBackPic_CobCannon[] = INCBIN_U32("graphics/pokemon/cobcannon/back.4bpp.lz");
     const u32 gMonPalette_CobCannon[] = INCBIN_U32("graphics/pokemon/cobcannon/normal.gbapal.lz");
     const u8 gMonIcon_CobCannon[] = INCBIN_U8("graphics/pokemon/cobcannon/icon.4bpp");
+	const u32 gMonFrontPic_GelatinCube[] = INCBIN_U32("graphics/pokemon/gelatin_cube/front.4bpp.lz");
+    const u32 gMonBackPic_GelatinCube[] = INCBIN_U32("graphics/pokemon/gelatin_cube/back.4bpp.lz");
+    const u32 gMonPalette_GelatinCube[] = INCBIN_U32("graphics/pokemon/gelatin_cube/normal.gbapal.lz");
+    const u8 gMonIcon_GelatinCube[] = INCBIN_U8("graphics/pokemon/gelatin_cube/icon.4bpp");

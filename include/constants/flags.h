@@ -122,7 +122,7 @@
 #define FLAG_R3_DEFEATED_KING	             0x67
 #define FLAG_R4_BEAT_MAPLE                   0x68  // Unused Flag
 
-#define FLAG_OCEANIC_MUSEUM_MET_REPORTER     0x69
+#define FLAG_SPIDER_BITE_CANON_EVENT	     0x69
 #define FLAG_RECEIVED_HM_STRENGTH            0x6A
 #define FLAG_RECEIVED_HM_ROCK_SMASH          0x6B
 #define FLAG_WHITEOUT_TO_LAVARIDGE           0x6C // Set after defeating Flannery, so the player cant white out from poison before receiving Go Goggles
@@ -149,8 +149,8 @@
 #define FLAG_OC_CLEARED_SPIDERCAVE		     0x7F
 #define FLAG_ENABLE_ROXANNE_FIRST_CALL       0x80 // Set after defeating Brawly. This will activate a call with Roxanne in order to register her.
 #define FLAG_KYOGRE_ESCAPED_SEAFLOOR_CAVERN  0x81
-#define FLAG_DEFEATED_RIVAL_ROUTE103         0x82
-#define FLAG_RECEIVED_DOLL_LANETTE           0x83
+#define FLAG_OC_CLEARED_R6			         0x82
+#define FLAG_OC_GOT_BATTERY		             0x83
 #define FLAG_RECEIVED_POTION_OLDALE          0x84
 #define FLAG_RECEIVED_AMULET_COIN            0x85
 #define FLAG_PENDING_DAYCARE_EGG             0x86
@@ -185,7 +185,7 @@
 #define FLAG_SMART_PAINTING_MADE             0xA3
 #define FLAG_TOUGH_PAINTING_MADE             0xA4
 #define FLAG_RECEIVED_TM_BADGE1	             0xA5
-#define FLAG_RECEIVED_TM_BULK_UP             0xA6
+#define FLAG_RECEIVED_TM_BADGE2              0xA6
 #define FLAG_RECEIVED_TM_SHOCK_WAVE          0xA7
 #define FLAG_RECEIVED_TM_OVERHEAT            0xA8
 #define FLAG_RECEIVED_TM_FACADE              0xA9
@@ -1073,12 +1073,12 @@
 #define FLAG_ITEM_SC_SILVER_POWDER                                  0x3FD
 #define FLAG_ITEM_SC_MOON_STONE		                                0x3FE
 #define FLAG_ITEM_ROUTE_5_TM_ICY_WIND                               0x3FF
-#define FLAG_ITEM_ROUTE_119_SUPER_REPEL                             0x400
-#define FLAG_ITEM_ROUTE_119_ZINC                                    0x401
-#define FLAG_ITEM_ROUTE_119_ELIXIR_1                                0x402
-#define FLAG_ITEM_ROUTE_119_LEAF_STONE                              0x403
-#define FLAG_ITEM_ROUTE_119_RARE_CANDY                              0x404
-#define FLAG_ITEM_ROUTE_119_HYPER_POTION_1                          0x405
+#define FLAG_ITEM_ROUTE_6_WACAN             		                0x400
+#define FLAG_ITEM_ROUTE_6_BLUK	                                    0x401
+#define FLAG_ITEM_ROUTE_7_SODA		                                0x402
+#define FLAG_ITEM_ROUTE_7_WEBS              		                0x403
+#define FLAG_ITEM_ROUTE_7_ROCK		                                0x404
+#define FLAG_ITEM_ROUTE_7_SAND			                            0x405
 #define FLAG_ITEM_ROUTE_120_NUGGET                                  0x406
 #define FLAG_ITEM_ROUTE_120_FULL_HEAL                               0x407
 #define FLAG_ITEM_ROUTE_123_CALCIUM                                 0x408

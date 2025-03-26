@@ -54,7 +54,7 @@ OC_DP_RemoPostBattle:
 	.string "There ain't much to fish\n"
 	.string "in this narrow valley…$"
 OC_DP_Mystic1Intro:
-	.string "Eye of Exeggcute\n"
+	.string "Eye of Exeggcute,\n"
 	.string "I cast a hex on you!$"
 OC_DP_Mystic1Defeat:
 	.string "Curses! It failed!$"

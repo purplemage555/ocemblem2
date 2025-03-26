@@ -15,7 +15,7 @@ Route4_ES_DigMan::
 	goto_if_set FLAG_OC_GOT_DIG, Route4_ES_ExplainDig
 	msgbox Route4_Text_DigMan, MSGBOX_DEFAULT
 	giveitem ITEM_TM_DIG
-	goto_if_eq VAR_RESULT, FALSE, OC_ES_NoRoomForItem
+	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
 	setflag FLAG_OC_GOT_DIG
 	release
 	end

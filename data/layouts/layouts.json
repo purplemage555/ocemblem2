@@ -4565,7 +4565,7 @@
       "id": "LAYOUT_SELENIA_ROUTE2",
       "name": "SeleniaRoute2_Layout",
       "width": 40,
-      "height": 45,
+      "height": 60,
       "primary_tileset": "gTileset_snow",
       "secondary_tileset": "gTileset_Rustboro",
       "border_filepath": "data/layouts/SeleniaRoute2/border.bin",
@@ -4675,7 +4675,7 @@
       "id": "LAYOUT_SELENIA_ROUTE3SOUTH",
       "name": "SeleniaRoute3South_Layout",
       "width": 32,
-      "height": 55,
+      "height": 110,
       "primary_tileset": "gTileset_snow",
       "secondary_tileset": "gTileset_Slateport",
       "border_filepath": "data/layouts/SeleniaRoute3South/border.bin",
@@ -4755,7 +4755,7 @@
       "id": "LAYOUT_SELENIA_ROUTE5",
       "name": "SeleniaRoute5_Layout",
       "width": 40,
-      "height": 60,
+      "height": 100,
       "primary_tileset": "gTileset_snow",
       "secondary_tileset": "gTileset_Petalburg",
       "border_filepath": "data/layouts/SeleniaRoute5/border.bin",
@@ -4870,6 +4870,126 @@
       "secondary_tileset": "gTileset_GenericBuilding",
       "border_filepath": "data/layouts/ACS_Houses/border.bin",
       "blockdata_filepath": "data/layouts/ACS_Houses/map.bin"
+    },
+    {
+      "id": "LAYOUT_SELENIA_ROUTE6",
+      "name": "SeleniaRoute6_Layout",
+      "width": 100,
+      "height": 20,
+      "primary_tileset": "gTileset_snow",
+      "secondary_tileset": "gTileset_Rustboro",
+      "border_filepath": "data/layouts/SeleniaRoute6/border.bin",
+      "blockdata_filepath": "data/layouts/SeleniaRoute6/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE6HOUSE",
+      "name": "Route6House_Layout",
+      "width": 10,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/Route6House/border.bin",
+      "blockdata_filepath": "data/layouts/Route6House/map.bin"
+    },
+    {
+      "id": "LAYOUT_NOVEMBURG_OW",
+      "name": "NovemburgOW_Layout",
+      "width": 40,
+      "height": 40,
+      "primary_tileset": "gTileset_snow",
+      "secondary_tileset": "gTileset_Rustboro",
+      "border_filepath": "data/layouts/NovemburgOW/border.bin",
+      "blockdata_filepath": "data/layouts/NovemburgOW/map.bin"
+    },
+    {
+      "id": "LAYOUT_BIG_BRIDGE",
+      "name": "BigBridge_Layout",
+      "width": 40,
+      "height": 28,
+      "primary_tileset": "gTileset_snow",
+      "secondary_tileset": "gTileset_Rustboro",
+      "border_filepath": "data/layouts/BigBridge/border.bin",
+      "blockdata_filepath": "data/layouts/BigBridge/map.bin"
+    },
+    {
+      "id": "LAYOUT_SELENIA_ROUTE7",
+      "name": "SeleniaRoute7_Layout",
+      "width": 50,
+      "height": 60,
+      "primary_tileset": "gTileset_snow",
+      "secondary_tileset": "gTileset_Mossdeep",
+      "border_filepath": "data/layouts/SeleniaRoute7/border.bin",
+      "blockdata_filepath": "data/layouts/SeleniaRoute7/map.bin"
+    },
+    {
+      "id": "LAYOUT_NOVEMBURG_POKE_CENTER",
+      "name": "NovemburgPokeCenter_Layout",
+      "width": 14,
+      "height": 9,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_PokemonCenter",
+      "border_filepath": "data/layouts/NovemburgPokeCenter/border.bin",
+      "blockdata_filepath": "data/layouts/NovemburgPokeCenter/map.bin"
+    },
+    {
+      "id": "LAYOUT_NOVEMBURG_MART",
+      "name": "NovemburgMart_Layout",
+      "width": 11,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Shop",
+      "border_filepath": "data/layouts/NovemburgMart/border.bin",
+      "blockdata_filepath": "data/layouts/NovemburgMart/map.bin"
+    },
+    {
+      "id": "LAYOUT_NOVEMBURG_NPCS",
+      "name": "NovemburgNPCs_Layout",
+      "width": 47,
+      "height": 17,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/NovemburgNPCs/border.bin",
+      "blockdata_filepath": "data/layouts/NovemburgNPCs/map.bin"
+    },
+    {
+      "id": "LAYOUT_PARKER_HOUSE",
+      "name": "ParkerHouse_Layout",
+      "width": 11,
+      "height": 9,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_BrendansMaysHouse",
+      "border_filepath": "data/layouts/ParkerHouse/border.bin",
+      "blockdata_filepath": "data/layouts/ParkerHouse/map.bin"
+    },
+    {
+      "id": "LAYOUT_PETER_ROOM",
+      "name": "PeterRoom_Layout",
+      "width": 9,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_BrendansMaysHouse",
+      "border_filepath": "data/layouts/PeterRoom/border.bin",
+      "blockdata_filepath": "data/layouts/PeterRoom/map.bin"
+    },
+    {
+      "id": "LAYOUT_NOVEMBURG_BADGE",
+      "name": "NovemburgBadge_Layout",
+      "width": 24,
+      "height": 24,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Facility",
+      "border_filepath": "data/layouts/NovemburgBadge/border.bin",
+      "blockdata_filepath": "data/layouts/NovemburgBadge/map.bin"
+    },
+    {
+      "id": "LAYOUT_SHULK_HOUSE",
+      "name": "ShulkHouse_Layout",
+      "width": 14,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/ShulkHouse/border.bin",
+      "blockdata_filepath": "data/layouts/ShulkHouse/map.bin"
     }
   ]
 }

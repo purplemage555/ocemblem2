@@ -85,7 +85,7 @@
       "dest_warp_id": "0"
     },
     {
-      "x": 24,
+      "x": 22,
       "y": 16,
       "elevation": 0,
       "dest_map": "MAP_PETESBURG_NPCS",
@@ -99,7 +99,7 @@
       "dest_warp_id": "4"
     },
     {
-      "x": 10,
+      "x": 9,
       "y": 24,
       "elevation": 0,
       "dest_map": "MAP_BARST_HOUSE",

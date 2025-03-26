@@ -4,9 +4,19 @@ OC_R4_ES_RouteSign::
 	msgbox OC_R4_Text_RouteSign, MSGBOX_SIGN
 	end
 OC_R4_ES_Maple::
-	trainerbattle_single TRAINER_OC_R4_MAPLE, R4_Text_MapleHiPlayer, R4_Text_MapleDefeat
+	faceplayer
+	trainerbattle_single TRAINER_OC_R4_MAPLE, R4_Text_MapleHiPlayer, R4_Text_MapleDefeat, OC_ES_AmuletCoin
 	setflag FLAG_R4_BEAT_MAPLE
+	goto_if_unset FLAG_RECEIVED_AMULET_COIN, OC_ES_AmuletCoin
 	msgbox R4_Text_BeatMaple, MSGBOX_AUTOCLOSE
+	end
+OC_ES_AmuletCoin::
+	msgbox R4_Text_PostMaple, MSGBOX_DEFAULT
+	giveitem ITEM_AMULET_COIN
+	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
+	setflag FLAG_RECEIVED_AMULET_COIN
+	msgbox R4_Text_BeatMaple, MSGBOX_DEFAULT
+	release
 	end
 OC_R4_ES_Neil::
 	trainerbattle_single TRAINER_OC_R4_NEIL, R4_NeilIntro, R4_NeilDefeat
@@ -42,14 +52,17 @@ R4_Text_MapleHiPlayer:
 R4_Text_MapleDefeat:
 	.string "Oh, wow!\p"
 	.string "You clearly aren't holding back!$"
-R4_Text_BeatMaple:
+R4_Text_PostMaple:
 	.string "Maple: That was fun, even if I lost!\p"
-	.string "I'd give you a gift right now, but\n"
-	.string "I can't think of anything right now…\p"
+	.string "Oh yeah, I have a gift for you!\n"
+	.string "It's an Amulet Coin! Cool, right?$"
+R4_Text_BeatMaple:
 	.string "I'll hang out here for a bit, since\n"
 	.string "I need to visit the Alien Crash Site!\p"
 	.string "It's to the west of here; it's home\n"
-	.string "to Selenia's national space program!$"
+	.string "to Selenia's national space program!\p"
+	.string "After that, I think I'll head over\n"
+	.string "to Route 7 and visit a friend there…$"
 R4_NeilIntro:
 	.string "One small step for a man,\n"
 	.string "one giant leap for mankind!$"

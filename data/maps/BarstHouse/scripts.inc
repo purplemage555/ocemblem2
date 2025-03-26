@@ -1,8 +1,5 @@
 BarstHouse_MapScripts::
 	.byte 0
-OC_ES_Pot::
-	msgbox OC_Text_Pot, MSGBOX_SIGN
-	end
 Petesburg_ES_Barst::
 	trainerbattle_single TRAINER_OC_PIRATEBRIDGE_SAILOR3, OC_BarstIntro, OC_BarstDefeat, OC_ES_BarstDefeated, NO_MUSIC
 	goto_if_unset FLAG_OC_GOT_TIMBURR, OC_ES_BarstDefeated
@@ -59,7 +56,3 @@ OC_Barst_TakeTimburr:
 	.string "As promised, here's Timburr's ball.$"
 OC_Text_GotTimburr:
 	.string "{PLAYER} received Timburr!$"
-OC_Text_Pot:
-	.string "A beautiful ceramic pot!\p"
-	.string "There's nothing valuable inside,\n"
-	.string "so you shouldn't try to break it!$"

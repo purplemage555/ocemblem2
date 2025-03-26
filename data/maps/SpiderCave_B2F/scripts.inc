@@ -23,7 +23,7 @@ OC_SC_ES_Knight9::
 	end
 SC_ES_Admin::
 	trainerbattle_single TRAINER_OC_SPIDERCAVE_ADMIN, SC_Text_AdminIntro, SC_Text_AdminDefeat, NO_MUSIC
-	msgbox SC_Text_AdminRetreat
+	msgbox SC_Text_AdminRetreat, MSGBOX_AUTOCLOSE
 	fadescreen FADE_TO_BLACK
 	removeobject LOCALID_SPECTER
 	removeobject LOCALID_K1

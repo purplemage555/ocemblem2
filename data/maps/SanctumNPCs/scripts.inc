@@ -18,7 +18,7 @@ Sanctum_ES_NPC3::
 	goto_if_set FLAG_OC_GOT_SPOON, Sanctum_ES_ExplainSpoon
 	msgbox Sanctum_Text_NPC3, MSGBOX_DEFAULT
 	giveitem ITEM_TWISTED_SPOON
-	goto_if_eq VAR_RESULT, FALSE, OC_ES_NoRoomForItem
+	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
 	setflag FLAG_OC_GOT_SPOON
 	release
 	end
@@ -26,12 +26,12 @@ Sanctum_ES_ExplainSpoon::
 	msgbox Sanctum_Text_AfterSpoon, MSGBOX_DEFAULT
 	release
 	end
-OC_ES_NoRoomForItem::
-	msgbox OC_Text_NoRoom, MSGBOX_DEFAULT
-	release
-	end
-OC_Text_NoRoom:
-	.string "Your bag is already full!$"
+//OC_ES_NoRoomForItem::
+//	msgbox OC_Text_NoRoom, MSGBOX_DEFAULT
+//	release
+//	end
+//OC_Text_NoRoom:
+//	.string "Your bag is already full!$"
 Sanctum_Text_NPC1:
 	.string "Most of the houses near the Sanctum\n"
 	.string "are connected using portal magic.\p"

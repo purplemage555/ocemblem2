@@ -96,7 +96,7 @@ Name: Maple
 Class: Rival
 Pic: Maple
 Gender: Female
-Music: Female
+Music: May
 
 Artoria (Swablu) (F)
 Level: 4
@@ -133,13 +133,13 @@ AI: Check Bad Move
 
 Shroomish (M)
 Level: 6
-Ability: ABILITY_POISON_HEAL
-Ball: ITEM_NEST_BALL
+Ability: Poison Heal
+Ball: Nest Ball
 
 Cottonee (F)
 Level: 6
 Ability: Infiltrator
-Ball: ITEM_NEST_BALL
+Ball: Nest Ball
 
 === TRAINER_OC_PIRATEBRIDGE_SAILOR1 ===
 Name: Bord
@@ -526,17 +526,13 @@ Shellder
 Level: 13
 Ability: Shell Armor
 -Bubble
--Tackle
 -Withdraw
--Supersonic
 
 Shellder
 Level: 13
 Ability: Shell Armor
 -Bubble
--Tackle
 -Withdraw
--Supersonic
 
 === TRAINER_OC_R3_ELLIOTT ===
 Name: Elliott
@@ -585,15 +581,17 @@ AI: Basic Trainer
 Nidoking @ Oran Berry
 Level: 16
 Ability: Sheer Force
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Ball: Luxury Ball
 Nature: Adamant
 -Poison Sting
+-Bulldoze
 -Double Kick
 -Horn Attack
--Leer
 
 Slaking @ Oran Berry
 Level: 18
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Ball: Luxury Ball
 Nature: Adamant
 -Giga Beam
@@ -657,13 +655,13 @@ Ball: Net Ball
 Nature: Bold
 -Bubble
 -Withdraw
--Protect
--Supersonic
+-Rapid Spin
+-Rock Blast
 
 === TRAINER_OC_BADGE1 ===
 Name: Erina
 Class: Leader
-Pic: Leader Misty
+Pic: Badge1
 Gender: Female
 Music: Female
 Items: Fresh Water / Fresh Water / Fresh Water
@@ -671,20 +669,24 @@ AI: Basic Trainer
 
 Wingull (F) @ Oran Berry
 Level: 17
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Ball: Net Ball
+Nature: Modest
 -Water Pulse
--Wing Attack
--Thunder Shock
--Supersonic
+-Air Cutter
+-Shock Wave
+-Quick Attack
 
-Corphish (F) @ Oran Berry
-Level: 17
-Ability: Shell Armor
+Chinchou (F) @ Oran Berry
+Level: 18
+Ability: Volt Absorb
+IVs: 31 HP / 0 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Ball: Net Ball
--Bubble Beam
--Bite
--Protect
--Leer
+Nature: Modest
+-Water Pulse
+-Shock Wave
+-Thunder Wave
+-Icy Wind
 
 Pearlice (Cloyster) (F) @ Apicot Berry
 Level: 20
@@ -695,8 +697,8 @@ Ball: Net Ball
 Nature: Bold
 -Water Pulse
 -Withdraw
--Protect
--Supersonic
+-Rock Blast
+-Rapid Spin
 
 === TRAINER_OC_R4_MAPLE ===
 Name: Maple
@@ -719,7 +721,7 @@ Nature: Adamant
 Snowcone (Vanillite) (M)
 Level: 22
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-EVs: 3 HP / 9 Atk / 5 Def / 3 SpA / 2 SpD / 3 Spe
+EVs: 3 HP / 9 Atk / 6 Def / 3 SpA / 2 SpD / 3 Spe
 Ball: Great Ball
 Nature: Modest
 -Aurora Beam
@@ -730,7 +732,7 @@ Nature: Modest
 Artoria (Swablu) (F)
 Level: 24
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-EVs: 7 HP / 15 Atk / 17 Def / 15 SpA / 6 SpD / 15 Spe
+EVs: 7 HP / 15 Atk / 18 Def / 15 SpA / 6 SpD / 15 Spe
 Nature: Bashful
 -Wing Attack
 -Twister
@@ -739,8 +741,8 @@ Nature: Bashful
 
 === TRAINER_OC_R4_NEIL ===
 Name: Neil
-Class: Scientist
-Pic: Scientist
+Class: Engineer
+Pic: Engineer
 Gender: Male
 Music: Cool
 AI: Check Bad Move
@@ -763,12 +765,12 @@ Ball: Moon Ball
 -Charge Beam
 -Mirror Shot
 -Thunder Wave
--Supersonic
+-Magnet Bomb
 
 === TRAINER_OC_R4_BUZZ ===
 Name: Buzz
-Class: Scientist
-Pic: Scientist
+Class: Engineer
+Pic: Engineer
 Gender: Male
 Music: Cool
 AI: Check Bad Move
@@ -787,7 +789,7 @@ Ball: Moon Ball
 -Charge Beam
 -Mirror Shot
 -Thunder Wave
--Supersonic
+-Magnet Bomb
 
 === TRAINER_OC_R4_MIKE ===
 Name: Mike
@@ -811,7 +813,7 @@ Ball: Moon Ball
 -Charge Beam
 -Mirror Shot
 -Thunder Wave
--Supersonic
+-Magnet Bomb
 
 === TRAINER_OC_R4_WOODY ===
 Name: Woody
@@ -1019,9 +1021,10 @@ Music: Magma
 AI: Basic Trainer
 
 Lampent (M) @ Passho Berry
-Level: 25
+Level: 24
+IVs: 31 HP / 0 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Ball: Dusk Ball
-Nature: Calm
+Nature: Careful
 -Mystical Fire
 -Confuse Ray
 -Will-O-Wisp
@@ -1029,6 +1032,7 @@ Nature: Calm
 
 Golett @ Passho Berry
 Level: 25
+IVs: 31 HP / 31 Atk / 31 Def / 0 SpA / 31 SpD / 31 Spe
 Ball: Dusk Ball
 Nature: Careful
 -Mud-Slap
@@ -1037,13 +1041,14 @@ Nature: Careful
 -Iron Defense
 
 Yamask (M) @ Oran Berry
-Level: 25
+Level: 26
+IVs: 31 HP / 0 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Ball: Dusk Ball
 Nature: Calm
 -Night Shade
 -Shock Wave
 -Disable
--Protect
+-Ancient Power
 
 === TRAINER_OC_R5_TRAINER1 ===
 Name: Ivan
@@ -1077,3 +1082,405 @@ AI: Check Bad Move
 
 Magnemite
 Level: 23
+
+=== TRAINER_OC_R6_TETRIS ===
+Name: Alexey
+Class: Engineer
+Pic: Engineer
+Gender: Male
+Music: Cool
+AI: Check Bad Move
+
+Timburr
+Level: 24
+Ability: Guts
+
+Potater
+Level: 24
+
+Magnemite
+Level: 24
+Ability: Analytic
+
+Porygon
+Level: 24
+Ability: Analytic
+
+=== TRAINER_OC_R6_REDIGIT ===
+Name: Andrew
+Class: Cooltrainer
+Pic: Cooltrainer M
+Gender: Male
+Music: Cool
+AI: Check Bad Move
+
+Gurdurr
+Level: 25
+Ability: Sheer Force
+
+Krokorok
+Level: 25
+Ability: Intimidate
+
+Kadabra
+Level: 25
+Ability: Magic Guard
+
+Haunter
+Level: 25
+
+=== TRAINER_OC_R6_STEVE ===
+Name: Steve
+Class: Camper
+Pic: Camper
+Gender: Male
+Music: Cool
+AI: Check Bad Move
+
+Timburr (M)
+Level: 24
+Ability: Sheer Force
+
+Scrafty (M)
+Level: 24
+Ability: Intimidate
+
+Graveler (M)
+Level: 25
+Ability: Rock Head
+
+Lairon (M)
+Level: 25
+Ability: Rock Head
+
+=== TRAINER_OC_R6_ALEX ===
+Name: Alex
+Class: Picnicker
+Pic: Picnicker
+Gender: Female
+Music: Cool
+AI: Check Bad Move
+
+Exeggcute (F)
+Level: 24
+Ability: Harvest
+
+Baketater (F)
+Level: 24
+
+Flaaffy (F)
+Level: 25
+Ability: Fluffy
+
+Piloswine (F)
+Level: 25
+Ability: Thick Fat
+
+=== TRAINER_OC_BADGE2HINT ===
+Name: Guide
+Class: Cooltrainer
+Pic: Super Nerd
+Gender: Male
+Music: Cool
+AI: Basic Trainer
+
+Voltorb
+Level: 25
+Ability: Soundproof
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 252 Atk / 252 Spe
+Ball: Net Ball
+Nature: Adamant
+-Self-Destruct
+
+=== TRAINER_OC_GYM2_TRAINER1 ===
+Name: Fiorung
+Class: Beauty
+Pic: Beauty
+Gender: Female
+Music: Female
+
+Joltik (F)
+Level: 24
+Ability: Swarm
+
+Pawniard (F)
+Level: 25
+Ability: Defiant
+
+Eelektrik (F)
+Level: 26
+-Charge Beam
+-Bite
+-Wrap
+-Coil
+
+=== TRAINER_OC_GYM2_TRAINER2 ===
+Name: Nya
+Class: Pkmn Ranger
+Pic: Pokemon Ranger F
+Gender: Female
+Music: Female
+
+Chinchou (F)
+Level: 24
+Ability: Water Absorb
+
+Koffing (F)
+Level: 25
+
+Meowth
+Level: 26
+Ability: Technician
+-Water Pulse
+-Shock Wave
+-Bite
+-Taunt
+
+=== TRAINER_OC_GYM2_TRAINER3 ===
+Name: Glitter
+Class: Beauty
+Pic: Battle Girl
+Gender: Female
+Music: Female
+
+Flaaffy (F)
+Level: 24
+Ability: Static
+
+Haunter (F)
+Level: 25
+
+Vulpix (F)
+Level: 26
+
+=== TRAINER_OC_BADGE2 ===
+Name: Cooper
+Class: Leader
+Pic: Badge2
+Gender: Male
+Music: Male
+Items: Soda Pop / Soda Pop / Soda Pop
+AI: Basic Trainer
+
+Magnemite @ Oran Berry
+Level: 24
+Ability: Analytic
+IVs: 31 HP / 0 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Ball: Repeat Ball
+-Charge Beam
+-Shock Wave
+-Mirror Shot
+-Thunder Wave
+
+Grimer @ Oran Berry
+Level: 25
+Ability: Poison Touch
+IVs: 31 HP / 31 Atk / 31 Def / 0 SpA / 31 SpD / 31 Spe
+Ball: Repeat Ball
+-Poison Fang
+-Bite
+-Minimize
+-Thunder Punch
+
+Monad (Electrode) @ Choice Specs
+Level: 27
+Ability: Soundproof
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 252 SpA / 252 Spe
+Ball: Repeat Ball
+Nature: Modest
+-EMP-splosion
+
+=== TRAINER_OC_R7_KAPPA ===
+Name: Lily
+Class: Cooltrainer
+Pic: Cooltrainer F
+Gender: Female
+Music: Cool
+AI: Check Bad Move
+
+Dolly (Swadloon) (F)
+Level: 24
+Ability: Leaf Guard
+Ball: Dusk Ball
+
+Rian (Lombre) (M)
+Level: 26
+Ability: Rain Dish
+Ball: Dusk Ball
+
+=== TRAINER_OC_R7_LESK ===
+Name: Lesk
+Class: Camper
+Pic: Camper
+Gender: Male
+Music: Male
+Items: Soda Pop / Soda Pop / Soda Pop / Soda Pop
+
+Whismur @ Soda Pop
+Level: 17
+Ball: Master Ball
+
+Flaaffy (F) @ Soda Pop
+Level: 24
+Ability: Static
+Ball: Dusk Ball
+
+Grimer @ Soda Pop
+Level: 25
+Ability: Sticky Hold
+Ball: Dusk Ball
+
+Spheal @ Soda Pop
+Level: 26
+Ability: Slush Rush
+Ball: Dusk Ball
+
+=== TRAINER_OC_R7_SPIDEY ===
+Name: Peter
+Class: Pkmn Trainer 1
+Pic: Super Nerd
+Gender: Male
+Music: May
+Items: Potion / Super Potion / Fresh Water / Soda Pop
+AI: Basic Trainer
+
+Swadloon (M) @ Silver Powder
+Level: 24
+Ability: Leaf Guard
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Ball: Net Ball
+Nature: Adamant
+-Razor Leaf
+-Leech Seed
+-Pin Missile
+-String Shot
+
+Riolu (M) @ Black Belt
+Level: 24
+Ability: Steadfast
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Ball: Great Ball
+Nature: Brave
+-Karate Chop
+-Metal Claw
+-Feint Attack
+-Counter
+
+Joltik (M) @ Magnet
+Level: 25
+Ability: Compound Eyes
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Ball: Net Ball
+Nature: Modest
+-Pin Missile
+-Shock Wave
+-Bite
+-String Shot
+
+=== TRAINER_OC_R7_GOBLIN ===
+Name: Norman
+Class: Scientist
+Pic: Gentleman
+Gender: Male
+Music: Rich
+Items: Hyper Potion / X Attack / X Special / X Speed
+AI: Check Bad Move
+
+Koffing (M)
+Level: 24
+Ball: Luxury Ball
+Nature: Naughty
+
+Pawniard (M)
+Level: 25
+Ability: Pressure
+Ball: Luxury Ball
+Nature: Naughty
+
+Tyrunt (M)
+Level: 25
+Ability: Strong Jaw
+Ball: Luxury Ball
+Nature: Naughty
+
+Electrode
+Level: 26
+Ability: Soundproof
+Ball: Luxury Ball
+Nature: Naughty
+-Shock Wave
+-Mega Drain
+-Charge Beam
+-Self-Destruct
+
+=== TRAINER_OC_R7_OCTOPUS ===
+Name: Olivia
+Class: Scientist
+Pic: Cooltrainer F
+Gender: Female
+Music: Cool
+Items: Super Potion / Lemonade / Paralyze Heal / X Special
+AI: Check Bad Move
+
+Tentacool (F)
+Level: 24
+Ability: Rain Dish
+Ball: Repeat Ball
+Nature: Serious
+
+Vulpix (F)
+Level: 25
+Ball: Repeat Ball
+Nature: Serious
+-Mystical Fire
+-Psybeam
+-Will-O-Wisp
+-Sunny Day
+
+Omanyte (F)
+Level: 25
+Ability: Swift Swim
+Ball: Repeat Ball
+Nature: Sassy
+
+Octillery (F)
+Level: 26
+Ability: Analytic
+Ball: Repeat Ball
+Nature: Sassy
+-Octazooka
+-Bubble Beam
+-Psybeam
+-Rock Blast
+
+=== TRAINER_OC_R7_ELECTRO ===
+Name: Max
+Class: Scientist
+Pic: Scientist
+Gender: Male
+Music: Cool
+Items: Soda Pop / X Attack / X Special / X Speed
+AI: Check Bad Move
+
+Magnemite
+Level: 24
+Ability: Magnet Pull
+Ball: Repeat Ball
+Nature: Quirky
+
+Chinchou (M)
+Level: 25
+Ability: Volt Absorb
+Ball: Repeat Ball
+Nature: Timid
+
+Eelektrik (M)
+Level: 26
+Ball: Repeat Ball
+Nature: Rash
+-Shock Wave
+-Thunder Wave
+-Charge Beam
+-Bite

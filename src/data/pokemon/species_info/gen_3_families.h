@@ -3365,10 +3365,10 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
     {
         .baseHP        = 64,
         .baseAttack    = 51,
-        .baseDefense   = 23,
-        .baseSpeed     = 28,
+        .baseDefense   = 22,
+        .baseSpeed     = 30,
         .baseSpAttack  = 51,
-        .baseSpDefense = 23,
+        .baseSpDefense = 22,
         .types = MON_TYPES(TYPE_NORMAL),
         .catchRate = 190,
         .expYield = 68,
@@ -3390,7 +3390,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
             "Its cries equal a jet plane in volume.\n"
             "Because it inhales through its ears,\n"
             "it can cry continually without having\n"
-            "to catch its breath. 64/51/23/51/23/28"),
+            "to catch its breath. 64/51/22/51/22/30"),
         .pokemonScale = 373,
         .pokemonOffset = 17,
         .trainerScale = 256,
@@ -3427,10 +3427,10 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
     {
         .baseHP        = 84,
         .baseAttack    = 71,
-        .baseDefense   = 43,
-        .baseSpeed     = 48,
+        .baseDefense   = 42,
+        .baseSpeed     = 50,
         .baseSpAttack  = 71,
-        .baseSpDefense = 43,
+        .baseSpDefense = 42,
         .types = MON_TYPES(TYPE_NORMAL),
         .catchRate = 120,
         .expYield = 126,
@@ -3452,7 +3452,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
             "It positions the round speakers on its\n"
             "head to assail foes with ultrasonic waves\n"
             "at massive volume. It builds power by\n"
-            "stomping the ground. 84/71/43/71/43/48"),
+            "stomping the ground. 84/71/42/71/42/50"),
         .pokemonScale = 356,
         .pokemonOffset = 10,
         .trainerScale = 256,
@@ -3489,10 +3489,10 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
     {
         .baseHP        = 104,
         .baseAttack    = 91,
-        .baseDefense   = 63,
-        .baseSpeed     = 68,
+        .baseDefense   = 62,
+        .baseSpeed     = 70,
         .baseSpAttack  = 101,
-        .baseSpDefense = 73,
+        .baseSpDefense = 72,
         .types = MON_TYPES(TYPE_NORMAL),
         .catchRate = 45,
 		.expYield = 245,
@@ -3514,7 +3514,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
             "It has sound-generating organs all over\n"
             "its body. It communicates with others by\n"
             "adjusting the tone and volume of the cries\n"
-            "it emits. 104/91/63/101/73/68"),
+            "it emits. 104/91/62/101/72/70"),
         .pokemonScale = 284,
         .pokemonOffset = 1,
         .trainerScale = 256,
@@ -6719,7 +6719,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
 		.perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,
         .levelUpLearnset = sAltariaLevelUpLearnset,
         .teachableLearnset = sAltariaTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 30, SPECIES_ALTARIA}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 28, SPECIES_ALTARIA}),
     },
     [SPECIES_ALTARIA] =
     {

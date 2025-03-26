@@ -313,11 +313,25 @@ const u32 gTrainerFrontPic_LeaderBlaine[] = INCBIN_U32("graphics/trainers/front_
 const u32 gTrainerPalette_LeaderBlaine[] = INCBIN_U32("graphics/trainers/front_pics/leader_blaine.gbapal.lz");
 const u32 gTrainerFrontPic_LeaderGiovanni[] = INCBIN_U32("graphics/trainers/front_pics/leader_giovanni.4bpp.lz");
 const u32 gTrainerPalette_LeaderGiovanni[] = INCBIN_U32("graphics/trainers/front_pics/leader_giovanni.gbapal.lz");
+const u32 gTrainerFrontPic_Badge1[] = INCBIN_U32("graphics/trainers/front_pics/waterstone.4bpp.lz");
+const u32 gTrainerPalette_Badge1[] = INCBIN_U32("graphics/trainers/front_pics/waterstone.gbapal.lz");
+const u32 gTrainerFrontPic_Badge2[] = INCBIN_U32("graphics/trainers/front_pics/thunderstone.4bpp.lz");
+const u32 gTrainerPalette_Badge2[] = INCBIN_U32("graphics/trainers/front_pics/thunderstone.gbapal.lz");
+const u32 gTrainerFrontPic_Badge3[] = INCBIN_U32("graphics/trainers/front_pics/firestone.4bpp.lz");
+const u32 gTrainerPalette_Badge3[] = INCBIN_U32("graphics/trainers/front_pics/firestone.gbapal.lz");
+const u32 gTrainerFrontPic_Badge4[] = INCBIN_U32("graphics/trainers/front_pics/leafstone.4bpp.lz");
+const u32 gTrainerPalette_Badge4[] = INCBIN_U32("graphics/trainers/front_pics/leafstone.gbapal.lz");
+const u32 gTrainerFrontPic_Badge5[] = INCBIN_U32("graphics/trainers/front_pics/icestone.4bpp.lz");
+const u32 gTrainerPalette_Badge5[] = INCBIN_U32("graphics/trainers/front_pics/icestone.gbapal.lz");
+const u32 gTrainerFrontPic_Badge6[] = INCBIN_U32("graphics/trainers/front_pics/duskstone.4bpp.lz");
+const u32 gTrainerPalette_Badge6[] = INCBIN_U32("graphics/trainers/front_pics/duskstone.gbapal.lz");
 
 const u32 gTrainerFrontPic_Scientist[] = INCBIN_U32("graphics/trainers/front_pics/scientist.4bpp.lz");
 const u32 gTrainerPalette_Scientist[] = INCBIN_U32("graphics/trainers/front_pics/scientist.gbapal.lz");
 const u32 gTrainerFrontPic_SuperNerd[] = INCBIN_U32("graphics/trainers/front_pics/super_nerd.4bpp.lz");
 const u32 gTrainerPalette_SuperNerd[] = INCBIN_U32("graphics/trainers/front_pics/super_nerd.gbapal.lz");
+const u32 gTrainerFrontPic_Engineer[] = INCBIN_U32("graphics/trainers/front_pics/engineer.4bpp.lz");
+const u32 gTrainerPalette_Engineer[] = INCBIN_U32("graphics/trainers/front_pics/engineer.gbapal.lz");
 
 const u8 gTrainerBackPic_Brendan[] = INCBIN_U8("graphics/trainers/back_pics/brendan.4bpp");
 const u8 gTrainerBackPic_May[] = INCBIN_U8("graphics/trainers/back_pics/may.4bpp");
@@ -459,7 +473,13 @@ const struct TrainerSprite gTrainerSprites[] =
     TRAINER_SPRITE(TRAINER_PIC_LEADER_SABRINA, gTrainerFrontPic_LeaderSabrina, gTrainerPalette_LeaderSabrina),
     TRAINER_SPRITE(TRAINER_PIC_LEADER_BLAINE, gTrainerFrontPic_LeaderBlaine, gTrainerPalette_LeaderBlaine),
     TRAINER_SPRITE(TRAINER_PIC_LEADER_GIOVANNI, gTrainerFrontPic_LeaderGiovanni, gTrainerPalette_LeaderGiovanni),
-	
+	TRAINER_SPRITE(TRAINER_PIC_ENGINEER, gTrainerFrontPic_Engineer, gTrainerPalette_Engineer),
+	TRAINER_SPRITE(TRAINER_PIC_BADGE1, gTrainerFrontPic_Badge1, gTrainerPalette_Badge1),
+	TRAINER_SPRITE(TRAINER_PIC_BADGE2, gTrainerFrontPic_Badge2, gTrainerPalette_Badge2),
+	TRAINER_SPRITE(TRAINER_PIC_BADGE3, gTrainerFrontPic_Badge3, gTrainerPalette_Badge3),
+	TRAINER_SPRITE(TRAINER_PIC_BADGE4, gTrainerFrontPic_Badge4, gTrainerPalette_Badge4),
+	TRAINER_SPRITE(TRAINER_PIC_BADGE5, gTrainerFrontPic_Badge5, gTrainerPalette_Badge5),
+	TRAINER_SPRITE(TRAINER_PIC_BADGE6, gTrainerFrontPic_Badge6, gTrainerPalette_Badge6),
 };
 
 static const union AnimCmd sAnimCmd_Hoenn[] =

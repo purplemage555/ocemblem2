@@ -1242,3 +1242,27 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/SpiderCave_Lab/scripts.inc"
 
 	.include "data/maps/ACS_Houses/scripts.inc"
+
+	.include "data/maps/SeleniaRoute6/scripts.inc"
+
+	.include "data/maps/Route6House/scripts.inc"
+
+	.include "data/maps/NovemburgOW/scripts.inc"
+
+	.include "data/maps/BigBridge/scripts.inc"
+
+	.include "data/maps/SeleniaRoute7/scripts.inc"
+
+	.include "data/maps/NovemburgPokeCenter/scripts.inc"
+
+	.include "data/maps/NovemburgMart/scripts.inc"
+
+	.include "data/maps/NovemburgNPCs/scripts.inc"
+
+	.include "data/maps/ParkerHouse/scripts.inc"
+
+	.include "data/maps/PeterRoom/scripts.inc"
+
+	.include "data/maps/NovemburgBadge/scripts.inc"
+
+	.include "data/maps/ShulkHouse/scripts.inc"

@@ -110,7 +110,11 @@
     "SeleniaRoute4",
     "AlienCrashSite",
     "SeleniaRoute5",
-    "RadioOutpost"
+    "RadioOutpost",
+    "SeleniaRoute6",
+    "NovemburgOW",
+    "BigBridge",
+    "SeleniaRoute7"
   ],
   "gMapGroup_IndoorLittleroot": [
     "LittlerootTown_BrendansHouse_1F",
@@ -127,7 +131,9 @@
     "PetesburgPokeCenter",
     "PetesburgMart",
     "PetesburgNPCs",
-    "BarstHouse"
+    "BarstHouse",
+    "ParkerHouse",
+    "PeterRoom"
   ],
   "gMapGroup_IndoorOldale": [
     "OldaleTown_House1",
@@ -157,7 +163,8 @@
     "ACSMart",
     "Route4DigHouse",
     "Route4SailorHouse",
-    "ACS_Houses"
+    "ACS_Houses",
+    "Route6House"
   ],
   "gMapGroup_IndoorLavaridge": [
     "LavaridgeTown_HerbShop",
@@ -250,7 +257,12 @@
     "RustboroCity_Flat2_1F",
     "RustboroCity_Flat2_2F",
     "RustboroCity_Flat2_3F",
-    "RustboroCity_House3"
+    "RustboroCity_House3",
+    "NovemburgPokeCenter",
+    "NovemburgMart",
+    "NovemburgNPCs",
+    "NovemburgBadge",
+    "ShulkHouse"
   ],
   "gMapGroup_IndoorFortree": [
     "FortreeCity_House1",

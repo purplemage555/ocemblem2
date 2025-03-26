@@ -422,6 +422,7 @@ const u32 gObjectEventPic_WomanK2[] = INCBIN_U32("graphics/object_events/kanto/w
 const u32 gObjectEventPic_WomanK3[] = INCBIN_U32("graphics/object_events/kanto/woman_3.4bpp");
 const u32 gObjectEventPic_WorkerF[] = INCBIN_U32("graphics/object_events/kanto/worker_f.4bpp");
 const u32 gObjectEventPic_WorkerM[] = INCBIN_U32("graphics/object_events/kanto/worker_m.4bpp");
+const u32 gObjectEventPic_Cube[] = INCBIN_U32("graphics/object_events/pics/misc/cube.4bpp");
 #if OW_FOLLOWERS_POKEBALLS
 const u32 gObjectEventPic_MasterBall[] = INCBIN_U32("graphics/object_events/pics/misc/ball_master.4bpp");
 const u32 gObjectEventPic_UltraBall[] = INCBIN_U32("graphics/object_events/pics/misc/ball_ultra.4bpp");

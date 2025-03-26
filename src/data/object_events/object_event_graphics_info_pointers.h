@@ -269,6 +269,7 @@ extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_WomanK2;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_WomanK3;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_WorkerF;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_WorkerM;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Cube;
 // Begin pokemon event objects
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_PokeBall;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Follower;
@@ -554,6 +555,7 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
 	[OBJ_EVENT_GFX_WOMAN_K_3] = &gObjectEventGraphicsInfo_WomanK3,
 	[OBJ_EVENT_GFX_WORKER_F] = &gObjectEventGraphicsInfo_WorkerF,
 	[OBJ_EVENT_GFX_WORKER_M] = &gObjectEventGraphicsInfo_WorkerM,
+	[OBJ_EVENT_GFX_CUBE] =                 	   &gObjectEventGraphicsInfo_Cube,
 	[OBJ_EVENT_GFX_POKE_BALL] =                &gObjectEventGraphicsInfo_PokeBall,
     [OBJ_EVENT_GFX_OW_MON] =                   &gObjectEventGraphicsInfo_Follower,
 };

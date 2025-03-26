@@ -8099,12 +8099,12 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
     },
     [SPECIES_GALVANTULA] =
     {
-        .baseHP        = 72,
+        .baseHP        = 70,
         .baseAttack    = 77,
-        .baseDefense   = 60,
+        .baseDefense   = 64,
         .baseSpeed     = 108,
-        .baseSpAttack  = 98,
-        .baseSpDefense = 60,
+        .baseSpAttack  = 97,
+        .baseSpDefense = 64,
         .types = MON_TYPES(TYPE_BUG, TYPE_ELECTRIC),
         .catchRate = 75,
         .expYield = 165,
@@ -8126,7 +8126,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
             "It creates barriers from electrified silk\n"
             "that stun foes. This works as a weapon as\n"
             "well as a defense. While it is immobilized\n"
-            "by shock, they eat it. 72/77/60/98/60/108"),
+            "by shock, they eat it. 70/77/64/97/64/108"),
         .pokemonScale = 366,
         .pokemonOffset = 10,
         .trainerScale = 257,

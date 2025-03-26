@@ -11,12 +11,13 @@ OC_ES_Badge1Defeated::
 	message OC_Text_ReceivedBadge1
 	waitmessage
 	call Common_EventScript_PlayGymBadgeFanfare
-	msgbox OC_Text_Badge1InfoTakeThis, MSGBOX_DEFAULT
+	msgbox OC_Text_Badge1Info, MSGBOX_DEFAULT
 	setflag FLAG_DEFEATED_RUSTBORO_GYM
 	setflag FLAG_BADGE01_GET
 	goto OC_ES_GiveTMBadge1
 	end
 OC_ES_GiveTMBadge1::
+	msgbox OC_Text_Badge1TakeThis, MSGBOX_DEFAULT
 	giveitem ITEM_TM_WATER_PULSE
 	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
 	setflag FLAG_RECEIVED_TM_BADGE1
@@ -62,11 +63,12 @@ OC_Text_Badge1Defeat:
 OC_Text_ReceivedBadge1:
 	.string "{PLAYER} received the\n"
 	.string "Pearl Badge from Erina!$"
-OC_Text_Badge1InfoTakeThis:
+OC_Text_Badge1Info:
 	.string "The Pearl Badge boosts your\n"
 	.string "Pokémon's physical Attack.\p"
 	.string "It also enables them to use\n"
-	.string "the HM Cut outside of battle.\p"
+	.string "the HM Cut outside of battle.$"
+OC_Text_Badge1TakeThis:
 	.string "Please take this TM as well,\n"
 	.string "as a token of my appreciation.$"
 OC_Text_ExplainBadge1TM:

@@ -34,7 +34,7 @@ R3_ES_HelpUs::
 R3_Text_KingIntro:
 	.string "Stop right there, commoner scum!\p"
 	.string "I am King Knight!\n"
-	.string "Bow before me!$"
+	.string "Kneel before me!$"
 R3_Text_KingDefeat:
 	.string "H-how could I lose to a\n"
 	.string "lowly peasant like you?!$"

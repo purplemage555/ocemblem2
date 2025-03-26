@@ -3,6 +3,9 @@ SouthportOW_MapScripts::
 Southport_EventScript_TownSign::
 	msgbox Southport_Text_TownSign, MSGBOX_SIGN
 	end
+Southport_EventScript_BadgeSign::
+	msgbox Southport_Text_BadgeSign, MSGBOX_SIGN
+	end
 OC_ES_HM1::
 	lock
 	faceplayer
@@ -37,7 +40,10 @@ Southport_Text_TownSign:
 	.string "from treasure to tasty seafood!$"
 OC_Text_ComeBackAfterBadge1:
 	.string "Come back after you've bested\n"
-	.string "Duchess Erina Waterstone, matey!$"
+	.string "Duchess Waterstone, matey!$"
 gText_Badge1TMShop:
 	.string "You got the Pearl Badge!\n"
 	.string "Take a look at me wares!$"
+Southport_Text_BadgeSign:
+	.string "Office of Duchess Waterstone,\n"
+	.string "governor of the Argent Coast.$"

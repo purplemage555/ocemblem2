@@ -36,7 +36,7 @@ const u8 gItemEffect_MaxPotion[7] = {
 
 const u8 gItemEffect_HyperPotion[7] = {
     [4] = ITEM4_HEAL_HP,
-    [6] = 150, // Amount of HP to recover
+    [6] = 200, // Amount of HP to recover
 };
 
 const u8 gItemEffect_SuperPotion[7] = {
