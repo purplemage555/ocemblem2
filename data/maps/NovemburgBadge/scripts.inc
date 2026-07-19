@@ -75,7 +75,11 @@ OC_Text_Badge2Info:
 	.string "The Zonaite Badge is named\n"
 	.string "after an amazing metal!\p"
 	.string "Ancient civilizations used it\n"
-	.string "to craft and power their tech!$"
+	.string "to craft and power their tech!\p"
+	.string "Your Pokémon can also now\n"
+	.string "safely level up to Level 30.\p"
+	.string "It also allows you to use\n"
+	.string "the HM Flash outside of battle.$"
 OC_Text_Badge2TakeThis:
 	.string "Oh yeah, take this TM too!\n"
 	.string "We've got plenty of these.$"

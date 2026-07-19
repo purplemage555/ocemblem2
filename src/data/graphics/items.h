@@ -2099,3 +2099,19 @@ const u32 gItemIconPalette_SwapSnack[] = INCBIN_U32("graphics/items/icon_palette
 
 const u32 gItemIcon_TwiceSpicedRadish[] = INCBIN_U32("graphics/items/icons/twice_spiced_radish.4bpp.lz");
 const u32 gItemIconPalette_TwiceSpicedRadish[] = INCBIN_U32("graphics/items/icon_palettes/twice_spiced_radish.gbapal.lz");
+
+const u32 gItemIconPalette_OCItems[] = INCBIN_U32("graphics/items/icon_palettes/oc_items.gbapal.lz");
+const u32 gItemIcon_Bread[] = INCBIN_U32("graphics/items/icons/bread.4bpp.lz");
+const u32 gItemIcon_Nuggets[] = INCBIN_U32("graphics/items/icons/nuggets.4bpp.lz");
+const u32 gItemIcon_SweetRoll[] = INCBIN_U32("graphics/items/icons/sweet_roll.4bpp.lz");
+const u32 gItemIcon_ChocoMilk[] = INCBIN_U32("graphics/items/icons/choco_milk.4bpp.lz");
+const u32 gItemIcon_Burger[] = INCBIN_U32("graphics/items/icons/burger.4bpp.lz");
+const u32 gItemIcon_WallMeat[] = INCBIN_U32("graphics/items/icons/wall_meat.4bpp.lz");
+const u32 gItemIcon_Milkshake[] = INCBIN_U32("graphics/items/icons/milkshake.4bpp.lz");
+const u32 gItemIcon_Sandvich[] = INCBIN_U32("graphics/items/icons/sandvich.4bpp.lz");
+const u32 gItemIcon_PowerBeans[] = INCBIN_U32("graphics/items/icons/power_beans.4bpp.lz");
+const u32 gItemIcon_WallNut[] = INCBIN_U32("graphics/items/icons/wall_nut.4bpp.lz");
+const u32 gItemIcon_Cheese[] = INCBIN_U32("graphics/items/icons/cheese.4bpp.lz");
+const u32 gItemIcon_ChocolateBar[] = INCBIN_U32("graphics/items/icons/chocolate_bar.4bpp.lz");
+const u32 gItemIcon_Cake[] = INCBIN_U32("graphics/items/icons/cake.4bpp.lz");
+const u32 gItemIcon_Pizza[] = INCBIN_U32("graphics/items/icons/pizza.4bpp.lz");

@@ -1,5 +1,9 @@
 PetesburgOW_MapScripts::
+	map_script MAP_SCRIPT_ON_TRANSITION, Petesburg_OnTransition
 	.byte 0
+Petesburg_OnTransition::
+	setflag FLAG_VISITED_PETESBURG
+	end
 Petesburg_EventScript_TownSign::
 	msgbox Petesburg_Text_TownSign, MSGBOX_SIGN
 	end

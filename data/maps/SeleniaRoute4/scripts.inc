@@ -5,10 +5,19 @@ OC_R4_ES_RouteSign::
 	end
 OC_R4_ES_Maple::
 	faceplayer
-	trainerbattle_single TRAINER_OC_R4_MAPLE, R4_Text_MapleHiPlayer, R4_Text_MapleDefeat, OC_ES_AmuletCoin
+	goto_if_set FLAG_R4_BEAT_MAPLE, OC_ES_PostMaple
+	msgbox R4_Text_MapleHiPlayer, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, YES, R4_ES_MapleFight
+	msgbox Maple_Text_OhOk, MSGBOX_DEFAULT
+	release
+	end
+R4_ES_MapleFight::
+	trainerbattle_single TRAINER_OC_R4_MAPLE, R4_Text_MapleIntro, R4_Text_MapleDefeat, OC_ES_AmuletCoin
 	setflag FLAG_R4_BEAT_MAPLE
+OC_ES_PostMaple::
 	goto_if_unset FLAG_RECEIVED_AMULET_COIN, OC_ES_AmuletCoin
 	msgbox R4_Text_BeatMaple, MSGBOX_AUTOCLOSE
+	release
 	end
 OC_ES_AmuletCoin::
 	msgbox R4_Text_PostMaple, MSGBOX_DEFAULT
@@ -49,8 +58,13 @@ R4_Text_MapleHiPlayer:
 	.string "be going quite well!\p"
 	.string "Now that you're more experienced,\n"
 	.string "let's have a quick battle right here!$"
+Maple_Text_OhOk:
+	.string "Oh, okay. I'm always here, {PLAYER}!$"
+R4_Text_MapleIntro:
+	.string "I won't go easy on you:\n"
+	.string "Better give it your all!$"
 R4_Text_MapleDefeat:
-	.string "Oh, wow!\p"
+	.string "Oh, wow!\n"
 	.string "You clearly aren't holding back!$"
 R4_Text_PostMaple:
 	.string "Maple: That was fun, even if I lost!\p"

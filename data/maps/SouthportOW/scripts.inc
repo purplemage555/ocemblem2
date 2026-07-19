@@ -1,5 +1,9 @@
 SouthportOW_MapScripts::
+	map_script MAP_SCRIPT_ON_TRANSITION, Southport_OnTransition
 	.byte 0
+Southport_OnTransition::
+	setflag FLAG_VISITED_SOUTHPORT
+	end
 Southport_EventScript_TownSign::
 	msgbox Southport_Text_TownSign, MSGBOX_SIGN
 	end
@@ -46,4 +50,4 @@ gText_Badge1TMShop:
 	.string "Take a look at me wares!$"
 Southport_Text_BadgeSign:
 	.string "Office of Duchess Waterstone,\n"
-	.string "governor of the Argent Coast.$"
+	.string "Governor of the Argent Coast.$"

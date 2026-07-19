@@ -62,7 +62,7 @@ Novemburg_Text_LoveStory:
 	.string "Oh, I hope my fairy tale didn't\n"
 	.string "bore you. Take this TM with you.$"
 Novemburg_Text_ExplainAttract:
-	.string "TM19 contains Attract. It works\n"
+	.string "TM20 contains Attract. It works\n"
 	.string "on Pokémon of the opposite gender.$"
 Novemburg_Text_Batteries:
 	.string "Sheikah and Zonai machines were\n"

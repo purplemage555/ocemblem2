@@ -50,11 +50,11 @@ OC_ES_ReceivedVanillite::
 	release
 	end
 OC_ES_GotVanilliteFanfare::
+	bufferspeciesname STR_VAR_1, SPECIES_VANILLITE
 	playfanfare MUS_OBTAIN_ITEM
-	message OC_Text_GotVanillite
+	message OC_Text_GotPokemon
 	waitmessage
 	waitfanfare
-	bufferspeciesname STR_VAR_1, SPECIES_VANILLITE
 	return
 OC_R3N_ES_Trainer1::
 	trainerbattle_single TRAINER_OC_R3_SEB, OC_R3N_Trainer1Intro, OC_R3N_Trainer1Defeat
@@ -91,8 +91,6 @@ OC_HieloPostBattle:
 OC_Hielo_TakeVanillite:
 	.string "Great work! Here's your own Vanillite,\n"
 	.string "just like I promised. A deal's a deal!$"
-OC_Text_GotVanillite:
-	.string "{PLAYER} received Vanillite!$"
 OC_R3N_Trainer1Intro:
 	.string "Life must be the bubbles\n"
 	.string "if you live under the sea…$"
@@ -122,6 +120,6 @@ OC_R3N_Trainer3PostBattle:
 OC_R3_Text_FisherSign:
 	.string "Fisherman's House$"
 OC_R3_Text_SeaSign:
-	.string "Swimming and surfing allowed.$"
+	.string "Fishing, swimming and surfing allowed.$"
 OC_R3_Text_LodgeSign:
 	.string "Route 3 Rest House$"

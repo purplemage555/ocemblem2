@@ -5,7 +5,7 @@ OC_R7_ES_RouteSign::
 	end
 OC_R7_Text_RouteSign:
 	.string "Selenia Route 7:\n"
-	.string "Right across the Power Plant!$"
+	.string "Across the river from the Power Plant!$"
 OC_R7_ES_HouseSign::
 	msgbox OC_R7_Text_HouseSign, MSGBOX_SIGN
 	end
@@ -17,8 +17,18 @@ OC_R7_Text_HouseSign:
 OC_Text_ThisIsASign:
 	.string "This is a sign.$"
 OC_R7_ES_Peter::
+	faceplayer
+	goto_if_set 0x546, OC_ES_PostPeter
+	msgbox R7_PeterIntroduction, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, YES, R7_ES_PeterFight
+	msgbox Peter_Text_OhOk, MSGBOX_DEFAULT
+	release
+	end
+R7_ES_PeterFight::
 	trainerbattle_single TRAINER_OC_R7_SPIDEY, R7_PeterIntro, R7_PeterDefeat
+OC_ES_PostPeter::
 	msgbox R7_PeterPostBattle, MSGBOX_AUTOCLOSE
+	release
 	end
 OC_R7_ES_Goblin::
 	trainerbattle_single TRAINER_OC_R7_GOBLIN, R7_GoblinIntro, R7_GoblinDefeat
@@ -28,19 +38,19 @@ OC_R7_ES_Octopus::
 	trainerbattle_single TRAINER_OC_R7_OCTOPUS, R7_OctopusIntro, R7_OctopusDefeat
 	msgbox R7_OctopusPostBattle, MSGBOX_AUTOCLOSE
 	end
+OC_R7_ES_Sand::
+	trainerbattle_single TRAINER_OC_R7_SAND, R7_SandIntro, R7_SandDefeat
+	msgbox R7_SandPostBattle, MSGBOX_AUTOCLOSE
+	end
+OC_R7_ES_Lizard::
+	trainerbattle_single TRAINER_OC_R7_LIZARD, R7_LizardIntro, R7_LizardDefeat
+	msgbox R7_LizardPostBattle, MSGBOX_AUTOCLOSE
+	end
 OC_R7_ES_Electro::
 	trainerbattle_single TRAINER_OC_R7_ELECTRO, R7_ElectroIntro, R7_ElectroDefeat
 	msgbox R7_ElectroPostBattle, MSGBOX_AUTOCLOSE
 	end
-OC_R7_ES_Kappa::
-	trainerbattle_single TRAINER_OC_R7_KAPPA, R7_KappaIntro, R7_KappaDefeat
-	msgbox R7_KappaPostBattle, MSGBOX_AUTOCLOSE
-	end
-OC_R7_ES_Lesk::
-	trainerbattle_single TRAINER_OC_R7_LESK, R7_LeskIntro, R7_LeskDefeat
-	msgbox R7_LeskPostBattle, MSGBOX_AUTOCLOSE
-	end
-R7_PeterIntro:
+R7_PeterIntroduction:
 	.string "Hi, um… I'm Peter Parker.\n"
 	.string "You're {PLAYER}, right?\p"
 	.string "I've heard a lot about you\n"
@@ -48,6 +58,11 @@ R7_PeterIntro:
 	.string "Maple's been my best friend,\n"
 	.string "even when I was still a kid…\p"
 	.string "Anyway, uh- Wanna battle?$"
+Peter_Text_OhOk:
+	.string "Oh, okay. I'll be here\n"
+	.string "if you ever reconsider…$"
+R7_PeterIntro:
+	.string "I'll do my best!$"
 R7_PeterDefeat:
 	.string "Darn, I lost.\n"
 	.string "That was fun though!$"
@@ -74,6 +89,22 @@ R7_OctopusPostBattle:
 	.string "from satellites orbiting the Sun.\p"
 	.string "This array of energy-collecting\n"
 	.string "satellites is called a Dyson swarm.$"
+R7_SandIntro:
+	.string "I think all the sand's in place?\n"
+	.string "That oughta be enough for today…$"
+R7_SandDefeat:
+	.string "This is rough…$"
+R7_SandPostBattle:
+	.string "I'm Flint Marko. I deliver and handle\n"
+	.string "shipments of sand for the Power Plant.$"
+R7_LizardIntro:
+	.string "For most reptilian Pokémon, rain\n"
+	.string "can be quite the welcome reprieve!$"
+R7_LizardDefeat:
+	.string "Tsk… I lost…$"
+R7_LizardPostBattle:
+	.string "I'm Dr. Carla Connors, a scientist\n"
+	.string "from the Selenian Power Plant.$"
 R7_ElectroIntro:
 	.string "It's my birthday today! Now it's\n"
 	.string "time for me to light up my candles!$"
@@ -84,20 +115,13 @@ R7_ElectroPostBattle:
 	.string "the Electric types in the river.\p"
 	.string "Their population is thriving\n"
 	.string "from the Power Plant's output!$"
-R7_KappaIntro:
-	.string "A gulp of tea makes for\n"
-	.string "a great picnic capper!$"
-R7_KappaDefeat:
-	.string "Gulp… My tea…$"
-R7_KappaPostBattle:
-	.string "I know it's raining hard,\n"
-	.string "but it's still lovely weather!$"
-R7_LeskIntro:
-	.string "Soda Pop, Soda Pop!\n"
-	.string "Can't get enough of Soda Pop!$"
-R7_LeskDefeat:
-	.string "Fizzled out…$"
-R7_LeskPostBattle:
-	.string "I drink tons of Soda Pop\n"
-	.string "every day, 'round the clock!\p"
-	.string "It makes me feel ALIVE!!!!!$"
+OC_R7_ES_Labrys::
+	msgbox OC_R7_Text_Labrys, MSGBOX_NPC
+	end
+OC_R7_Text_Labrys:
+	.string "Huh? What the- oh,\n"
+	.string "it's just you, {PLAYER}…\p"
+	.string "I'm keepin' an eye on the Parkers,\n"
+	.string "gotta keep 'em safe and all that!\p"
+	.string "Keep it a secret from Maple\n"
+	.string "and her lil' guy Pete, 'kay?$"

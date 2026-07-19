@@ -35,11 +35,11 @@ OC_ES_ReceivedTimburr::
 	release
 	end
 OC_ES_GotTimburrFanfare::
+	bufferspeciesname STR_VAR_1, SPECIES_TIMBURR
 	playfanfare MUS_OBTAIN_ITEM
-	message OC_Text_GotTimburr
+	message OC_Text_GotPokemon
 	waitmessage
 	waitfanfare
-	bufferspeciesname STR_VAR_1, SPECIES_TIMBURR
 	return
 OC_BarstIntro:
 	.string "Ahoy there!\p"
@@ -54,5 +54,5 @@ OC_BarstPostBattle:
 OC_Barst_TakeTimburr:
 	.string "You beat us fair and square.\n"
 	.string "As promised, here's Timburr's ball.$"
-OC_Text_GotTimburr:
-	.string "{PLAYER} received Timburr!$"
+OC_Text_GotPokemon:
+	.string "{PLAYER} received {STR_VAR_1}!$"

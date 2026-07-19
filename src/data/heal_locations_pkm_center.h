@@ -164,6 +164,13 @@ static const struct HealLocation sHealLocationsPokemonCenter[HEAL_LOCATION_COUNT
         .map = MAP_NUM(SANCTUM_POKE_CENTER),
         DEFAULT_POKEMON_CENTER_COORDS,
     },
+	[HEAL_LOCATION_TARIF - 1] =
+    {
+        .group = MAP_GROUP(FORT_TARIF),
+        .map = MAP_NUM(FORT_TARIF),
+        .x = 7,
+		.y = 26,
+    },
 	[HEAL_LOCATION_SOUTHPORT - 1] =
     {
         .group = MAP_GROUP(SOUTHPORT_POKE_CENTER),
@@ -180,6 +187,18 @@ static const struct HealLocation sHealLocationsPokemonCenter[HEAL_LOCATION_COUNT
     {
         .group = MAP_GROUP(NOVEMBURG_POKE_CENTER),
         .map = MAP_NUM(NOVEMBURG_POKE_CENTER),
+        DEFAULT_POKEMON_CENTER_COORDS,
+    },
+	[HEAL_LOCATION_EBONHEART - 1] =
+    {
+        .group = MAP_GROUP(NEW_EBONHEART_POKE_CENTER),
+        .map = MAP_NUM(NEW_EBONHEART_POKE_CENTER),
+        DEFAULT_POKEMON_CENTER_COORDS,
+    },
+	[HEAL_LOCATION_AGRIOPOLIS - 1] =
+    {
+        .group = MAP_GROUP(AGRIOPOLIS_POKE_CENTER),
+        .map = MAP_NUM(AGRIOPOLIS_POKE_CENTER),
         DEFAULT_POKEMON_CENTER_COORDS,
     },
 };
@@ -218,7 +237,10 @@ static const u8 sHealNpcLocalId[HEAL_LOCATION_COUNT - 1] =
 	[HEAL_LOCATION_KIRKOPOLIS - 1] = 1,
 	[HEAL_LOCATION_PETESBURG - 1] = 1,
 	[HEAL_LOCATION_SANCTUM - 1] = 1,
+	[HEAL_LOCATION_TARIF - 1] = 0,
 	[HEAL_LOCATION_SOUTHPORT - 1] = 1,
 	[HEAL_LOCATION_CRASHSITE - 1] = 1,
 	[HEAL_LOCATION_NOVEMBURG - 1] = 1,
+	[HEAL_LOCATION_EBONHEART - 1] = 1,
+	[HEAL_LOCATION_AGRIOPOLIS - 1] = 1,
 };

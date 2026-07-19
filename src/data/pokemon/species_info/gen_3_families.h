@@ -960,7 +960,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
-        .abilities = { ABILITY_PICKUP, ABILITY_NONE, ABILITY_QUICK_FEET },
+        .abilities = { ABILITY_PICKUP, ABILITY_PICKUP, ABILITY_QUICK_FEET },
         .bodyColor = BODY_COLOR_BROWN,
         .speciesName = _("Zigzagoon"),
         .cryId = CRY_ZIGZAGOON,
@@ -1025,7 +1025,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
-        .abilities = { ABILITY_PICKUP, ABILITY_NONE, ABILITY_QUICK_FEET },
+        .abilities = { ABILITY_PICKUP, ABILITY_PICKUP, ABILITY_QUICK_FEET },
         .bodyColor = BODY_COLOR_WHITE,
         .speciesName = _("Linoone"),
         .cryId = CRY_LINOONE,
@@ -1034,8 +1034,8 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .height = 5,
         .weight = 325,
         .description = COMPOUND_STRING(
-            "It is exceedingly fast if it only has to run\n"
-            "in a straight line. When it spots prey\n"
+            "It is exceedingly fast if it only has to\n"
+            "run in a straight line. When it spots prey\n"
             "underwater in ponds, it quickly leaps in\n"
             "and catches it. 78/70/61/50/61/100"),
         .pokemonScale = 321,
@@ -1088,7 +1088,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
-        .abilities = { ABILITY_GUTS, ABILITY_NONE, ABILITY_DEFIANT },
+        .abilities = { ABILITY_RECKLESS, ABILITY_GUTS, ABILITY_DEFIANT },
         .bodyColor = BODY_COLOR_GRAY,
         .speciesName = _("Obstagoon"),
         .cryId = CRY_OBSTAGOON,
@@ -1113,7 +1113,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .backPic = gMonBackPic_Obstagoon,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 1,
-        //.backAnimId = BACK_ANIM_NONE,
+        .backAnimId = BACK_ANIM_JOLT_RIGHT,
         .palette = gMonPalette_Obstagoon,
         .shinyPalette = gMonShinyPalette_Obstagoon,
         .iconSprite = gMonIcon_Obstagoon,
@@ -1662,10 +1662,10 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .height = 5,
         .weight = 26,
         .description = COMPOUND_STRING(
-            "This Pokémon lives in ponds with clean\n"
-            "water. It is known to ferry small Pokémon\n"
-            "across ponds by carrying them on its\n"
-            "lily pad. 40/30/30/45/50/30"),
+            "This Pokémon lives in clean ponds.\n"
+            "It is known to ferry small Pokémon\n"
+            "across ponds by carrying them on\n"
+            "its lily pad. 40/30/30/45/50/30"),
         .pokemonScale = 406,
         .pokemonOffset = 19,
         .trainerScale = 256,
@@ -1707,7 +1707,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .baseSpAttack  = 60,
         .baseSpDefense = 70,
         .types = MON_TYPES(TYPE_WATER, TYPE_GRASS),
-        .catchRate = 120,
+        .catchRate = 90,
         .expYield = 141,
         .evYield_SpDefense = 2,
         .itemRare = ITEM_MENTAL_HERB,
@@ -1725,10 +1725,10 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .height = 12,
         .weight = 325,
         .description = COMPOUND_STRING(
-            "In the evening, it takes great delight in\n"
-            "popping out of rivers and startling people.\n"
+            "It takes great delight in popping out\n"
+            "of rivers and startling people at night.\n"
             "It feeds on aquatic moss that grows on\n"
-            "rocks in the riverbed. 60/50/50/60/70/50"),
+            "rocks in riverbeds. 60/50/50/60/70/50"),
         .pokemonScale = 277,
         .pokemonOffset = 9,
         .trainerScale = 256,
@@ -2224,7 +2224,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
             "It makes its nest on a sheer cliff at the\n"
             "edge of the sea. It has trouble keeping\n"
             "its wings flapping in flight. Instead, it\n"
-            "soars on updrafts. 40/30/60/70/30/85"),
+            "glides on updrafts. 40/30/60/70/30/85"),
         .pokemonScale = 295,
         .pokemonOffset = -2,
         .trainerScale = 256,
@@ -2281,14 +2281,14 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .speciesName = _("Pelipper"),
         .cryId = CRY_PELIPPER,
         .natDexNum = NATIONAL_DEX_PELIPPER,
-        .categoryName = _("Water Bird"),
+        .categoryName = _("Pelican"),
         .height = 12,
         .weight = 280,
         .description = COMPOUND_STRING(
-            "It skims the tops of waves as it flies.\n"
-            "When it spots prey, it uses its large beak\n"
-            "to scoop it up with water. It protects its\n"
-            "eggs in its beak. 100/50/100/95/75/95"),
+            "It skims the tops of waves as it flies,\n"
+            "using its large beak to scoop up prey.\n"
+            "It protects its eggs in its beak, and can\n"
+            "summon rain at will. 100/50/100/95/75/95"),
         .pokemonScale = 288,
         .pokemonOffset = 1,
         .trainerScale = 256,
@@ -2949,7 +2949,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .description = COMPOUND_STRING(
             "It scatters spores from holes in the cap\n"
             "on its head. It loves warm and humid\n"
-            "climates. It feeds on trees and plants in\n"
+            "climates, and feeds on vegetation in\n"
             "fields and forests. 60/130/80/60/60/70"),
         .pokemonScale = 324,
         .pokemonOffset = 6,
@@ -3136,8 +3136,8 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .description = COMPOUND_STRING(
             "Hordes of Slaking gather around trees\n"
             "when fruits come into season. They wait\n"
-            "around patiently for ripened fruits to fall\n"
-            "out of the trees. 150/160/100/95/65/100"),
+            "around patiently for fruits to fall, but\n"
+            "only for 25 days. 150/160/100/95/65/100"),
         .pokemonScale = 256,
         .pokemonOffset = 2,
         .trainerScale = 300,
@@ -3363,12 +3363,12 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
 #if P_FAMILY_WHISMUR
     [SPECIES_WHISMUR] =
     {
-        .baseHP        = 64,
+        .baseHP        = 74,
         .baseAttack    = 51,
-        .baseDefense   = 22,
-        .baseSpeed     = 30,
+        .baseDefense   = 23,
+        .baseSpeed     = 33,
         .baseSpAttack  = 51,
-        .baseSpDefense = 22,
+        .baseSpDefense = 23,
         .types = MON_TYPES(TYPE_NORMAL),
         .catchRate = 190,
         .expYield = 68,
@@ -3378,7 +3378,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MONSTER, EGG_GROUP_FIELD),
-        .abilities = { ABILITY_SOUNDPROOF, ABILITY_NONE, ABILITY_RATTLED },
+        .abilities = { ABILITY_BOOM_BOX, ABILITY_NONE, ABILITY_RATTLED },
         .bodyColor = BODY_COLOR_PINK,
         .speciesName = _("Whismur"),
         .cryId = CRY_WHISMUR,
@@ -3390,7 +3390,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
             "Its cries equal a jet plane in volume.\n"
             "Because it inhales through its ears,\n"
             "it can cry continually without having\n"
-            "to catch its breath. 64/51/22/51/22/30"),
+            "to catch its breath. 74/51/23/51/23/33"),
         .pokemonScale = 373,
         .pokemonOffset = 17,
         .trainerScale = 256,
@@ -3421,16 +3421,16 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
 		.perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,
         .levelUpLearnset = sWhismurLevelUpLearnset,
         .teachableLearnset = sExploudTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 18, SPECIES_LOUDRED}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 16, SPECIES_LOUDRED}),
     },
     [SPECIES_LOUDRED] =
     {
-        .baseHP        = 84,
-        .baseAttack    = 71,
-        .baseDefense   = 42,
-        .baseSpeed     = 50,
-        .baseSpAttack  = 71,
-        .baseSpDefense = 42,
+        .baseHP        = 99,
+        .baseAttack    = 76,
+        .baseDefense   = 48,
+        .baseSpeed     = 53,
+        .baseSpAttack  = 76,
+        .baseSpDefense = 48,
         .types = MON_TYPES(TYPE_NORMAL),
         .catchRate = 120,
         .expYield = 126,
@@ -3445,14 +3445,14 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .speciesName = _("Loudred"),
         .cryId = CRY_LOUDRED,
         .natDexNum = NATIONAL_DEX_LOUDRED,
-        .categoryName = _("Big Voice"),
+        .categoryName = _("Loud Voice"),
         .height = 10,
         .weight = 405,
         .description = COMPOUND_STRING(
             "It positions the round speakers on its\n"
             "head to assail foes with ultrasonic waves\n"
             "at massive volume. It builds power by\n"
-            "stomping the ground. 84/71/42/71/42/50"),
+            "stomping the ground. 99/76/48/76/48/53"),
         .pokemonScale = 356,
         .pokemonOffset = 10,
         .trainerScale = 256,
@@ -3483,16 +3483,16 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
 		.perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,
         .levelUpLearnset = sLoudredLevelUpLearnset,
         .teachableLearnset = sExploudTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 36, SPECIES_EXPLOUD}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 32, SPECIES_EXPLOUD}),
     },
     [SPECIES_EXPLOUD] =
     {
-        .baseHP        = 104,
-        .baseAttack    = 91,
-        .baseDefense   = 62,
-        .baseSpeed     = 70,
-        .baseSpAttack  = 101,
-        .baseSpDefense = 72,
+        .baseHP        = 114,
+        .baseAttack    = 101,
+        .baseDefense   = 63,
+        .baseSpeed     = 73,
+        .baseSpAttack  = 111,
+        .baseSpDefense = 73,
         .types = MON_TYPES(TYPE_NORMAL),
         .catchRate = 45,
 		.expYield = 245,
@@ -3513,8 +3513,8 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .description = COMPOUND_STRING(
             "It has sound-generating organs all over\n"
             "its body. It communicates with others by\n"
-            "adjusting the tone and volume of the cries\n"
-            "it emits. 104/91/62/101/72/70"),
+            "adjusting the tone and volume of the\n"
+            "cries it emits. 114/101/63/111/73/73"),
         .pokemonScale = 284,
         .pokemonOffset = 1,
         .trainerScale = 256,
@@ -3571,7 +3571,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .speciesName = _("Makuhita"),
         .cryId = CRY_MAKUHITA,
         .natDexNum = NATIONAL_DEX_MAKUHITA,
-        .categoryName = _("Guts"),
+        .categoryName = _("Sumo Trainee"),
         .height = 10,
         .weight = 864,
         .description = COMPOUND_STRING(
@@ -3634,7 +3634,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .speciesName = _("Hariyama"),
         .cryId = CRY_HARIYAMA,
         .natDexNum = NATIONAL_DEX_HARIYAMA,
-        .categoryName = _("Arm Thrust"),
+        .categoryName = _("Sumo Slammer"),
         .height = 23,
         .weight = 2538,
         .description = COMPOUND_STRING(
@@ -4243,8 +4243,8 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .description = COMPOUND_STRING(
             "A Pokémon that is clad in steel armor.\n"
             "A new suit of armor is made when it evolves.\n"
-            "The old, discarded armor is salvaged into\n"
-            "iron products. 80/70/100/20/40/30"),
+            "Its discarded armor is then salvaged\n"
+            "into iron products. 80/70/100/20/40/30"),
         .pokemonScale = 419,
         .pokemonOffset = 23,
         .trainerScale = 256,
@@ -4286,7 +4286,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .baseSpAttack  = 25,
         .baseSpDefense = 50,
         .types = MON_TYPES(TYPE_STEEL, TYPE_ROCK),
-        .catchRate = 90,
+        .catchRate = 75,
         .expYield = 152,
         .evYield_Defense = 2,
         .itemRare = ITEM_HARD_STONE,
@@ -4300,7 +4300,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .speciesName = _("Lairon"),
         .cryId = CRY_LAIRON,
         .natDexNum = NATIONAL_DEX_LAIRON,
-        .categoryName = _("Iron Armor"),
+        .categoryName = _("Steel Armor"),
         .height = 9,
         .weight = 1200,
         .description = COMPOUND_STRING(
@@ -4349,7 +4349,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .baseSpAttack  = 30,
         .baseSpDefense = 60,
         .types = MON_TYPES(TYPE_STEEL, TYPE_ROCK),
-        .catchRate = 45,
+        .catchRate = 30,
         .expYield = 265,
         .evYield_Defense = 3,
         .itemRare = ITEM_HARD_STONE,
@@ -4363,7 +4363,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .speciesName = _("Aggron"),
         .cryId = CRY_AGGRON,
         .natDexNum = NATIONAL_DEX_AGGRON,
-        .categoryName = _("Iron Armor"),
+        .categoryName = _("Silver Armor"),
         .height = 21,
         .weight = 3600,
         .description = COMPOUND_STRING(
@@ -6393,12 +6393,12 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
     },
     [SPECIES_VIBRAVA] =
     {
-        .baseHP        = 80,
-        .baseAttack    = 80,
-        .baseDefense   = 60,
+        .baseHP        = 75,
+        .baseAttack    = 100,
+        .baseDefense   = 55,
         .baseSpeed     = 80,
-        .baseSpAttack  = 60,
-        .baseSpDefense = 60,
+        .baseSpAttack  = 55,
+        .baseSpDefense = 55,
         .types = MON_TYPES(TYPE_GROUND, TYPE_DRAGON),
         .catchRate = 120,
         .expYield = 126,
@@ -6420,8 +6420,8 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .description = COMPOUND_STRING(
             "It looses ultrasonic waves by rubbing its\n"
             "wings together. Since a Vibrava's wings\n"
-            "are still in the process of growing, it can\n"
-            "only fly briefly. 80/80/60/60/60/80"),
+            "are still in the process of growing, it\n"
+            "can only fly briefly. 75/100/55/55/55/80"),
         .pokemonScale = 370,
         .pokemonOffset = 11,
         .trainerScale = 256,
@@ -6661,10 +6661,10 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
     [SPECIES_SWABLU] =
     {
         .baseHP        = 50,
-        .baseAttack    = 45,
+        .baseAttack    = 50,
         .baseDefense   = 75,
-        .baseSpeed     = 55,
-        .baseSpAttack  = 45,
+        .baseSpeed     = 60,
+        .baseSpAttack  = 50,
         .baseSpDefense = 80,
         .types = MON_TYPES(TYPE_NORMAL, TYPE_FLYING),
         .catchRate = 255,
@@ -6673,7 +6673,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .genderRatio = PERCENT_FEMALE(50),
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
-        .growthRate = GROWTH_ERRATIC,
+        .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FLYING, EGG_GROUP_DRAGON),
         .abilities = { ABILITY_NATURAL_CURE, ABILITY_CLOUD_NINE, ABILITY_CLOUD_NINE },
         .bodyColor = BODY_COLOR_BLUE,
@@ -6687,7 +6687,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
             "A Pokémon that has wings like cottony\n"
             "clouds. After enduring winter, in which\n"
             "little food is available, Swablu flocks\n"
-            "to towns in spring. 50/45/75/45/80/55"),
+            "to towns in spring. 50/50/75/50/80/60"),
         .pokemonScale = 422,
         .pokemonOffset = -8,
         .trainerScale = 256,
@@ -6736,7 +6736,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .genderRatio = PERCENT_FEMALE(50),
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
-        .growthRate = GROWTH_ERRATIC,
+        .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FLYING, EGG_GROUP_DRAGON),
         .abilities = { ABILITY_NATURAL_CURE, ABILITY_CLOUD_NINE, ABILITY_CLOUD_NINE },
         .bodyColor = BODY_COLOR_BLUE,
@@ -7347,8 +7347,8 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .weight = 328,
         .description = COMPOUND_STRING(
             "A brutish Pokémon that loves to battle.\n"
-            "A veteran Crawdaunt that has prevailed in\n"
-            "hundreds of battles has giant pincers\n"
+            "A veteran Crawdaunt that has prevailed\n"
+            "in hundreds of battles has giant pincers\n"
             "with countless scars. 65/130/115/90/55/75"),
         .pokemonScale = 365,
         .pokemonOffset = 9,
@@ -7445,7 +7445,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
 		.perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,
         .levelUpLearnset = sBaltoyLevelUpLearnset,
         .teachableLearnset = sBaltoyTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 36, SPECIES_CLAYDOL}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 28, SPECIES_CLAYDOL}),
     },
     [SPECIES_CLAYDOL] =
     {
@@ -7942,11 +7942,11 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
     [SPECIES_CASTFORM_NORMAL] =
     {
         .baseHP        = 80,
-        .baseAttack    = 70,
-        .baseDefense   = 75,
-        .baseSpeed     = 75,
+        .baseAttack    = 60,
+        .baseDefense   = 80,
+        .baseSpeed     = 80,
         .baseSpAttack  = 100,
-        .baseSpDefense = 75,
+        .baseSpDefense = 80,
         .types = MON_TYPES(TYPE_NORMAL),
         .catchRate = 45,
         .expYield = 147,
@@ -7970,7 +7970,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
             "It alters its form depending on the\n"
             "weather. Changes in the climate such as\n"
             "the temperature and humidity affect its\n"
-            "own biochemistry. 80/70/75/100/75/75"),
+            "own biochemistry. 80/60/80/100/80/80"),
         .pokemonScale = 435,
         .pokemonOffset = -5,
         .trainerScale = 256,
@@ -8008,11 +8008,11 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
     [SPECIES_CASTFORM_SUNNY] =
     {
         .baseHP        = 80,
-        .baseAttack    = 70,
+        .baseAttack    = 60,
         .baseDefense   = 100,
-        .baseSpeed     = 75,
+        .baseSpeed     = 80,
         .baseSpAttack  = 100,
-        .baseSpDefense = 75,
+        .baseSpDefense = 80,
         .types = MON_TYPES(TYPE_FIRE),
         .catchRate = 45,
         .expYield = 147,
@@ -8036,7 +8036,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
             "Castform takes this form on bright days.\n"
             "In an experiment where is was placed in\n"
             "front of a heater, it didn't change to this\n"
-            "warm and toasty form. 80/70/100/100/75/75"),
+            "warm and toasty form. 80/60/100/100/80/80"),
         .pokemonScale = 435,
         .pokemonOffset = -5,
         .trainerScale = 256,
@@ -8074,9 +8074,9 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
     [SPECIES_CASTFORM_RAINY] =
     {
         .baseHP        = 80,
-        .baseAttack    = 70,
-        .baseDefense   = 75,
-        .baseSpeed     = 75,
+        .baseAttack    = 60,
+        .baseDefense   = 80,
+        .baseSpeed     = 80,
         .baseSpAttack  = 100,
         .baseSpDefense = 100,
         .types = MON_TYPES(TYPE_WATER),
@@ -8102,7 +8102,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
             "This is Castform's form while it's raining.\n"
             "In an experiment where it was placed in a\n"
             "shower, it didn't change to this form. Its\n"
-            "soft body is watery. 80/70/75/100/100/75"),
+            "soft body is watery. 80/60/80/100/100/80"),
         .pokemonScale = 435,
         .pokemonOffset = -5,
         .trainerScale = 256,
@@ -8140,11 +8140,11 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
     [SPECIES_CASTFORM_SNOWY] =
     {
         .baseHP        = 80,
-        .baseAttack    = 70,
-        .baseDefense   = 75,
+        .baseAttack    = 60,
+        .baseDefense   = 80,
         .baseSpeed     = 100,
         .baseSpAttack  = 100,
-        .baseSpDefense = 75,
+        .baseSpDefense = 80,
         .types = MON_TYPES(TYPE_ICE),
         .catchRate = 45,
         .expYield = 147,
@@ -8168,7 +8168,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
             "This is Castform's form in a hailstorm.\n"
             "In an experiment where it was placed\n"
             "in a freezer, it didn't change to this form.\n"
-            "Its smooth skin is cold. 80/70/75/100/75/100"),
+            "Its smooth skin is cold. 80/60/80/100/80/100"),
         .pokemonScale = 435,
         .pokemonOffset = -5,
         .trainerScale = 256,
@@ -9431,7 +9431,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .speciesName = _("Walrein"),
         .cryId = CRY_WALREIN,
         .natDexNum = NATIONAL_DEX_WALREIN,
-        .categoryName = _("Ice Break"),
+        .categoryName = _("Horker"),
         .height = 14,
         .weight = 1506,
         .description = COMPOUND_STRING(
@@ -9841,7 +9841,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
             "Although it is small, this Pokémon is very\n"
             "powerful because its body is a bundle of\n"
             "muscles. It launches head-butts with its\n"
-            "ironlike skull. 45/75/60/40/30/50"),
+            "iron-like skull. 45/75/60/40/30/50"),
         .pokemonScale = 448,
         .pokemonOffset = 18,
         .trainerScale = 256,
@@ -9965,8 +9965,8 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .weight = 1026,
         .description = COMPOUND_STRING(
             "After many long years, its cellular\n"
-            "structure underwent a sudden mutation to\n"
-            "grow wings. When angered, it goes on a\n"
+            "structure underwent a sudden mutation\n"
+            "to grow wings. When angered, it goes on a\n"
             "mindless rampage. 95/135/80/110/80/100"),
         .pokemonScale = 256,
         .pokemonOffset = 0,
@@ -10213,7 +10213,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .speciesName = _("Metagross"),
         .cryId = CRY_METAGROSS,
         .natDexNum = NATIONAL_DEX_METAGROSS,
-        .categoryName = _("Iron Leg"),
+        .categoryName = _("Iron Mech"),
         .height = 16,
         .weight = 5500,
         .description = COMPOUND_STRING(

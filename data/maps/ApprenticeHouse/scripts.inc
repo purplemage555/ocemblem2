@@ -35,11 +35,11 @@ OC_ES_ReceivedVenonat::
 	release
 	end
 OC_ES_GotVenonatFanfare::
+	bufferspeciesname STR_VAR_1, SPECIES_VENONAT
 	playfanfare MUS_OBTAIN_ITEM
-	message OC_Text_GotVenonat
+	message OC_Text_GotPokemon
 	waitmessage
 	waitfanfare
-	bufferspeciesname STR_VAR_1, SPECIES_VENONAT
 	return
 Sanctum_ES_NatBro::
 	lock
@@ -61,8 +61,6 @@ OC_Nat_TakeVenonat:
 	.string "don't have the time to do so myself.\p"
 	.string "You seem like a competent Trainer.\n"
 	.string "Can you do it instead, pretty please?$"
-OC_Text_GotVenonat:
-	.string "{PLAYER} received Venonat!$"
 Sanctum_Text_NatBro:
 	.string "My older sister Nat's a natural\n"
 	.string "when it comes to casting spells,\p"

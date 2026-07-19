@@ -14,11 +14,11 @@ PlayerHouse_EventScript_ReceiveWhismur::
 	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_WHISMUR
 	givemon SPECIES_WHISMUR, 5, ITEM_SOOTHE_BELL
 	setflag FLAG_SYS_POKEDEX_GET
+	bufferspeciesname STR_VAR_1, SPECIES_WHISMUR
 	playfanfare MUS_OBTAIN_ITEM
 	message PlayerHouse_Text_ReceivedWhismur
 	waitmessage
 	waitfanfare
-	bufferspeciesname STR_VAR_1, SPECIES_WHISMUR
 	msgbox gText_NicknameThisPokemon, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, NO, PlayerHouseLetsBattle
 	call Common_EventScript_GetGiftMonPartySlot
@@ -50,7 +50,7 @@ PlayerHouse_GiveStarter:
 	.string "I'm here to give you your\n"
 	.string "starter and your Pokédex!$"
 PlayerHouse_Text_ReceivedWhismur:
-	.string "{PLAYER} received a Whismur\n"
+	.string "{PLAYER} received a {STR_VAR_1}\n"
 	.string "and a Selenian Pokédex!$"
 PlayerHouseHeyLetsBattle:
 	.string "Maple: Now that you have your\n"

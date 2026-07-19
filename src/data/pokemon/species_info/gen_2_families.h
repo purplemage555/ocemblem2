@@ -1307,8 +1307,8 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .weight = 225,
         .description = COMPOUND_STRING(
             "The light-emitting orbs on its back are\n"
-            "very bright. They are formed from a part of\n"
-            "its dorsal fin. This Pokémon illuminates\n"
+            "very bright. They are formed from a part\n"
+            "of its dorsal fin. This Pokémon illuminates\n"
             "the deep darkness. 125/58/58/81/81/77"),
         .pokemonScale = 269,
         .pokemonOffset = 6,
@@ -1360,7 +1360,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
-        .abilities = { ABILITY_SERENE_GRACE, ABILITY_NONE, ABILITY_SUPER_LUCK },
+        .abilities = { ABILITY_SUPER_LUCK, ABILITY_SERENE_GRACE, ABILITY_SUPER_LUCK },
         .bodyColor = BODY_COLOR_WHITE,
         .speciesName = _("Togepi"),
         .cryId = CRY_TOGEPI,
@@ -1422,7 +1422,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FLYING, EGG_GROUP_FAIRY),
-        .abilities = { ABILITY_SERENE_GRACE, ABILITY_NONE, ABILITY_SUPER_LUCK },
+        .abilities = { ABILITY_SUPER_LUCK, ABILITY_SERENE_GRACE, ABILITY_SUPER_LUCK },
         .bodyColor = BODY_COLOR_WHITE,
         .speciesName = _("Togetic"),
         .cryId = CRY_TOGETIC,
@@ -1470,7 +1470,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
     [SPECIES_TOGEKISS] =
     {
         .baseHP        = 85,
-        .baseAttack    = 50,
+        .baseAttack    = 45,
         .baseDefense   = 95,
         .baseSpeed     = 80,
         .baseSpAttack  = 120,
@@ -1485,7 +1485,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FLYING, EGG_GROUP_FAIRY),
-        .abilities = { ABILITY_SERENE_GRACE, ABILITY_NONE, ABILITY_SUPER_LUCK },
+        .abilities = { ABILITY_SUPER_LUCK, ABILITY_SERENE_GRACE, ABILITY_SUPER_LUCK },
         .bodyColor = BODY_COLOR_WHITE,
         .noFlip = TRUE,
         .speciesName = _("Togekiss"),
@@ -1498,7 +1498,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
             "As everyone knows, it visits peaceful\n"
             "regions, bringing them gifts of kindness\n"
             "and sweet blessings. It will never appear\n"
-            "in ravaged places. 85/50/95/120/115/80"),
+            "in ravaged places. 85/45/95/120/115/80"),
         .pokemonScale = 268,
         .pokemonOffset = 2,
         .trainerScale = 271,
@@ -1696,10 +1696,10 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .height = 6,
         .weight = 78,
         .description = COMPOUND_STRING(
-            "Its fluffy wool rubs together and builds\n"
-            "a static charge. The more energy is\n"
-            "charged, the more brightly the lightbulb\n"
-            "on its tail glows. 55/40/40/65/45/35"),
+            "Its fluffy wool rubs together and\n"
+            "builds up static charge. The more energy\n"
+            "it has charged up, the brighter its\n"
+            "tail bulb glows. 55/40/40/65/45/35"),
         .pokemonScale = 379,
         .pokemonOffset = 18,
         .trainerScale = 256,
@@ -1737,12 +1737,12 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
     {
         .baseHP        = 70,
         .baseAttack    = 55,
-        .baseDefense   = 55,
+        .baseDefense   = 60,
         .baseSpeed     = 45,
-        .baseSpAttack  = 80,
+        .baseSpAttack  = 85,
         .baseSpDefense = 60,
         .types = MON_TYPES(TYPE_ELECTRIC),
-        .catchRate = 120,
+        .catchRate = 90,
         .expYield = 128,
         .evYield_SpAttack = 2,
         .genderRatio = PERCENT_FEMALE(50),
@@ -1762,7 +1762,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
             "Its fleece quality changes to generate\n"
             "strong static electricity with a small\n"
             "amount of wool. It is insulated by its\n"
-            "pink hide. 70/55/55/80/60/45"),
+            "pink hide. 70/55/60/85/60/45"),
         .pokemonScale = 372,
         .pokemonOffset = 15,
         .trainerScale = 256,
@@ -1812,12 +1812,12 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MONSTER, EGG_GROUP_FIELD),
-        .abilities = { ABILITY_STATIC, ABILITY_FUR_COAT },
+        .abilities = { ABILITY_THICK_FAT, ABILITY_FUR_COAT },
         .bodyColor = BODY_COLOR_YELLOW,
         .speciesName = _("Ampharos"),
         .cryId = CRY_AMPHAROS,
         .natDexNum = NATIONAL_DEX_AMPHAROS,
-        .categoryName = _("Light"),
+        .categoryName = _("Beacon"),
         .height = 14,
         .weight = 615,
         .description = COMPOUND_STRING(
@@ -2929,7 +2929,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
             "After losing a territorial struggle,\n"
             "Wooper began living on land, developing\n"
             "a poisonous film to protect its body.\n"
-            "55/45/45/25/25/15"),
+            "It loves chocolate. 55/45/45/25/25/15"),
         .pokemonScale = 479,
         .pokemonOffset = 21,
         .trainerScale = 256,
@@ -3062,9 +3062,9 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .weight = 2230,
         .description = COMPOUND_STRING(
             "When attacked, this Pokémon will\n"
-            "retaliate by sticking thick spines\n"
-            "out from its body, risking it all.\n"
-            "130/85/85/45/100/35"),
+            "retaliate by riskily sticking thick\n"
+            "spines out from its body. It still\n"
+            "loves chocolate. 130/85/85/45/100/35"),
         .pokemonScale = 356,
         .pokemonOffset = 17,
         .trainerScale = 256,
@@ -3073,11 +3073,11 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 8,
         .frontAnimFrames = sAnims_Clodsire,
-        //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .frontAnimId = ANIM_H_STRETCH,
         .backPic = gMonBackPic_Clodsire,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 15,
-        //.backAnimId = BACK_ANIM_NONE,
+        .backAnimId = BACK_ANIM_H_SLIDE,
         .palette = gMonPalette_Clodsire,
         .shinyPalette = gMonShinyPalette_Clodsire,
         .iconSprite = gMonIcon_Clodsire,
@@ -3755,7 +3755,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
     },
     [SPECIES_FARIGIRAF] =
     {
-        .baseHP        = 120,
+        .baseHP        = 115,
         .baseAttack    = 90,
         .baseDefense   = 70,
         .baseSpeed     = 85,
@@ -3782,7 +3782,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
             "Now that the brain waves from the\n"
             "head and tail are synced up, its\n"
             "psychic power is 10x that of\n"
-            "Girafarig's. 120/90/70/110/70/85"),
+            "Girafarig's. 115/90/70/110/70/85"),
         .pokemonScale = 356,
         .pokemonOffset = 17,
         .trainerScale = 256,
@@ -3791,11 +3791,11 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_Farigiraf,
-        //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .frontAnimId = ANIM_V_JUMPS_BIG,
         .backPic = gMonBackPic_Farigiraf,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 0,
-        //.backAnimId = BACK_ANIM_NONE,
+        .backAnimId = BACK_ANIM_SHRINK_GROW_VIBRATE,
         .palette = gMonPalette_Farigiraf,
         .shinyPalette = gMonShinyPalette_Farigiraf,
         .iconSprite = gMonIcon_Farigiraf,
@@ -4715,12 +4715,12 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_BUG),
-        .abilities = { ABILITY_GUTS, ABILITY_NONE, ABILITY_MOXIE },
+        .abilities = { ABILITY_MOXIE, ABILITY_GUTS, ABILITY_MOXIE },
         .bodyColor = BODY_COLOR_BLUE,
         .speciesName = _("Heracross"),
         .cryId = CRY_HERACROSS,
         .natDexNum = NATIONAL_DEX_HERACROSS,
-        .categoryName = _("Single Horn"),
+        .categoryName = _("Mega Horn"),
         .height = 15,
         .weight = 540,
         .description = COMPOUND_STRING(
@@ -4857,7 +4857,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .speciesName = _("Sneasel"),
         .cryId = CRY_SNEASEL,
         .natDexNum = NATIONAL_DEX_SNEASEL,
-        .categoryName = _("Sharp Claw"),
+        .categoryName = _("Sneaky Claw"),
         .height = 9,
         .weight = 280,
         .description = COMPOUND_STRING(
@@ -4934,7 +4934,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .speciesName = _("Weavile"),
         .cryId = CRY_WEAVILE,
         .natDexNum = NATIONAL_DEX_WEAVILE,
-        .categoryName = _("Sharp Claw"),
+        .categoryName = _("Vile Claw"),
         .height = 11,
         .weight = 340,
         .description = COMPOUND_STRING(
@@ -5687,7 +5687,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .speciesName = _("Mamoswine"),
         .cryId = CRY_MAMOSWINE,
         .natDexNum = NATIONAL_DEX_MAMOSWINE,
-        .categoryName = _("Twin Tusk"),
+        .categoryName = _("Mammoth"),
         .height = 25,
         .weight = 2910,
         .description = COMPOUND_STRING(
@@ -6366,12 +6366,12 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .friendship = 35,
         .growthRate = GROWTH_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
-        .abilities = { ABILITY_EARLY_BIRD, ABILITY_UNNERVE, ABILITY_UNNERVE },
+        .abilities = { ABILITY_SOLAR_POWER, ABILITY_UNNERVE },
         .bodyColor = BODY_COLOR_BLACK,
         .speciesName = _("Houndour"),
         .cryId = CRY_HOUNDOUR,
         .natDexNum = NATIONAL_DEX_HOUNDOUR,
-        .categoryName = _("Dark"),
+        .categoryName = _("Dire Hound"),
         .height = 6,
         .weight = 108,
         .description = COMPOUND_STRING(
@@ -6428,12 +6428,12 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .friendship = 35,
         .growthRate = GROWTH_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
-        .abilities = { ABILITY_EARLY_BIRD, ABILITY_UNNERVE, ABILITY_UNNERVE },
+        .abilities = { ABILITY_SOLAR_POWER, ABILITY_UNNERVE },
         .bodyColor = BODY_COLOR_BLACK,
         .speciesName = _("Houndoom"),
         .cryId = CRY_HOUNDOOM,
         .natDexNum = NATIONAL_DEX_HOUNDOOM,
-        .categoryName = _("Dark"),
+        .categoryName = _("Doom Hound"),
         .height = 14,
         .weight = 350,
         .description = COMPOUND_STRING(
@@ -6904,7 +6904,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
-        .abilities = { ABILITY_THICK_FAT, ABILITY_INTIMIDATE, ABILITY_SAP_SIPPER },
+        .abilities = { ABILITY_THICK_FAT, ABILITY_INTIMIDATE },
         .bodyColor = BODY_COLOR_PINK,
         .speciesName = _("Miltank"),
         .cryId = CRY_MILTANK,
@@ -7325,14 +7325,14 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .speciesName = _("Tyranitar"),
         .cryId = CRY_TYRANITAR,
         .natDexNum = NATIONAL_DEX_TYRANITAR,
-        .categoryName = _("Armor"),
+        .categoryName = _("Tyrant"),
         .height = 20,
         .weight = 2020,
         .description = COMPOUND_STRING(
             "A Tyranitar is so overwhelmingly powerful,\n"
             "it can bring down a whole mountain to make\n"
             "its nest. It roams in mountains seeking\n"
-            "opponents to fight. 100/134/110/95/100/61"),
+            "enemies to fight. 100/134/110/95/100/61"),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 345,

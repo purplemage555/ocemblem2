@@ -510,6 +510,8 @@ static const struct SpritePalette sObjectEventSpritePalettes[] = {
 	{gObjectEventPal_Maple,       			OBJ_EVENT_PAL_TAG_MAPLE},
 	{gObjectEventPal_Enemy,       			OBJ_EVENT_PAL_TAG_ENEMY},
 	{gObjectEventPal_Allies,      			OBJ_EVENT_PAL_TAG_ALLIES},
+	{gObjectEventPal_Labrys,      			OBJ_EVENT_PAL_TAG_LABRYS},
+	{gObjectEventPal_Spidey,      			OBJ_EVENT_PAL_TAG_SPIDEY},
 	{gObjectEventPal_NpcBlue,               OBJ_EVENT_PAL_TAG_NPC_BLUE},
     {gObjectEventPal_NpcPink,               OBJ_EVENT_PAL_TAG_NPC_PINK},
     {gObjectEventPal_NpcGreen,              OBJ_EVENT_PAL_TAG_NPC_GREEN},

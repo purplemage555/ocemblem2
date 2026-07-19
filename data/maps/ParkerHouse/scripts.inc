@@ -15,7 +15,7 @@ OC_ES_AuntMay::
 	goto_if_set FLAG_SPIDER_BITE_CANON_EVENT, AuntMay_ES_PostCanonEvent
 	msgbox OC_Text_AuntMay, MSGBOX_DEFAULT
 	closemessage
-	applymovement LOCALID_SANCTUMGUARD, Common_Movement_FaceOriginalDirection
+	applymovement LOCALID_MAY, Common_Movement_FaceOriginalDirection
 	waitmovement 0
 	release
 	end
@@ -53,5 +53,5 @@ AuntMay_Text_RIPBen:
 	.string "Peter left not long after.\p"
 	.string "It was his own way of grieving,\n"
 	.string "so I gave him my blessing.\p"
-	.string "He calls me every now and\n"
-	.string "then, telling me he's okay.$"
+	.string "He calls me every now and then,\n"
+	.string "just to let me know he's okay.$"

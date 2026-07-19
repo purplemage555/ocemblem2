@@ -20,12 +20,12 @@
     },
     {
       "map": "MAP_SELENIA_ROUTE5",
-      "offset": 0,
+      "offset": -20,
       "direction": "up"
     },
     {
       "map": "MAP_RADIO_OUTPOST",
-      "offset": 32,
+      "offset": 26,
       "direction": "right"
     },
     {
@@ -89,33 +89,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_PUSHABLE_BOULDER",
-      "x": 6,
-      "y": 10,
-      "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "OC_ACS_ES_Rocks",
-      "flag": "FLAG_OC_CLEARED_SPIDERCAVE"
-    },
-    {
-      "graphics_id": "OBJ_EVENT_GFX_PUSHABLE_BOULDER",
       "x": 5,
-      "y": 11,
-      "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "OC_ACS_ES_Rocks",
-      "flag": "FLAG_OC_CLEARED_SPIDERCAVE"
-    },
-    {
-      "graphics_id": "OBJ_EVENT_GFX_PUSHABLE_BOULDER",
-      "x": 6,
       "y": 11,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
@@ -141,33 +115,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_PUSHABLE_BOULDER",
-      "x": 6,
-      "y": 12,
-      "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "OC_ACS_ES_Rocks",
-      "flag": "FLAG_OC_CLEARED_SPIDERCAVE"
-    },
-    {
-      "graphics_id": "OBJ_EVENT_GFX_PUSHABLE_BOULDER",
       "x": 5,
-      "y": 13,
-      "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "OC_ACS_ES_Rocks",
-      "flag": "FLAG_OC_CLEARED_SPIDERCAVE"
-    },
-    {
-      "graphics_id": "OBJ_EVENT_GFX_PUSHABLE_BOULDER",
-      "x": 6,
       "y": 13,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
@@ -193,19 +141,6 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_PUSHABLE_BOULDER",
-      "x": 6,
-      "y": 14,
-      "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "OC_ACS_ES_Rocks",
-      "flag": "FLAG_OC_CLEARED_SPIDERCAVE"
-    },
-    {
-      "graphics_id": "OBJ_EVENT_GFX_PUSHABLE_BOULDER",
       "x": 5,
       "y": 15,
       "elevation": 3,
@@ -218,17 +153,17 @@
       "flag": "FLAG_OC_CLEARED_SPIDERCAVE"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_PUSHABLE_BOULDER",
-      "x": 6,
-      "y": 15,
+      "graphics_id": "OBJ_EVENT_GFX_LABRYS",
+      "x": 19,
+      "y": 43,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "OC_ACS_ES_Rocks",
-      "flag": "FLAG_OC_CLEARED_SPIDERCAVE"
+      "script": "ACS_ES_Labrys",
+      "flag": "0"
     }
   ],
   "warp_events": [
@@ -273,6 +208,13 @@
       "elevation": 0,
       "dest_map": "MAP_ACS_HOUSES",
       "dest_warp_id": "4"
+    },
+    {
+      "x": 26,
+      "y": 41,
+      "elevation": 0,
+      "dest_map": "MAP_SELENIA_SPACE_CENTER_1F",
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [
@@ -298,14 +240,6 @@
     {
       "type": "sign",
       "x": 12,
-      "y": 41,
-      "elevation": 0,
-      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "OC_ES_LockedSign"
-    },
-    {
-      "type": "sign",
-      "x": 26,
       "y": 41,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",

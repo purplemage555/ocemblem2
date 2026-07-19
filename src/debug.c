@@ -4695,7 +4695,17 @@ static void DebugAction_Sound_MUS_SelectId(u8 taskId)
     X(PH_NURSE_BLEND) \
     X(PH_NURSE_HELD) \
     X(PH_NURSE_SOLO) \
-
+	X(OC_GRASSWALK) \
+	X(OC_POOL) \
+	X(OC_ROOF) \
+	X(OC_ULTBAT) \
+	X(OC_ZOMBOSS) \
+	X(OC_BRIDGE) \
+	X(OC_FROZEN) \
+	X(OC_TINKER) \
+	X(OC_PROPELLER) \
+	X(OC_NECROZMA) \
+	
 #define SOUND_LIST_SE \
     X(SE_USE_ITEM) \
     X(SE_PC_LOGIN) \

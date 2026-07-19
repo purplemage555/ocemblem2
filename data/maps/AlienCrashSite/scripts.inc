@@ -1,5 +1,9 @@
 AlienCrashSite_MapScripts::
+	map_script MAP_SCRIPT_ON_TRANSITION, ACS_OnTransition
 	.byte 0
+ACS_OnTransition::
+	setflag FLAG_VISITED_ACS
+	end
 OC_ES_LockedSign::
 	msgbox OC_Text_Locked, MSGBOX_SIGN
 	end
@@ -40,7 +44,7 @@ ACS_ES_GivePorygon::
 	msgbox ACS_Text_Thanks, MSGBOX_DEFAULT
 	msgbox OC_ACS_TakePorygon, MSGBOX_DEFAULT
 	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_PORYGON
-	givemon SPECIES_PORYGON, 20, ITEM_CHOPLE_BERRY, ITEM_MOON_BALL, NATURE_MODEST, 0, 0
+	givemon SPECIES_PORYGON, 16, ITEM_CHOPLE_BERRY, ITEM_MOON_BALL, NATURE_MODEST, 0, 0
 	goto_if_eq VAR_RESULT, MON_GIVEN_TO_PARTY, OC_ES_ACS_PorygonParty
 	goto_if_eq VAR_RESULT, MON_GIVEN_TO_PC, OC_ES_ACS_PorygonPC
 	goto Common_EventScript_NoMoreRoomForPokemon
@@ -66,12 +70,16 @@ OC_ES_ReceivedPorygon::
 	release
 	end
 OC_ES_GotPorygonFanfare::
+	bufferspeciesname STR_VAR_1, SPECIES_PORYGON
 	playfanfare MUS_OBTAIN_ITEM
-	message OC_Text_GotPorygon
+	message OC_Text_GotPokemon
 	waitmessage
 	waitfanfare
-	bufferspeciesname STR_VAR_1, SPECIES_PORYGON
 	return
+ACS_ES_Labrys::
+	msgbox ACS_Text_Labrys, MSGBOX_NPC
+	release
+	end
 OC_Text_Locked:
 	.string "It's locked…$"
 OC_ACS_Text_TownSign:
@@ -111,10 +119,19 @@ SC_Text_Thanks:
 OC_ACS_TakePorygon:
 	.string "To show our gratitude, we scientists\n"
 	.string "have decided to gift you a Porygon.$"
-OC_Text_GotPorygon:
-	.string "{PLAYER} received Porygon!$"
 OC_Text_ExplainPorygon:
 	.string "Porygon is a virtual Pokémon;\n"
 	.string "it's made of computer code!\p"
 	.string "They make for intelligent companions\n"
 	.string "who help us in research and fieldwork.$"
+ACS_Text_Labrys:
+	.string "Hey there, {PLAYER}!\n"
+	.string "Welcome to the Alien Crash Site!\p"
+	.string "This place was the site of some\n"
+	.string "aliens crashing here centuries ago!\p"
+	.string "It's now home to the Selenian\n"
+	.string "Space Program! Pretty cool, huh?\p"
+	.string "You can rest assured with our\n"
+	.string "spacecraft's stellar workmanship:\p"
+	.string "ISO-Certified, World-Class Quality.\n"
+	.string "ACS! …I dunno what that all means…$"

@@ -343,7 +343,12 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
         .description = COMPOUND_STRING("Recovers 1/8 in rain."),
         .aiRating = 3,
     },
-
+	[ABILITY_SUN_SOAK] =
+    {
+        .name = _("Sun Soak"),
+        .description = COMPOUND_STRING("Recovers 1/8 in sun."),
+        .aiRating = 3,
+    },
     [ABILITY_SAND_STREAM] =
     {
         .name = _("Sand Stream"),
@@ -449,7 +454,7 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
     [ABILITY_FORECAST] =
     {
         .name = _("Forecast"),
-        .description = COMPOUND_STRING("Changes with the weather."),
+        .description = COMPOUND_STRING("Changes with the weather, floats."),
         .aiRating = 6,
         .cantBeCopied = TRUE,
         .cantBeTraced = TRUE,
@@ -530,7 +535,7 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
     [ABILITY_DROUGHT] =
     {
         .name = _("Drought"),
-        .description = COMPOUND_STRING("Summons sunlight, heals in it."),
+        .description = COMPOUND_STRING("Summons sun, heals in it."),
         .aiRating = 9,
     },
 
@@ -672,7 +677,7 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
     [ABILITY_IRON_FIST] =
     {
         .name = _("Iron Fist"),
-        .description = COMPOUND_STRING("Boosts punching moves."),
+        .description = COMPOUND_STRING("Buffs punches by 1.25x."),
         .aiRating = 6,
     },
 
@@ -707,7 +712,7 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
     [ABILITY_SOLAR_POWER] =
     {
         .name = _("Solar Power"),
-        .description = COMPOUND_STRING("Powers up in sunshine."),
+        .description = COMPOUND_STRING("Boosts types in Sun."),
         .aiRating = 3,
     },
 
@@ -756,14 +761,14 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
     [ABILITY_TECHNICIAN] =
     {
         .name = _("Technician"),
-        .description = COMPOUND_STRING("Boosts weaker moves."),
+        .description = COMPOUND_STRING("Boosts <=60 pow moves."),
         .aiRating = 8,
     },
 
     [ABILITY_LEAF_GUARD] =
     {
         .name = _("Leaf Guard"),
-        .description = COMPOUND_STRING("Blocks status in sunshine."),
+        .description = COMPOUND_STRING("Blocks status in Sun."),
         .aiRating = 2,
         .breakable = TRUE,
     },
@@ -865,7 +870,7 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
     [ABILITY_SOLID_ROCK] =
     {
         .name = _("Solid Rock"),
-        .description = COMPOUND_STRING("Weakens “supereffective”."),
+        .description = COMPOUND_STRING("Halves “supereffective”."),
         .aiRating = 6,
         .breakable = TRUE,
     },
@@ -1191,7 +1196,7 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
     [ABILITY_SAND_FORCE] =
     {
         .name = _("Sand Force"),
-        .description = COMPOUND_STRING("Powers up in a sandstorm."),
+        .description = COMPOUND_STRING("Boosts types in Sand."),
         .aiRating = 4,
     },
 
@@ -2407,7 +2412,7 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
 	[ABILITY_BOOM_BOX] =
     {
         .name = _("Boom Box"),
-        .description = COMPOUND_STRING("Ups and resists sound."),
+        .description = COMPOUND_STRING("Ups sound by 1.5x and resists."),
         .aiRating = 2,
         .breakable = TRUE,
     },
@@ -2459,32 +2464,44 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
 	[ABILITY_AMIHAN] =
     {
         .name = _("Amihan"),
-        .description = COMPOUND_STRING("Snow and Psychic Field."),
+        .description = COMPOUND_STRING("Snow & Psychic Field."),
         .aiRating = 9,
+		.cantBeCopied = TRUE,
+        .cantBeSwapped = TRUE,
+        .cantBeTraced = TRUE,
+        .failsOnImposter = TRUE,
     },
 	[ABILITY_HABAGAT] =
     {
         .name = _("Habagat"),
-        .description = COMPOUND_STRING("Sun and Grassy Field."),
+        .description = COMPOUND_STRING("Sun & Grassy Field."),
         .aiRating = 9,
+		.cantBeCopied = TRUE,
+        .cantBeSwapped = TRUE,
+        .cantBeTraced = TRUE,
+        .failsOnImposter = TRUE,
     },
 	[ABILITY_RAMUH] =
     {
         .name = _("Ramuh"),
-        .description = COMPOUND_STRING("Rain and Electric Field."),
+        .description = COMPOUND_STRING("Rain & Electric Field."),
         .aiRating = 9,
+		.cantBeCopied = TRUE,
+        .cantBeSwapped = TRUE,
+        .cantBeTraced = TRUE,
+        .failsOnImposter = TRUE,
     },
 	[ABILITY_AIR_PRESSURE] =
     {
         .name = _("Air Pressure"),
-        .description = COMPOUND_STRING("Not hit by Ground attacks."),
+        .description = COMPOUND_STRING("Adds Pressure, Immune to Ground."),
         .aiRating = 7,
         .breakable = TRUE,
     },
 	[ABILITY_TRI_OS] =
     {
         .name = _("Tri-OS"),
-        .description = COMPOUND_STRING("Boosts Rock/Ice."),
+        .description = COMPOUND_STRING("Boosts Rock & Ice."),
         .aiRating = 10,
         .cantBeCopied = TRUE,
         .cantBeSwapped = TRUE,

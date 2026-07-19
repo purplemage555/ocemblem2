@@ -274,6 +274,19 @@ static const struct SpriteFrameImage sPicTable_Nurse[] = {
     overworld_frame(gObjectEventPic_Nurse, 2, 4, 3),
 };
 
+static const struct SpriteFrameImage sPicTable_Labrys[] = {
+    overworld_frame(gObjectEventPic_Labrys, 2, 4, 0),
+    overworld_frame(gObjectEventPic_Labrys, 2, 4, 1),
+    overworld_frame(gObjectEventPic_Labrys, 2, 4, 2),
+    overworld_frame(gObjectEventPic_Labrys, 2, 4, 0),
+    overworld_frame(gObjectEventPic_Labrys, 2, 4, 0),
+    overworld_frame(gObjectEventPic_Labrys, 2, 4, 1),
+    overworld_frame(gObjectEventPic_Labrys, 2, 4, 1),
+    overworld_frame(gObjectEventPic_Labrys, 2, 4, 2),
+    overworld_frame(gObjectEventPic_Labrys, 2, 4, 2),
+    overworld_frame(gObjectEventPic_Labrys, 2, 4, 3),
+};
+
 static const struct SpriteFrameImage sPicTable_ProfBirch[] = {
     overworld_ascending_frames(gObjectEventPic_ProfBirch, 2, 4),
 };
@@ -351,6 +364,9 @@ static const struct SpriteFrameImage sPicTable_PushableBoulder[] = {
 };
 static const struct SpriteFrameImage sPicTable_Cube[] = {
     obj_frame_tiles(gObjectEventPic_Cube),
+};
+static const struct SpriteFrameImage sPicTable_CrazyDave[] = {
+    overworld_ascending_frames(gObjectEventPic_CrazyDave, 2, 4),
 };
 static const struct SpriteFrameImage sPicTable_MrBrineysBoat[] = {
     overworld_frame(gObjectEventPic_MrBrineysBoat, 4, 4, 0),
@@ -1351,6 +1367,9 @@ static const struct SpriteFrameImage sPicTable_RubySapphireMay[] = {
 };
 static const struct SpriteFrameImage sPicTable_Maple[] = {
     overworld_ascending_frames(gObjectEventPic_Maple, 2, 4),
+};
+static const struct SpriteFrameImage sPicTable_Spidey[] = {
+    overworld_ascending_frames(gObjectEventPic_Spidey, 2, 4),
 };
 static const struct SpriteFrameImage sPicTable_Knight[] = {
     overworld_ascending_frames(gObjectEventPic_Knight, 2, 2),

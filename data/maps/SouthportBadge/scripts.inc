@@ -66,7 +66,9 @@ OC_Text_ReceivedBadge1:
 OC_Text_Badge1Info:
 	.string "The Pearl Badge boosts your\n"
 	.string "Pokémon's physical Attack.\p"
-	.string "It also enables them to use\n"
+	.string "Your Pokémon can also now\n"
+	.string "safely level up to Level 25.\p"
+	.string "It also allows you to use\n"
 	.string "the HM Cut outside of battle.$"
 OC_Text_Badge1TakeThis:
 	.string "Please take this TM as well,\n"

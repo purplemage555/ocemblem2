@@ -2,7 +2,7 @@
   "id": "MAP_KIRKOPOLIS_OW",
   "name": "KirkopolisOW",
   "layout": "LAYOUT_KIRKOPOLIS_OW",
-  "music": "MUS_OLDALE",
+  "music": "OC_POOL",
   "region_map_section": "MAPSEC_VIRIDIAN_CITY",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
@@ -32,6 +32,11 @@
       "map": "MAP_SELENIA_ROUTE5",
       "offset": 20,
       "direction": "left"
+    },
+    {
+      "map": "MAP_PETESBURG_OW",
+      "offset": -30,
+      "direction": "right"
     }
   ],
   "object_events": [

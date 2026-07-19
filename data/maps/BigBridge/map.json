@@ -2,7 +2,7 @@
   "id": "MAP_BIG_BRIDGE",
   "name": "BigBridge",
   "layout": "LAYOUT_BIG_BRIDGE",
-  "music": "MUS_ROUTE110",
+  "music": "OC_BRIDGE",
   "region_map_section": "MAPSEC_BOND_BRIDGE",
   "requires_flash": false,
   "weather": "WEATHER_SNOW",
@@ -93,6 +93,37 @@
 
   ],
   "bg_events": [
-
+    {
+      "type": "sign",
+      "x": 17,
+      "y": 21,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "OC_ES_ElecTruck"
+    },
+    {
+      "type": "sign",
+      "x": 19,
+      "y": 21,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "OC_ES_ElecTruck"
+    },
+    {
+      "type": "sign",
+      "x": 25,
+      "y": 21,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "OC_ES_ElecTruck"
+    },
+    {
+      "type": "sign",
+      "x": 27,
+      "y": 21,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "OC_ES_ElecTruck"
+    }
   ]
 }

@@ -4335,3 +4335,12 @@ void UseBlankMessageToCancelPokemonPic(void)
     AddTextPrinterParameterized(0, FONT_NORMAL, &t, 0, 1, 0, NULL);
     ScriptMenu_HidePokemonPic();
 }
+
+void FoodFriendship(void)
+{
+	u32 partyIndex;
+    for (partyIndex = 0; partyIndex < CalculatePlayerPartyCount(); partyIndex++)
+    {
+        AdjustFriendship(&gPlayerParty[partyIndex], FRIENDSHIP_EVENT_LEAGUE_BATTLE);
+    }
+}

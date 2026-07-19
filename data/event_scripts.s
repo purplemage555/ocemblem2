@@ -1266,3 +1266,105 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/NovemburgBadge/scripts.inc"
 
 	.include "data/maps/ShulkHouse/scripts.inc"
+
+	.include "data/maps/SeleniaRoute8East/scripts.inc"
+
+	.include "data/maps/SpelunkersLodge/scripts.inc"
+
+	.include "data/maps/SeleniaRoute8West/scripts.inc"
+
+	.include "data/maps/MagmaTunnel_1F/scripts.inc"
+
+	.include "data/maps/MagmaTunnel_2F/scripts.inc"
+
+	.include "data/maps/QuarryJunction/scripts.inc"
+
+	.include "data/maps/SeleniaRoute8_School/scripts.inc"
+
+	.include "data/maps/NewEbonheartOW/scripts.inc"
+
+	.include "data/maps/SeleniaSpaceCenter_1F/scripts.inc"
+
+	.include "data/maps/NewEbonheartPokeCenter/scripts.inc"
+
+	.include "data/maps/NewEbonheartMart/scripts.inc"
+
+	.include "data/maps/Ebonheart_Houses/scripts.inc"
+
+	.include "data/maps/RiverReservoir_1F/scripts.inc"
+
+	.include "data/maps/RiverReservoir_B1F/scripts.inc"
+
+	.include "data/maps/EbonheartBadge/scripts.inc"
+
+	.include "data/maps/SkoomaDen/scripts.inc"
+
+	.include "data/maps/SeleniaRoute9/scripts.inc"
+
+	.include "data/maps/SeleniaRoute9Kevin/scripts.inc"
+
+	.include "data/maps/BugPreserve/scripts.inc"
+
+	.include "data/maps/Route9Houses/scripts.inc"
+
+	.include "data/maps/EastfordPokeCenter2F/scripts.inc"
+
+	.include "data/maps/KirkopolisPokeCenter2F/scripts.inc"
+
+	.include "data/maps/PetesburgPokeCenter2F/scripts.inc"
+
+	.include "data/maps/SanctumPokeCenter2F/scripts.inc"
+
+	.include "data/maps/SouthportPokeCenter2F/scripts.inc"
+
+	.include "data/maps/ACSPokeCenter2F/scripts.inc"
+
+	.include "data/maps/NovemburgPokeCenter2F/scripts.inc"
+
+	.include "data/maps/NewEbonheartPokeCenter2F/scripts.inc"
+
+	.include "data/maps/EastfordPokeCenterB1F/scripts.inc"
+
+	.include "data/maps/SanctumPokeCenterB1F/scripts.inc"
+
+	.include "data/maps/SouthportPokeCenterB1F/scripts.inc"
+
+	.include "data/maps/ACSPokeCenterB1F/scripts.inc"
+
+	.include "data/maps/NovemburgPokeCenterB1F/scripts.inc"
+
+	.include "data/maps/NewEbonheartPokeCenterB1F/scripts.inc"
+
+	.include "data/maps/AgriopolisOW/scripts.inc"
+
+	.include "data/maps/SafariZoneNE/scripts.inc"
+
+	.include "data/maps/SafariZoneSE/scripts.inc"
+
+	.include "data/maps/SafariZoneSW/scripts.inc"
+
+	.include "data/maps/SafariZoneNW/scripts.inc"
+
+	.include "data/maps/AgriopolisPokeCenter/scripts.inc"
+
+	.include "data/maps/AgriopolisPokeCenter2F/scripts.inc"
+
+	.include "data/maps/AgriopolisPokeCenterB1F/scripts.inc"
+
+	.include "data/maps/SafariZoneCave/scripts.inc"
+
+	.include "data/maps/AgriopolisDeptStore1F/scripts.inc"
+
+	.include "data/maps/AgriopolisDeptStore2F/scripts.inc"
+
+	.include "data/maps/AgriopolisDeptStore3F/scripts.inc"
+
+	.include "data/maps/AgriopolisDeptStore4F/scripts.inc"
+
+	.include "data/maps/AgriopolisDeptStore5F/scripts.inc"
+
+	.include "data/maps/AgriopolisDeptStoreRoof/scripts.inc"
+
+	.include "data/maps/SafariZoneEntrance/scripts.inc"
+
+	.include "data/maps/SeleniaPowerPlantOW/scripts.inc"

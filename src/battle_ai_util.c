@@ -2696,9 +2696,12 @@ enum AIPivot ShouldPivot(u32 battlerAtk, u32 battlerDef, u32 defAbility, u32 mov
 {
     bool32 hasStatBoost = AnyUsefulStatIsRaised(battlerAtk) || gBattleMons[battlerDef].statStages[STAT_EVASION] >= 9; //Significant boost in evasion for any class
     u32 battlerToSwitch;
-
-    battlerToSwitch = gBattleStruct->AI_monToSwitchIntoId[battlerAtk];
-
+    //battlerToSwitch = gBattleStruct->AI_monToSwitchIntoId[battlerAtk];
+	battlerToSwitch = AI_DATA->mostSuitableMonId[battlerAtk];
+    if (battlerToSwitch >= PARTY_SIZE) {
+        // This shouldn't ever happen, but it's there to make sure we don't accidentally read past the gParty array.
+        battlerToSwitch = 0;
+    }
     if (PartyBattlerShouldAvoidHazards(battlerAtk, battlerToSwitch))
         return DONT_PIVOT;
 

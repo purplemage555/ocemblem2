@@ -237,6 +237,7 @@ extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_RubySapphir
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Lugia;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_HoOh;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Maple;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Spidey;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Knight;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_King;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Agatha;
@@ -269,7 +270,9 @@ extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_WomanK2;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_WomanK3;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_WorkerF;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_WorkerM;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Labrys;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Cube;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_CrazyDave;
 // Begin pokemon event objects
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_PokeBall;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Follower;
@@ -555,7 +558,10 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
 	[OBJ_EVENT_GFX_WOMAN_K_3] = &gObjectEventGraphicsInfo_WomanK3,
 	[OBJ_EVENT_GFX_WORKER_F] = &gObjectEventGraphicsInfo_WorkerF,
 	[OBJ_EVENT_GFX_WORKER_M] = &gObjectEventGraphicsInfo_WorkerM,
+	[OBJ_EVENT_GFX_LABRYS] = &gObjectEventGraphicsInfo_Labrys,
+	[OBJ_EVENT_GFX_SPIDEY] = &gObjectEventGraphicsInfo_Spidey,
 	[OBJ_EVENT_GFX_CUBE] =                 	   &gObjectEventGraphicsInfo_Cube,
+	[OBJ_EVENT_GFX_CRAZY_DAVE] =               &gObjectEventGraphicsInfo_CrazyDave,
 	[OBJ_EVENT_GFX_POKE_BALL] =                &gObjectEventGraphicsInfo_PokeBall,
     [OBJ_EVENT_GFX_OW_MON] =                   &gObjectEventGraphicsInfo_Follower,
 };

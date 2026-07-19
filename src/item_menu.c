@@ -917,7 +917,13 @@ static void GetItemName(u8 *dest, u16 itemId)
             ConvertIntToDecimalStringN(gStringVar1, itemId - ITEM_HM01 + 1, STR_CONV_MODE_LEADING_ZEROS, 1);
             StringExpandPlaceholders(dest, gText_NumberItem_HM);
         }
-        else
+        else if (itemId == ITEM_TM00)
+		{
+            // if TM00
+            ConvertIntToDecimalStringN(gStringVar1, itemId - ITEM_TM01 - 99, STR_CONV_MODE_LEADING_ZEROS, 2);
+            StringExpandPlaceholders(dest, gText_NumberItem_TMBerry);
+        }
+		else
         {
             // Get TM number
             ConvertIntToDecimalStringN(gStringVar1, itemId - ITEM_TM01 + 1, STR_CONV_MODE_LEADING_ZEROS, 2);

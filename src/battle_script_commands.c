@@ -11110,11 +11110,11 @@ static void Cmd_setprotectlike(void)
                 gProtectStructs[gBattlerAttacker].spikyShielded = TRUE;
                 gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_PROTECTED_ITSELF;
             }
-            else if (gCurrentMove == MOVE_KINGS_SHIELD)
-            {
-                gProtectStructs[gBattlerAttacker].kingsShielded = TRUE;
-                gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_PROTECTED_ITSELF;
-            }
+            //else if (gCurrentMove == MOVE_KINGS_SHIELD)
+            //{
+            //    gProtectStructs[gBattlerAttacker].kingsShielded = TRUE;
+            //    gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_PROTECTED_ITSELF;
+            //}
             else if (gCurrentMove == MOVE_BANEFUL_BUNKER)
             {
                 gProtectStructs[gBattlerAttacker].banefulBunkered = TRUE;
@@ -15270,8 +15270,7 @@ static void Cmd_handleballthrow(void)
                 ballMultiplier = 150;
                 break;
             case BALL_SAFARI:
-                if (B_SAFARI_BALL_MODIFIER <= GEN_7)
-                    ballMultiplier = 150;
+                ballMultiplier = 125;
                 break;
             case BALL_NET:
                 if (IS_BATTLER_OF_TYPE(gBattlerTarget, TYPE_WATER) || IS_BATTLER_OF_TYPE(gBattlerTarget, TYPE_BUG))

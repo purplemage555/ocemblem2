@@ -151,14 +151,14 @@
 #define FLAG_KYOGRE_ESCAPED_SEAFLOOR_CAVERN  0x81
 #define FLAG_OC_CLEARED_R6			         0x82
 #define FLAG_OC_GOT_BATTERY		             0x83
-#define FLAG_RECEIVED_POTION_OLDALE          0x84
+#define FLAG_OC_DESTROY_MT_ROCK	             0x84
 #define FLAG_RECEIVED_AMULET_COIN            0x85
 #define FLAG_PENDING_DAYCARE_EGG             0x86
 #define FLAG_THANKED_FOR_PLAYING_WITH_WALLY  0x87
 #define FLAG_ENABLE_FIRST_WALLY_POKENAV_CALL 0x88 // Set after defeating Wally outside Mauville Gym. Will activate a call later to register Wally.
 #define FLAG_RECEIVED_HM_CUT                 0x89
 #define FLAG_SCOTT_CALL_FORTREE_GYM          0x8A // Triggers call from Scott after defeating Winona
-#define FLAG_DEFEATED_EVIL_TEAM_MT_CHIMNEY   0x8B
+#define FLAG_DEFEATED_EVIL_TEAM_MT_CHIMNEY   0x8B // Treasure Knight
 #define FLAG_RECEIVED_6_SODA_POP             0x8C
 #define FLAG_DEFEATED_SEASHORE_HOUSE         0x8D
 #define FLAG_DEVON_GOODS_STOLEN              0x8E
@@ -186,7 +186,7 @@
 #define FLAG_TOUGH_PAINTING_MADE             0xA4
 #define FLAG_RECEIVED_TM_BADGE1	             0xA5
 #define FLAG_RECEIVED_TM_BADGE2              0xA6
-#define FLAG_RECEIVED_TM_SHOCK_WAVE          0xA7
+#define FLAG_RECEIVED_TM_BADGE3		         0xA7
 #define FLAG_RECEIVED_TM_OVERHEAT            0xA8
 #define FLAG_RECEIVED_TM_FACADE              0xA9
 #define FLAG_RECEIVED_TM_AERIAL_ACE          0xAA
@@ -213,11 +213,11 @@
 #define FLAG_DEFEATED_GRUNT_SPACE_CENTER_1F  0xBF
 #define FLAG_RECEIVED_SUN_STONE_MOSSDEEP     0xC0
 #define FLAG_WALLY_SPEECH                    0xC1
-#define FLAG_TRICK_HOUSE_PUZZLE_7_SWITCH_1   0xC2 // Leftover from the RS version of Puzzle Room 7, functionally unused
-#define FLAG_TRICK_HOUSE_PUZZLE_7_SWITCH_2   0xC3 //
-#define FLAG_TRICK_HOUSE_PUZZLE_7_SWITCH_3   0xC4 //
-#define FLAG_TRICK_HOUSE_PUZZLE_7_SWITCH_4   0xC5 //
-#define FLAG_TRICK_HOUSE_PUZZLE_7_SWITCH_5   0xC6 //
+#define FLAG_OC_GOT_HITMONLEE				 0xC2
+#define FLAG_OC_GOT_HITMONCHAN				 0xC3
+#define FLAG_OC_GOT_HITMONTOP				 0xC4
+#define FLAG_OC_QJ_BLACKBELT			     0xC5 
+#define FLAG_OC_FOUR_ITEM					 0xC6 // Leftover from the RS version of Puzzle Room 7, functionally unused
 #define FLAG_RUSTURF_TUNNEL_OPENED           0xC7
 #define FLAG_RECEIVED_RED_SCARF              0xC8
 #define FLAG_RECEIVED_BLUE_SCARF             0xC9
@@ -311,7 +311,7 @@
 #define FLAG_RECEIVED_DEVON_SCOPE            0x11D
 #define FLAG_DECLINED_RIVAL_BATTLE_LILYCOVE  0x11E
 #define FLAG_MET_DEVON_EMPLOYEE              0x11F
-#define FLAG_MET_RIVAL_RUSTBORO              0x120
+#define FLAG_GOT_TOWN_MAP	                 0x120
 #define FLAG_RECEIVED_SILK_SCARF             0x121
 #define FLAG_NOT_READY_FOR_BATTLE_ROUTE_120  0x122
 #define FLAG_RECEIVED_SS_TICKET              0x123
@@ -543,7 +543,7 @@
 
 // Hidden Items
 #define FLAG_HIDDEN_ITEMS_START                                                         0x1F4
-#define FLAG_HIDDEN_ITEM_LAVARIDGE_TOWN_ICE_HEAL             (FLAG_HIDDEN_ITEMS_START + 0x00)
+#define FLAG_HIDDEN_OC_NUGGET					             (FLAG_HIDDEN_ITEMS_START + 0x00)
 #define FLAG_HIDDEN_ITEM_TRICK_HOUSE_NUGGET                  (FLAG_HIDDEN_ITEMS_START + 0x01)
 #define FLAG_HIDDEN_ITEM_ROUTE_111_STARDUST                  (FLAG_HIDDEN_ITEMS_START + 0x02)
 #define FLAG_HIDDEN_ITEM_ROUTE_113_ETHER                     (FLAG_HIDDEN_ITEMS_START + 0x03)
@@ -1079,8 +1079,8 @@
 #define FLAG_ITEM_ROUTE_7_WEBS              		                0x403
 #define FLAG_ITEM_ROUTE_7_ROCK		                                0x404
 #define FLAG_ITEM_ROUTE_7_SAND			                            0x405
-#define FLAG_ITEM_ROUTE_120_NUGGET                                  0x406
-#define FLAG_ITEM_ROUTE_120_FULL_HEAL                               0x407
+#define FLAG_ITEM_EBONHEART_CHICKEN_NUGGET                          0x406
+#define FLAG_ITEM_EBONHEART_PEASHOOTER		                        0x407
 #define FLAG_ITEM_ROUTE_123_CALCIUM                                 0x408
 #define FLAG_ITEM_ROUTE_123_RARE_CANDY                              0x409 // Unused Flag, leftover from R/S. In Emerald this is a hidden item and uses a different flag
 #define FLAG_ITEM_ROUTE_127_ZINC                                    0x40A
@@ -1162,7 +1162,7 @@
 #define FLAG_ITEM_NEW_MAUVILLE_THUNDER_STONE                        0x456
 #define FLAG_ITEM_FIERY_PATH_FIRE_STONE                             0x457
 #define FLAG_ITEM_SHOAL_CAVE_ICE_ROOM_TM_HAIL                       0x458
-#define FLAG_ITEM_SHOAL_CAVE_ICE_ROOM_NEVER_MELT_ICE                0x459
+#define FLAG_ITEM_SCHOOL_NEVERMELTICE				                0x459
 #define FLAG_ITEM_ROUTE_103_GUARD_SPEC                              0x45A
 #define FLAG_ITEM_ROUTE_104_X_ACCURACY                              0x45B
 #define FLAG_ITEM_MAUVILLE_CITY_X_SPEED                             0x45C
@@ -1220,6 +1220,23 @@
 #define FLAG_ITEM_MAGMA_HIDEOUT_4F_MAX_REVIVE                       0x490
 #define FLAG_ITEM_SAFARI_ZONE_NORTH_EAST_NUGGET                     0x491
 #define FLAG_ITEM_SAFARI_ZONE_SOUTH_EAST_BIG_PEARL                  0x492
+
+#define FLAG_CAFE_EASTFORD                                          0x493 // Cafe Flag
+#define FLAG_CAFE_KIRKOPOLIS                                        0x494 // Cafe Flag
+#define FLAG_CAFE_PETESBURG                                         0x495 // Cafe Flag
+#define FLAG_CAFE_SANCTUM                                           0x496 // Cafe Flag
+#define FLAG_CAFE_SOUTHPORT                                         0x497 // Cafe Flag
+#define FLAG_CAFE_ACS                                           	0x498 // Cafe Flag
+#define FLAG_CAFE_NOVEMBURG                                         0x499 // Cafe Flag
+#define FLAG_CAFE_EBONHEART                                         0x49A // Cafe Flag
+#define FLAG_CAFE_AGRIOPOLIS                                        0x49B // Cafe Flag
+#define FLAG_CAFE_MAPLEGROVE                                        0x49C // Cafe Flag
+#define FLAG_CAFE_DAWNSTAR                                          0x49D // Cafe Flag
+#define FLAG_CAFE_DUSKSTONE                                         0x49E // Cafe Flag
+#define FLAG_CAFE_RADIO		                                        0x49F // Cafe Flag
+#define FLAG_CAFE_BRIDGEKEEP                                        0x4A0 // Cafe Flag
+#define FLAG_CAFE_SELENIUM											0x4A1 // Cafe Flag
+
 
 #define FLAG_UNUSED_0x493                                           0x493 // Unused Flag
 #define FLAG_UNUSED_0x494                                           0x494 // Unused Flag
@@ -1382,6 +1399,23 @@
 #define FLAG_VISITED_MOSSDEEP_CITY                  (SYSTEM_FLAGS + 0x1C)
 #define FLAG_VISITED_SOOTOPOLIS_CITY                (SYSTEM_FLAGS + 0x1D)
 #define FLAG_VISITED_EVER_GRANDE_CITY               (SYSTEM_FLAGS + 0x1E)
+
+#define FLAG_VISITED_EASTFORD                		(SYSTEM_FLAGS + 0xF)
+#define FLAG_VISITED_KIRKOPOLIS                    	(SYSTEM_FLAGS + 0x10)
+#define FLAG_VISITED_PETESBURG                   	(SYSTEM_FLAGS + 0x11)
+#define FLAG_VISITED_SANCTUM                 		(SYSTEM_FLAGS + 0x12)
+#define FLAG_VISITED_SOUTHPORT                 		(SYSTEM_FLAGS + 0x13)
+#define FLAG_VISITED_ACS                			(SYSTEM_FLAGS + 0x14)
+#define FLAG_VISITED_NOVEMBURG                		(SYSTEM_FLAGS + 0x15)
+#define FLAG_VISITED_EBONHEART            		    (SYSTEM_FLAGS + 0x16)
+#define FLAG_VISITED_AGRIOPOLIS		                (SYSTEM_FLAGS + 0x17)
+#define FLAG_VISITED_MAPLEGROVE                  	(SYSTEM_FLAGS + 0x18)
+#define FLAG_VISITED_DAWNSTAR                  		(SYSTEM_FLAGS + 0x19)
+#define FLAG_VISITED_FOREVER                   		(SYSTEM_FLAGS + 0x1A)
+#define FLAG_VISITED_DUSKSTONE                  	(SYSTEM_FLAGS + 0x1B)
+#define FLAG_VISITED_BRIDGEKEEP             	    (SYSTEM_FLAGS + 0x1C)
+#define FLAG_VISITED_RADIO			                (SYSTEM_FLAGS + 0x1D)
+#define FLAG_VISITED_SELENIUM       		        (SYSTEM_FLAGS + 0x1E)
 
 #define FLAG_IS_CHAMPION                            (SYSTEM_FLAGS + 0x1F) // Seems to be related to linking.
 #define FLAG_NURSE_UNION_ROOM_REMINDER              (SYSTEM_FLAGS + 0x20)

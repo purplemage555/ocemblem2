@@ -12,3 +12,13 @@ OC_ES_PokeCenter_Nurse::
 	waitbuttonpress
 	release
 	end
+Eastford_ES_LabrysInfo::
+	MSGBOX Eastford_Text_LabrysInfo, MSGBOX_NPC
+	end
+Eastford_Text_LabrysInfo:
+	.string "Hey there! I'm a Medical-series\n"
+	.string "Labrys unit; at your service!\p"
+	.string "There are dozens of us stationed\n"
+	.string "all across Selenia, ready to serve!\p"
+	.string "Ya might even run into other types\n"
+	.string "of Labrys-bots, not just medical ones!$"

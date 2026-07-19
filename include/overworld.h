@@ -39,7 +39,10 @@ struct LinkPlayerObjectEvent
     u8 objEventId;
     u8 movementMode;
 };
-
+enum {
+	REGION_HOENN,
+	REGION_SELENIA
+};
 extern struct WarpData gLastUsedWarp;
 extern struct LinkPlayerObjectEvent gLinkPlayerObjectEvents[4];
 

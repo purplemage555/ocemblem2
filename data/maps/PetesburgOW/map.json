@@ -2,7 +2,7 @@
   "id": "MAP_PETESBURG_OW",
   "name": "PetesburgOW",
   "layout": "LAYOUT_PETESBURG_OW",
-  "music": "MUS_PETALBURG",
+  "music": "MUS_OLDALE",
   "region_map_section": "MAPSEC_PEWTER_CITY",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
@@ -20,7 +20,7 @@
     },
     {
       "map": "MAP_KIRKOPOLIS_OW",
-      "offset": 28,
+      "offset": 30,
       "direction": "left"
     },
     {

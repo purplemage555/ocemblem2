@@ -3,6 +3,7 @@ SanctumOW_MapScripts::
 	map_script MAP_SCRIPT_ON_TRANSITION, Sanctum_OnTransition
 	.byte 0
 Sanctum_OnTransition:
+	setflag FLAG_VISITED_SANCTUM
 	call_if_unset FLAG_UNLOCK_SANCTUM, Sanctum_ES_BlockEntrance
 	end
 Sanctum_ES_BlockEntrance::

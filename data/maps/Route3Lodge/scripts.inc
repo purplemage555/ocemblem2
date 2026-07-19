@@ -10,7 +10,11 @@ OC_ES_FridgeHeal::
 	release
 	end
 R3_ES_King::
-	trainerbattle_single TRAINER_OC_R3_KING, R3_Text_KingIntro, R3_Text_KingDefeat, NO_MUSIC
+	faceplayer
+	trainerbattle_single TRAINER_OC_R3_KING, R3_Text_KingIntro, R3_Text_KingDefeat, R3_ES_KingDefeat, NO_MUSIC
+	release
+	end
+R3_ES_KingDefeat::
 	msgbox R3_Text_KingRetreat
 	fadescreen FADE_TO_BLACK
 	removeobject LOCALID_KING

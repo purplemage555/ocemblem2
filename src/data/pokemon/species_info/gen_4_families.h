@@ -2912,7 +2912,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .description = COMPOUND_STRING(
             "Because of the way it floats aimlessly,\n"
             "an old folktale calls it a “Signpost for\n"
-            "Wandering Spirits.” Children holding\n"
+            "Wandering Spirits”. Children holding\n"
             "them might vanish. 90/50/35/60/45/70"),
         .pokemonScale = 491,
         .pokemonOffset = 12,

@@ -101,7 +101,7 @@ LilycoveCity_DepartmentStoreRooftop_EventScript_MoomooMilk::
 	goto LilycoveCity_DepartmentStoreRooftop_EventScript_TryBuyDrink
 	end
 LilycoveCity_DepartmentStoreRooftop_EventScript_CheckMoneyFreshWater::
-	checkmoney 200
+	checkmoney 250
 	return
 LilycoveCity_DepartmentStoreRooftop_EventScript_CheckMoneySodaPop::
 	checkmoney 300
@@ -113,7 +113,7 @@ LilycoveCity_DepartmentStoreRooftop_EventScript_CheckMoneyMoomooMilk::
 	checkmoney 500
 	return
 LilycoveCity_DepartmentStoreRooftop_EventScript_RemoveMoneyFreshWater::
-	removemoney 200
+	removemoney 250
 	return
 LilycoveCity_DepartmentStoreRooftop_EventScript_RemoveMoneySodaPop::
 	removemoney 300

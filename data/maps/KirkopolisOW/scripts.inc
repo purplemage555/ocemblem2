@@ -1,5 +1,9 @@
 KirkopolisOW_MapScripts::
+	map_script MAP_SCRIPT_ON_TRANSITION, Kirkopolis_OnTransition
 	.byte 0
+Kirkopolis_OnTransition::
+	setflag FLAG_VISITED_KIRKOPOLIS
+	end
 Kirkopolis_EventScript_TownSign::
 	msgbox Kirkopolis_Text_TownSign, MSGBOX_SIGN
 	end

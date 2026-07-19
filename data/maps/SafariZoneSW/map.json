@@ -1,0 +1,75 @@
+{
+  "id": "MAP_SAFARI_ZONE_SW",
+  "name": "SafariZoneSW",
+  "layout": "LAYOUT_SAFARI_ZONE_SW",
+  "music": "MUS_DESERT",
+  "region_map_section": "MAPSEC_KANTO_SAFARI_ZONE",
+  "requires_flash": false,
+  "weather": "WEATHER_SANDSTORM",
+  "map_type": "MAP_TYPE_ROUTE",
+  "allow_cycling": true,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": [
+    {
+      "map": "MAP_SAFARI_ZONE_SE",
+      "offset": 0,
+      "direction": "right"
+    },
+    {
+      "map": "MAP_SAFARI_ZONE_NW",
+      "offset": 0,
+      "direction": "up"
+    }
+  ],
+  "object_events": [
+
+  ],
+  "warp_events": [
+    {
+      "x": 19,
+      "y": 5,
+      "elevation": 0,
+      "dest_map": "MAP_SAFARI_ZONE_CAVE",
+      "dest_warp_id": "2"
+    },
+    {
+      "x": 7,
+      "y": 10,
+      "elevation": 0,
+      "dest_map": "MAP_SAFARI_ZONE_ENTRANCE",
+      "dest_warp_id": "3"
+    }
+  ],
+  "coord_events": [
+
+  ],
+  "bg_events": [
+    {
+      "type": "sign",
+      "x": 23,
+      "y": 19,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "SafariZoneSW_ES_Sign1"
+    },
+    {
+      "type": "sign",
+      "x": 33,
+      "y": 13,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "SafariZoneSW_ES_Sign2"
+    },
+    {
+      "type": "sign",
+      "x": 17,
+      "y": 6,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "SafariZoneSW_ES_Sign3"
+    }
+  ]
+}

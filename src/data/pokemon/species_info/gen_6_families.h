@@ -2393,7 +2393,6 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .formSpeciesIdTable = sMeowsticFormSpeciesIdTable,
     },
 #endif //P_FAMILY_ESPURR
-
 #if P_FAMILY_HONEDGE
     [SPECIES_HONEDGE] =
     {
@@ -2422,9 +2421,9 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .weight = 20,
         .description = COMPOUND_STRING(
             "If anyone dares to grab its hilt, it\n"
-            "wraps a blue cloth around that person's\n"
-            "arm and drains that person's life\n"
-            "energy completely."),
+            "wraps a blue cloth around their arm\n"
+            "and drains that person's quintessence\n"
+            "completely. 45/80/100/35/37/28"),
         .pokemonScale = 366,
         .pokemonOffset = 7,
         .trainerScale = 257,
@@ -2453,20 +2452,21 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
             gOverworldPalette_Honedge,
             gShinyOverworldPalette_Honedge
         )
+		.perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,
         .levelUpLearnset = sHonedgeLevelUpLearnset,
         .teachableLearnset = sHonedgeTeachableLearnset,
         .eggMoveLearnset = sHonedgeEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 35, SPECIES_DOUBLADE}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 36, SPECIES_DOUBLADE}),
     },
 
     [SPECIES_DOUBLADE] =
     {
-        .baseHP        = 59,
+        .baseHP        = 60,
         .baseAttack    = 110,
         .baseDefense   = 150,
-        .baseSpeed     = 35,
-        .baseSpAttack  = 45,
-        .baseSpDefense = 49,
+        .baseSpeed     = 36,
+        .baseSpAttack  = 44,
+        .baseSpDefense = 50,
         .types = MON_TYPES(TYPE_STEEL, TYPE_GHOST),
         .catchRate = 90,
         .expYield = 157,
@@ -2481,14 +2481,14 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .speciesName = _("Doublade"),
         .cryId = CRY_DOUBLADE,
         .natDexNum = NATIONAL_DEX_DOUBLADE,
-        .categoryName = _("Sword"),
+        .categoryName = _("Double Sword"),
         .height = 8,
         .weight = 45,
         .description = COMPOUND_STRING(
             "When Honedge evolves, it divides into\n"
-            "two swords. The complex attack patterns\n"
-            "of its two swords are unstoppable, even\n"
-            "against those skilled at swordplay."),
+            "two swords. Its complex attack patterns\n"
+            "are unstoppable, even against skilled\n"
+            "swordsmen. 60/110/150/44/50/36"),
         .pokemonScale = 366,
         .pokemonOffset = 7,
         .trainerScale = 257,
@@ -2517,24 +2517,22 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
             gOverworldPalette_Doublade,
             gShinyOverworldPalette_Doublade
         )
-        .levelUpLearnset = sDoubladeLevelUpLearnset,
-        .teachableLearnset = sDoubladeTeachableLearnset,
+		.perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,
+        .levelUpLearnset = sHonedgeLevelUpLearnset,
+        .teachableLearnset = sHonedgeTeachableLearnset,
         .evolutions = EVOLUTION({EVO_ITEM, ITEM_DUSK_STONE, SPECIES_AEGISLASH_SHIELD}),
     },
-
-#define AEGISLASH_MAIN_STAT (P_UPDATED_STATS >= GEN_8 ? 140 : 150)
-
     [SPECIES_AEGISLASH_SHIELD] =
     {
         .baseHP        = 60,
         .baseAttack    = 50,
-        .baseDefense   = AEGISLASH_MAIN_STAT,
+        .baseDefense   = 140,
         .baseSpeed     = 60,
         .baseSpAttack  = 50,
-        .baseSpDefense = AEGISLASH_MAIN_STAT,
+        .baseSpDefense = 140,
         .types = MON_TYPES(TYPE_STEEL, TYPE_GHOST),
         .catchRate = 45,
-        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_8) ? 250 : 234,
+        .expYield = 250,
         .evYield_Defense = 2,
         .evYield_SpDefense = 1,
         .genderRatio = PERCENT_FEMALE(50),
@@ -2551,10 +2549,10 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .height = 17,
         .weight = 530,
         .description = COMPOUND_STRING(
-            "In this defensive stance,\n"
-            "Aegislash uses its steel body and a force\n"
-            "field of spectral power to reduce the\n"
-            "damage of any attack."),
+            "In this defensive stance, Aegislash\n"
+            "uses its metallic body and a spectral\n"
+            "forcefield to reduce the damage of\n"
+            "any attack. 60/50/140/50/140/60"),
         .pokemonScale = 259,
         .pokemonOffset = 0,
         .trainerScale = 290,
@@ -2583,8 +2581,9 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
             gOverworldPalette_AegislashShield,
             gShinyOverworldPalette_AegislashShield
         )
-        .levelUpLearnset = sAegislashLevelUpLearnset,
-        .teachableLearnset = sAegislashTeachableLearnset,
+		.perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,
+        .levelUpLearnset = sHonedgeLevelUpLearnset,
+        .teachableLearnset = sHonedgeTeachableLearnset,
         .formSpeciesIdTable = sAegislashFormSpeciesIdTable,
         .formChangeTable = sAegislashFormChangeTable,
     },
@@ -2592,21 +2591,16 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
     [SPECIES_AEGISLASH_BLADE] =
     {
         .baseHP        = 60,
-        .baseAttack    = AEGISLASH_MAIN_STAT,
+        .baseAttack    = 140,
         .baseDefense   = 50,
         .baseSpeed     = 60,
-        .baseSpAttack  = AEGISLASH_MAIN_STAT,
+        .baseSpAttack  = 140,
         .baseSpDefense = 50,
         .types = MON_TYPES(TYPE_STEEL, TYPE_GHOST),
         .catchRate = 45,
-        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_8) ? 250 : 234,
-    #if P_UPDATED_EVS >= GEN_7
+        .expYield = 250,
         .evYield_Attack = 2,
         .evYield_SpAttack = 1,
-    #else
-        .evYield_Defense = 2,
-        .evYield_SpDefense = 1,
-    #endif
         .genderRatio = PERCENT_FEMALE(50),
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
@@ -2622,9 +2616,9 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .weight = 530,
         .description = COMPOUND_STRING(
             "Once upon a time, a king with an\n"
-            "Aegislash reigned over the land. His\n"
-            "Pokémon eventually drained him of\n"
-            "life, and his kingdom fell with him."),
+            "Aegislash reigned. It gradually\n"
+            "drained his energy, dooming his\n"
+            "kingdom. 60/140/50/140/50/60"),
         .pokemonScale = 259,
         .pokemonOffset = 0,
         .trainerScale = 290,
@@ -2645,8 +2639,9 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .iconPalIndex = 2,
         SHADOW(0, 14, SHADOW_SIZE_M)
         FOOTPRINT(Aegislash)
-        .levelUpLearnset = sAegislashLevelUpLearnset,
-        .teachableLearnset = sAegislashTeachableLearnset,
+		.perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,
+        .levelUpLearnset = sHonedgeLevelUpLearnset,
+        .teachableLearnset = sHonedgeTeachableLearnset,
         .formSpeciesIdTable = sAegislashFormSpeciesIdTable,
         .formChangeTable = sAegislashFormChangeTable,
     },
@@ -3607,8 +3602,8 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
     },
     [SPECIES_TYRANTRUM] =
     {
-        .baseHP        = 81,
-        .baseAttack    = 121,
+        .baseHP        = 82,
+        .baseAttack    = 125,
         .baseDefense   = 119,
         .baseSpeed     = 71,
         .baseSpAttack  = 69,
@@ -3634,7 +3629,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
             "Thanks to its gargantuan jaws, which could\n"
             "shred thick metal plates as if they were\n"
             "paper, it was invincible in the ancient\n"
-            "world it lived in. 81/121/119/69/59/71"),
+            "world it lived in. 82/125/119/69/59/71"),
         .pokemonScale = 257,
         .pokemonOffset = 10,
         .trainerScale = 423,

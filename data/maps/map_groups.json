@@ -114,7 +114,15 @@
     "SeleniaRoute6",
     "NovemburgOW",
     "BigBridge",
-    "SeleniaRoute7"
+    "SeleniaRoute7",
+    "SeleniaRoute8East",
+    "SeleniaRoute8West",
+    "NewEbonheartOW",
+    "SeleniaRoute9",
+    "SeleniaRoute9Kevin",
+    "BugPreserve",
+    "AgriopolisOW",
+    "SeleniaPowerPlantOW"
   ],
   "gMapGroup_IndoorLittleroot": [
     "LittlerootTown_BrendansHouse_1F",
@@ -133,7 +141,11 @@
     "PetesburgNPCs",
     "BarstHouse",
     "ParkerHouse",
-    "PeterRoom"
+    "PeterRoom",
+    "EastfordPokeCenter2F",
+    "KirkopolisPokeCenter2F",
+    "PetesburgPokeCenter2F",
+    "EastfordPokeCenterB1F"
   ],
   "gMapGroup_IndoorOldale": [
     "OldaleTown_House1",
@@ -145,7 +157,9 @@
     "SanctumMart",
     "SanctumNPCs",
     "ApprenticeHouse",
-    "FortTarifCave"
+    "FortTarifCave",
+    "SanctumPokeCenter2F",
+    "SanctumPokeCenterB1F"
   ],
   "gMapGroup_IndoorDewford": [
     "DewfordTown_House1",
@@ -164,7 +178,12 @@
     "Route4DigHouse",
     "Route4SailorHouse",
     "ACS_Houses",
-    "Route6House"
+    "Route6House",
+    "SeleniaSpaceCenter_1F",
+    "SouthportPokeCenter2F",
+    "ACSPokeCenter2F",
+    "SouthportPokeCenterB1F",
+    "ACSPokeCenterB1F"
   ],
   "gMapGroup_IndoorLavaridge": [
     "LavaridgeTown_HerbShop",
@@ -173,7 +192,15 @@
     "LavaridgeTown_House",
     "LavaridgeTown_Mart",
     "LavaridgeTown_PokemonCenter_1F",
-    "LavaridgeTown_PokemonCenter_2F"
+    "LavaridgeTown_PokemonCenter_2F",
+    "SeleniaRoute8_School",
+    "NewEbonheartPokeCenter",
+    "NewEbonheartMart",
+    "Ebonheart_Houses",
+    "EbonheartBadge",
+    "SkoomaDen",
+    "NewEbonheartPokeCenter2F",
+    "NewEbonheartPokeCenterB1F"
   ],
   "gMapGroup_IndoorFallarbor": [
     "FallarborTown_Mart",
@@ -183,7 +210,8 @@
     "FallarborTown_PokemonCenter_1F",
     "FallarborTown_PokemonCenter_2F",
     "FallarborTown_CozmosHouse",
-    "FallarborTown_MoveRelearnersHouse"
+    "FallarborTown_MoveRelearnersHouse",
+    "SpelunkersLodge"
   ],
   "gMapGroup_IndoorVerdanturf": [
     "VerdanturfTown_BattleTentLobby",
@@ -194,7 +222,8 @@
     "VerdanturfTown_PokemonCenter_2F",
     "VerdanturfTown_WandasHouse",
     "VerdanturfTown_FriendshipRatersHouse",
-    "VerdanturfTown_House"
+    "VerdanturfTown_House",
+    "Route9Houses"
   ],
   "gMapGroup_IndoorPacifidlog": [
     "PacifidlogTown_PokemonCenter_1F",
@@ -262,7 +291,9 @@
     "NovemburgMart",
     "NovemburgNPCs",
     "NovemburgBadge",
-    "ShulkHouse"
+    "ShulkHouse",
+    "NovemburgPokeCenter2F",
+    "NovemburgPokeCenterB1F"
   ],
   "gMapGroup_IndoorFortree": [
     "FortreeCity_House1",
@@ -274,7 +305,16 @@
     "FortreeCity_House3",
     "FortreeCity_House4",
     "FortreeCity_House5",
-    "FortreeCity_DecorationShop"
+    "FortreeCity_DecorationShop",
+    "AgriopolisPokeCenter",
+    "AgriopolisPokeCenter2F",
+    "AgriopolisPokeCenterB1F",
+    "AgriopolisDeptStore1F",
+    "AgriopolisDeptStore2F",
+    "AgriopolisDeptStore3F",
+    "AgriopolisDeptStore4F",
+    "AgriopolisDeptStore5F",
+    "AgriopolisDeptStoreRoof"
   ],
   "gMapGroup_IndoorLilycove": [
     "LilycoveCity_CoveLilyMotel_1F",
@@ -374,13 +414,24 @@
     "Route117_PokemonDayCare"
   ],
   "gMapGroup_IndoorRoute121": [
-    "Route121_SafariZoneEntrance"
+    "Route121_SafariZoneEntrance",
+    "SafariZoneEntrance"
   ],
   "gMapGroup_OriginalDungeons": [
     "SpiderCave_1F",
     "SpiderCave_B1F",
     "SpiderCave_B2F",
-    "SpiderCave_Lab"
+    "SpiderCave_Lab",
+    "MagmaTunnel_1F",
+    "MagmaTunnel_2F",
+    "QuarryJunction",
+    "RiverReservoir_1F",
+    "RiverReservoir_B1F",
+    "SafariZoneNE",
+    "SafariZoneSE",
+    "SafariZoneSW",
+    "SafariZoneNW",
+    "SafariZoneCave"
   ],
   "gMapGroup_Dungeons": [
     "MeteorFalls_1F_1R",

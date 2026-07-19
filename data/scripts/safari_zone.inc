@@ -153,8 +153,8 @@ Route121_SafariZoneEntrance_Text_PleaseEnjoyYourself:
 	.string "Off you go on your wild excursion!$"
 
 Route121_SafariZoneEntrance_Text_PCIsFull:
-	.string "Excuse me!\n"
-	.string "Your PC BOX is full.$"
+	.string "Sorry!\n"
+	.string "Your PC boxes are full!$"
 
 Route121_SafariZoneEntrance_Text_YouNeedPokeblockCase:
 	.string "Excuse me!\n"
