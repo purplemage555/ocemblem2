@@ -1,4 +1,463 @@
 	.align 2
+OC_Ins000::
+	.incbin "sound/soundfont/inst000x00.DirectSound.bin"
+	.align 2
+OC_Ins001::
+	.incbin "sound/soundfont/inst010x01.DirectSound.bin"
+	.align 2
+OC_Ins002::
+	.incbin "sound/soundfont/inst020x02.DirectSound.bin"
+	.align 2
+OC_Ins003::
+	.incbin "sound/soundfont/inst030x03.DirectSound.bin"
+	.align 2
+OC_Ins004::
+	.incbin "sound/soundfont/inst040x04.DirectSound.bin"
+	.align 2
+OC_Ins005::
+	.incbin "sound/soundfont/inst050x05.DirectSound.bin"
+	.align 2
+OC_Ins006::
+	.incbin "sound/soundfont/inst060x06.DirectSound.bin"
+	.align 2
+OC_Ins007::
+	.incbin "sound/soundfont/inst070x07.DirectSound.bin"
+	.align 2
+OC_Ins008::
+	.incbin "sound/soundfont/inst080x08.DirectSound.bin"
+	.align 2
+OC_Ins009::
+	.incbin "sound/soundfont/inst090x09.DirectSound.bin"
+	.align 2
+OC_Ins00A::
+	.incbin "sound/soundfont/inst0A0x0A.DirectSound.bin"
+	.align 2
+OC_Ins00B::
+	.incbin "sound/soundfont/inst0B0x0B.DirectSound.bin"
+	.align 2
+OC_Ins00C::
+	.incbin "sound/soundfont/inst0C0x0C.DirectSound.bin"
+	.align 2
+OC_Ins00D::
+	.incbin "sound/soundfont/inst0D0x0D.DirectSound.bin"
+	.align 2
+OC_Ins00E::
+	.incbin "sound/soundfont/inst0E0x0E.DirectSound.bin"
+	.align 2
+OC_Ins00F::
+	.incbin "sound/soundfont/inst0F0x0F.DirectSound.bin"
+	.align 2
+OC_Ins010::
+	.incbin "sound/soundfont/inst100x10.DirectSound.bin"
+	.align 2
+OC_Ins011::
+	.incbin "sound/soundfont/inst110x11.DirectSound.bin"
+	.align 2
+OC_Ins012::
+	.incbin "sound/soundfont/inst120x12.DirectSound.bin"
+	.align 2
+OC_Ins013::
+	.incbin "sound/soundfont/inst130x13.DirectSound.bin"
+	.align 2
+OC_Ins014::
+	.incbin "sound/soundfont/inst140x14.DirectSound.bin"
+	.align 2
+OC_Ins015::
+	.incbin "sound/soundfont/inst150x15.DirectSound.bin"
+	.align 2
+OC_Ins016::
+	.incbin "sound/soundfont/inst160x16.DirectSound.bin"
+	.align 2
+OC_Ins017::
+	.incbin "sound/soundfont/inst170x17.DirectSound.bin"
+	.align 2
+OC_Ins018::
+	.incbin "sound/soundfont/inst180x18.DirectSound.bin"
+	.align 2
+OC_Ins01A::
+	.incbin "sound/soundfont/inst1A0x1A.DirectSound.bin"
+	.align 2
+OC_Ins01B::
+	.incbin "sound/soundfont/inst1B0x1B.DirectSound.bin"
+	.align 2
+OC_Ins01C::
+	.incbin "sound/soundfont/inst1C0x1C.DirectSound.bin"
+	.align 2
+OC_Ins01D::
+	.incbin "sound/soundfont/inst1D0x1D.DirectSound.bin"
+	.align 2
+OC_Ins01E::
+	.incbin "sound/soundfont/inst1E0x1E.DirectSound.bin"
+	.align 2
+OC_Ins01F::
+	.incbin "sound/soundfont/inst1F0x1F.DirectSound.bin"
+	.align 2
+OC_Ins020::
+	.incbin "sound/soundfont/inst200x20.DirectSound.bin"
+	.align 2
+OC_Ins021::
+	.incbin "sound/soundfont/inst210x21.DirectSound.bin"
+	.align 2
+OC_Ins022::
+	.incbin "sound/soundfont/inst220x22.DirectSound.bin"
+	.align 2
+OC_Ins023::
+	.incbin "sound/soundfont/inst230x23.DirectSound.bin"
+	.align 2
+OC_Ins024::
+	.incbin "sound/soundfont/inst240x24.DirectSound.bin"
+	.align 2
+OC_Ins026::
+	.incbin "sound/soundfont/inst260x26.DirectSound.bin"
+	.align 2
+OC_Ins027::
+	.incbin "sound/soundfont/inst270x27.DirectSound.bin"
+	.align 2
+OC_Ins028::
+	.incbin "sound/soundfont/inst280x28.DirectSound.bin"
+	.align 2
+OC_Ins029::
+	.incbin "sound/soundfont/inst290x29.DirectSound.bin"
+	.align 2
+OC_Ins02A::
+	.incbin "sound/soundfont/inst2A0x2A.DirectSound.bin"
+	.align 2
+OC_Ins02B::
+	.incbin "sound/soundfont/inst2B0x2B.DirectSound.bin"
+	.align 2
+OC_Ins02C::
+	.incbin "sound/soundfont/inst2C0x2C.DirectSound.bin"
+	.align 2
+OC_Ins02D::
+	.incbin "sound/soundfont/inst2D0x2D.DirectSound.bin"
+	.align 2
+OC_Ins02E::
+	.incbin "sound/soundfont/inst2E0x2E.DirectSound.bin"
+	.align 2
+OC_Ins02F::
+	.incbin "sound/soundfont/inst2F0x2F.DirectSound.bin"
+	.align 2
+OC_Ins030::
+	.incbin "sound/soundfont/inst300x30.DirectSound.bin"
+	.align 2
+OC_Ins031::
+	.incbin "sound/soundfont/inst310x31.DirectSound.bin"
+	.align 2
+OC_Ins032::
+	.incbin "sound/soundfont/inst320x32.DirectSound.bin"
+	.align 2
+OC_Ins033::
+	.incbin "sound/soundfont/inst330x33.DirectSound.bin"
+	.align 2
+OC_Ins034::
+	.incbin "sound/soundfont/inst340x34.DirectSound.bin"
+	.align 2
+OC_Ins036::
+	.incbin "sound/soundfont/inst360x36.DirectSound.bin"
+	.align 2
+OC_Ins039::
+	.incbin "sound/soundfont/inst390x39.DirectSound.bin"
+	.align 2
+OC_Ins03A::
+	.incbin "sound/soundfont/inst3A0x3A.DirectSound.bin"
+	.align 2
+OC_Ins03B::
+	.incbin "sound/soundfont/inst3B0x3B.DirectSound.bin"
+	.align 2
+OC_Ins03C::
+	.incbin "sound/soundfont/inst3C0x3C.DirectSound.bin"
+	.align 2
+OC_Ins03D::
+	.incbin "sound/soundfont/inst3D0x3D.DirectSound.bin"
+	.align 2
+OC_Ins03E::
+	.incbin "sound/soundfont/inst3E0x3E.DirectSound.bin"
+	.align 2
+OC_Ins03F::
+	.incbin "sound/soundfont/inst3F0x3F.DirectSound.bin"
+	.align 2
+OC_Ins040::
+	.incbin "sound/soundfont/inst400x40.DirectSound.bin"
+	.align 2
+OC_Ins041::
+	.incbin "sound/soundfont/inst410x41.DirectSound.bin"
+	.align 2
+OC_Ins042::
+	.incbin "sound/soundfont/inst420x42.DirectSound.bin"
+	.align 2
+OC_Ins043::
+	.incbin "sound/soundfont/inst430x43.DirectSound.bin"
+	.align 2
+OC_Ins044::
+	.incbin "sound/soundfont/inst440x44.DirectSound.bin"
+	.align 2
+OC_Ins045::
+	.incbin "sound/soundfont/inst450x45.DirectSound.bin"
+	.align 2
+OC_Ins046::
+	.incbin "sound/soundfont/inst460x46.DirectSound.bin"
+	.align 2
+OC_Ins047::
+	.incbin "sound/soundfont/inst470x47.DirectSound.bin"
+	.align 2
+OC_Ins049::
+	.incbin "sound/soundfont/inst490x49.DirectSound.bin"
+	.align 2
+OC_Ins04A::
+	.incbin "sound/soundfont/inst4A0x4A.DirectSound.bin"
+	.align 2
+OC_Ins04B::
+	.incbin "sound/soundfont/inst4B0x4B.DirectSound.bin"
+	.align 2
+OC_Ins04C::
+	.incbin "sound/soundfont/inst4C0x4C.DirectSound.bin"
+	.align 2
+OC_Ins04D::
+	.incbin "sound/soundfont/inst4D0x4D.DirectSound.bin"
+	.align 2
+OC_Ins04E::
+	.incbin "sound/soundfont/inst4E0x4E.DirectSound.bin"
+	.align 2
+OC_Ins04F::
+	.incbin "sound/soundfont/inst4F0x4F.DirectSound.bin"
+	.align 2
+OC_Ins050::
+	.incbin "sound/soundfont/inst500x50.DirectSound.bin"
+	.align 2
+OC_Ins051::
+	.incbin "sound/soundfont/inst510x51.DirectSound.bin"
+	.align 2
+OC_Ins055::
+	.incbin "sound/soundfont/inst550x55.DirectSound.bin"
+	.align 2
+OC_Ins056::
+	.incbin "sound/soundfont/inst560x56.DirectSound.bin"
+	.align 2
+OC_Ins058::
+	.incbin "sound/soundfont/inst580x58.DirectSound.bin"
+	.align 2
+OC_Ins059::
+	.incbin "sound/soundfont/inst590x59.DirectSound.bin"
+	.align 2
+OC_Ins05A::
+	.incbin "sound/soundfont/inst5A0x5A.DirectSound.bin"
+	.align 2
+OC_Ins05B::
+	.incbin "sound/soundfont/inst5B0x5B.DirectSound.bin"
+	.align 2
+OC_Ins05C::
+	.incbin "sound/soundfont/inst5C0x5C.DirectSound.bin"
+	.align 2
+OC_Ins05D::
+	.incbin "sound/soundfont/inst5D0x5D.DirectSound.bin"
+	.align 2
+OC_Ins05E::
+	.incbin "sound/soundfont/inst5E0x5E.DirectSound.bin"
+	.align 2
+OC_Ins05F::
+	.incbin "sound/soundfont/inst5F0x5F.DirectSound.bin"
+	.align 2
+OC_Ins062::
+	.incbin "sound/soundfont/inst620x62.DirectSound.bin"
+	.align 2
+OC_Ins063::
+	.incbin "sound/soundfont/inst630x63.DirectSound.bin"
+	.align 2
+OC_Ins064::
+	.incbin "sound/soundfont/inst640x64.DirectSound.bin"
+	.align 2
+OC_Ins065::
+	.incbin "sound/soundfont/inst650x65.DirectSound.bin"
+	.align 2
+OC_Ins066::
+	.incbin "sound/soundfont/inst660x66.DirectSound.bin"
+	.align 2
+OC_Ins067::
+	.incbin "sound/soundfont/inst670x67.DirectSound.bin"
+	.align 2
+OC_Ins068::
+	.incbin "sound/soundfont/inst680x68.DirectSound.bin"
+	.align 2
+OC_Ins069::
+	.incbin "sound/soundfont/inst690x69.DirectSound.bin"
+	.align 2
+OC_Ins06A::
+	.incbin "sound/soundfont/inst6A0x6A.DirectSound.bin"
+	.align 2
+OC_Ins06B::
+	.incbin "sound/soundfont/inst6B0x6B.DirectSound.bin"
+	.align 2
+OC_Ins06C::
+	.incbin "sound/soundfont/inst6C0x6C.DirectSound.bin"
+	.align 2
+OC_Ins06D::
+	.incbin "sound/soundfont/inst6D0x6D.DirectSound.bin"
+	.align 2
+OC_Ins06E::
+	.incbin "sound/soundfont/inst6E0x6E.DirectSound.bin"
+	.align 2
+OC_Ins06F::
+	.incbin "sound/soundfont/inst6F0x6F.DirectSound.bin"
+	.align 2
+OC_Ins070::
+	.incbin "sound/soundfont/inst700x70.DirectSound.bin"
+	.align 2
+OC_Ins074::
+	.incbin "sound/soundfont/inst740x74.DirectSound.bin"
+	.align 2
+OC_Ins075::
+	.incbin "sound/soundfont/inst750x75.DirectSound.bin"
+	.align 2
+OC_Ins076::
+	.incbin "sound/soundfont/inst760x76.DirectSound.bin"
+	.align 2
+OC_Ins077::
+	.incbin "sound/soundfont/inst770x77.DirectSound.bin"
+	.align 2
+OC_Ins07D::
+	.incbin "sound/soundfont/inst7D0x7D.DirectSound.bin"
+	.align 2
+OC_Ins07E::
+	.incbin "sound/soundfont/inst7E0x7E.DirectSound.bin"
+	.align 2
+D1_000::
+	.incbin "sound/soundfont/drums/D1_000.bin"
+	.align 2
+D1_001::
+	.incbin "sound/soundfont/drums/D1_001.bin"
+	.align 2
+D1_003::
+	.incbin "sound/soundfont/drums/D1_003.bin"
+	.align 2
+D1_004::
+	.incbin "sound/soundfont/drums/D1_004.bin"
+	.align 2
+D1_005::
+	.incbin "sound/soundfont/drums/D1_005.bin"
+	.align 2
+D1_006::
+	.incbin "sound/soundfont/drums/D1_006.bin"
+	.align 2
+D1_007::
+	.incbin "sound/soundfont/drums/D1_007.bin"
+	.align 2
+D1_008::
+	.incbin "sound/soundfont/drums/D1_008.bin"
+	.align 2
+D1_010::
+	.incbin "sound/soundfont/drums/D1_006.bin"
+	.align 2
+D1_012::
+	.incbin "sound/soundfont/drums/D1_012.bin"
+	.align 2
+D1_013::
+	.incbin "sound/soundfont/drums/D1_013.bin"
+	.align 2
+D1_014::
+	.incbin "sound/soundfont/drums/D1_014.bin"
+	.align 2
+D1_015::
+	.incbin "sound/soundfont/drums/D1_015.bin"
+	.align 2
+D1_016::
+	.incbin "sound/soundfont/drums/D1_016.bin"
+	.align 2
+D1_019::
+	.incbin "sound/soundfont/drums/D1_019.bin"
+	.align 2
+D1_020::
+	.incbin "sound/soundfont/drums/D1_020.bin"
+	.align 2
+D1_025::
+	.incbin "sound/soundfont/drums/D1_025.bin"
+	.align 2
+D1_026::
+	.incbin "sound/soundfont/drums/D1_026.bin"
+	.align 2
+D1_027::
+	.incbin "sound/soundfont/drums/D1_027.bin"
+	.align 2
+D1_028::
+	.incbin "sound/soundfont/drums/D1_028.bin"
+	.align 2
+D1_029::
+	.incbin "sound/soundfont/drums/D1_029.bin"
+	.align 2
+D1_032::
+	.incbin "sound/soundfont/drums/D1_032.bin"
+	.align 2
+D1_033::
+	.incbin "sound/soundfont/drums/D1_033.bin"
+	.align 2
+D1_034::
+	.incbin "sound/soundfont/drums/D1_034.bin"
+	.align 2
+D1_035::
+	.incbin "sound/soundfont/drums/D1_035.bin"
+	.align 2
+D1_036::
+	.incbin "sound/soundfont/drums/D1_036.bin"
+	.align 2
+D1_037::
+	.incbin "sound/soundfont/drums/D1_037.bin"
+	.align 2
+D1_038::
+	.incbin "sound/soundfont/drums/D1_038.bin"
+	.align 2
+D1_039::
+	.incbin "sound/soundfont/drums/D1_039.bin"
+	.align 2
+D1_040::
+	.incbin "sound/soundfont/drums/D1_040.bin"
+	.align 2
+D1_041::
+	.incbin "sound/soundfont/drums/D1_041.bin"
+	.align 2
+D1_042::
+	.incbin "sound/soundfont/drums/D1_042.bin"
+	.align 2
+D1_045::
+	.incbin "sound/soundfont/drums/D1_045.bin"
+	.align 2
+D1_046::
+	.incbin "sound/soundfont/drums/D1_046.bin"
+	.align 2
+D1_048::
+	.incbin "sound/soundfont/drums/D1_048.bin"
+	.align 2
+D1_049::
+	.incbin "sound/soundfont/drums/D1_049.bin"
+	.align 2
+D1_051::
+	.incbin "sound/soundfont/drums/D1_051.bin"
+	.align 2
+D1_057::
+	.incbin "sound/soundfont/drums/D1_057.bin"
+	.align 2
+D1_084::
+	.incbin "sound/soundfont/drums/D1_084.bin"
+	.align 2
+D1_086::
+	.incbin "sound/soundfont/drums/D1_086.bin"
+	.align 2
+D2_084::
+	.incbin "sound/soundfont/drums/D2_084.bin"
+	.align 2
+D2_086::
+	.incbin "sound/soundfont/drums/D2_086.bin"
+	.align 2
+D2_089::
+	.incbin "sound/soundfont/drums/D2_089.bin"
+	.align 2
+D2_090::
+	.incbin "sound/soundfont/drums/D2_090.bin"
+	.align 2
+D2_093::
+	.incbin "sound/soundfont/drums/D2_093.bin"
+	.align 2
+D2_094::
+	.incbin "sound/soundfont/drums/D2_094.bin"
+	.align 2
 DirectSoundWaveData_sc88pro_glockenspiel::
 	.incbin "sound/direct_sound_samples/sc88pro_glockenspiel.bin"
 

@@ -611,7 +611,16 @@ gSongTable::
 	song ph_nurse_blend, 2, 2
 	song ph_nurse_held, 2, 2
 	song ph_nurse_solo, 2, 2
-
+	song oc_grasswalk, 0, 0
+	song oc_pool, 0, 0
+	song oc_roof, 0, 0
+	song oc_ultbat, 0, 0
+	song oc_zomboss, 0, 0
+	song oc_bridge, 0, 0
+	song oc_frozen, 0, 0
+	song oc_tinker, 0, 0
+	song oc_propeller, 0, 0
+	song oc_necrozma, 0, 0
 	.align 2
 dummy_song_header:
 	.byte 0, 0, 0, 0
